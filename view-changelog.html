@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <!-- Meta tags per la codifica e il viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Changelog - La Mia Custom Map</title>
+    <!-- Collegamenti a fogli di stile e librerie -->
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
+    <!-- Header con titolo cliccabile -->
     <header>
         <h1 onclick="window.location.href='index.html'">Nome della Tua Custom Map</h1>
     </header>
 
+    <!-- Contenuto principale -->
     <main>
+        <!-- Intestazione del post con immagine e metadati -->
         <div id="post-header" class="post-header"></div>
+        <!-- Contenuto del changelog -->
         <div id="changelog" class="changelog"></div>
     </main>
 
+    <!-- Footer con copyright -->
     <footer>
         <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
     </footer>
 
+    <!-- Script per il caricamento dei dati -->
     <script src="js/changelog-loader.js"></script>
     <script>
+        // Configurazione del parser markdown
         marked.setOptions({
             headerIds: false,
             mangle: false,
             headerPrefix: '',
             breaks: true,
-            sanitize: false
+            sanitize: false // Permette HTML nel markdown
         });
 
+        // Recupera il parametro file dall'URL
         const urlParams = new URLSearchParams(window.location.search);
         const file = urlParams.get('file');
         
         if (file) {
+            // Cerca i metadata del changelog
             const metadata = window.changelogList.find(c => c.file === file);
             
+            // Se esistono metadata, mostra l'intestazione del post
             if (metadata) {
                 document.getElementById('post-header').innerHTML = `
                     <div class="post-thumbnail">
@@ -47,14 +59,16 @@
                 `;
             }
 
+            // Carica il contenuto del changelog
             fetch(`changelogs/${file}`)
                 .then(response => {
                     if (!response.ok) throw new Error('Changelog non trovato');
                     return response.text();
                 })
                 .then(text => {
-                    // Rimuovi il frontmatter
-                    text = text.replace(/^---[\s\S]*?---\n\n/, '');
+                    // Pulizia e preparazione del testo
+                    text = text.replace(/^---[\s\S]*?---\n\n/, ''); // Rimuove frontmatter
+                    text = text.replace(/<\/?[^>]+(>|$)/g, ''); // Rimuove tag HTML
                     
                     // Rimuovi i tag HTML non necessari dal markdown
                     text = text.replace(/<\/?[^>]+(>|$)/g, '');
@@ -64,6 +78,7 @@
                     document.getElementById('changelog').innerHTML = content;
                 })
                 .catch(error => {
+                    // Gestione degli errori
                     console.error('Errore:', error);
                     document.getElementById('changelog').innerHTML = `
                         <h2>Errore nel caricamento del changelog</h2>
@@ -72,6 +87,7 @@
                     `;
                 });
         } else {
+            // Messaggio se nessun changelog è selezionato
             document.getElementById('changelog').innerHTML = '<h2>Nessun changelog selezionato</h2>';
         }
     </script>

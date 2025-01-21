@@ -1,3 +1,4 @@
+/* Stili base */
 body {
     font-family: 'Minecraft', Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #ffffff;
 }
 
+/* Stili header */
 header {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -75,6 +77,7 @@ main {
     border-bottom: 1px solid #2d2d2d;
 }
 
+/* Stili changelog */
 .changelog {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -152,25 +155,26 @@ main {
     color: #999;
 }
 
+/* Stili thumbnail e immagini */
 .changelog-image {
     width: 100%;
-    height: 160px;  /* Altezza fissa per tutti i thumbnail */
+    height: 160px;
     overflow: hidden;
     border-radius: 4px;
     margin-bottom: 1rem;
-    background-color: #1a1a1a; /* Sfondo per immagini che stanno caricando */
+    background-color: #1a1a1a;
 }
 
 .changelog-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantiene le proporzioni e copre l'area */
-    object-position: center; /* Centra l'immagine */
+    object-fit: cover;
+    object-position: center;
     transition: transform 0.3s ease;
 }
 
 .changelog-card:hover .changelog-image img {
-    transform: scale(1.05); /* Leggero zoom all'hover */
+    transform: scale(1.05);
 }
 
 .changelog img {
@@ -210,6 +214,7 @@ footer {
     border-top: 4px solid #2d2d2d;
 }
 
+/* Stili post singolo */
 .post-header {
     text-align: center;
     margin-bottom: 2rem;
