@@ -4,7 +4,8 @@ window.changelogList = [
         file: '2020-12-31-changelog.md', // Nome del file markdown
         date: '25 Gennaio 2024',         // Data di pubblicazione
         title: 'Changelog Template date', // Titolo visualizzato
-        image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN3wr6bMKw7ri9urVk4xUHLRy4jVlGI6k8_Q8vqLgMcbrW-BM9BURbspRWu2MwOEEf0GqBWlsET696NTXcKGjNCo0VfOwrBgI7tppuZqupJdchAWtuLcKql5NSPPmrHuElQhKVqXTc9Do4/s72-w581-c-h581/changelog.png'  // URL immagine
+        image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN3wr6bMKw7ri9urVk4xUHLRy4jVlGI6k8_Q8vqLgMcbrW-BM9BURbspRWu2MwOEEf0GqBWlsET696NTXcKGjNCo0VfOwrBgI7tppuZqupJdchAWtuLcKql5NSPPmrHuElQhKVqXTc9Do4/s72-w581-c-h581/changelog.png',  // URL immagine
+        description: 'Template per i changelog' // Aggiunto campo description
     },
     {
         file: 'v1-0-0.md',
@@ -15,7 +16,8 @@ window.changelogList = [
     {
         file: 'v0-9-0.md',
         date: '10 Gennaio 2024',
-        title: 'Versione 0.9.0'
+        title: 'Versione 0.9.0',
+        image: ''
     }
 ];
 
@@ -36,11 +38,16 @@ function createChangelogCard(changelog) {
     card.href = `view-changelog.html?file=${changelog.file}`; // Link alla pagina del changelog
     card.className = 'changelog-card';
     
-    // Template della card con immagine opzionale
+    const defaultImage = 'https://placehold.co/600x400/1a1a1a/ffffff/png?text=No+Image';
     card.innerHTML = `
-        ${changelog.image ? `<div class="changelog-image"><img src="${changelog.image}" alt="${changelog.title}"></div>` : ''}
+        <div class="changelog-image">
+            <img src="${changelog.image || defaultImage}" 
+                 alt="${changelog.title}"
+                 onerror="this.src='${defaultImage}'">
+        </div>
         <h3>${changelog.title}</h3>
-        <p>${changelog.date}</p>
+        <p class="date">${changelog.date}</p>
+        ${changelog.description ? `<p class="description">${changelog.description}</p>` : ''}
     `;
     return card;
 }

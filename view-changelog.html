@@ -47,33 +47,32 @@
         if (file) {
             // Cerca i metadata del changelog
             const metadata = window.changelogList.find(c => c.file === file);
+            const defaultImage = 'https://placehold.co/800x400/1a1a1a/ffffff/png?text=No+Image';
             
             // Se esistono metadata, mostra l'intestazione del post
             if (metadata) {
+                document.title = `${metadata.title} - Changelog`;
                 document.getElementById('post-header').innerHTML = `
                     <div class="post-thumbnail">
-                        <img src="${metadata.image}" alt="${metadata.title}">
+                        <img src="${metadata.image || defaultImage}" 
+                             alt="${metadata.title}"
+                             onerror="this.src='${defaultImage}'">
                     </div>
                     <h1 class="post-title">${metadata.title}</h1>
                     <p class="post-date">${metadata.date}</p>
+                    ${metadata.description ? `<p class="post-description">${metadata.description}</p>` : ''}
                 `;
             }
 
             // Carica il contenuto del changelog
             fetch(`changelogs/${file}`)
                 .then(response => {
-                    if (!response.ok) throw new Error('Changelog non trovato');
+                    if (!response.ok) throw new Error(`Changelog non trovato (${response.status})`);
                     return response.text();
                 })
                 .then(text => {
-                    // Pulizia e preparazione del testo
-                    text = text.replace(/^---[\s\S]*?---\n\n/, ''); // Rimuove frontmatter
-                    text = text.replace(/<\/?[^>]+(>|$)/g, ''); // Rimuove tag HTML
-                    
-                    // Rimuovi i tag HTML non necessari dal markdown
-                    text = text.replace(/<\/?[^>]+(>|$)/g, '');
-                    
-                    // Renderizza il contenuto
+                    // Rimuovi solo i tag HTML pericolosi
+                    text = text.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
                     const content = marked.parse(text);
                     document.getElementById('changelog').innerHTML = content;
                 })
@@ -81,9 +80,12 @@
                     // Gestione degli errori
                     console.error('Errore:', error);
                     document.getElementById('changelog').innerHTML = `
-                        <h2>Errore nel caricamento del changelog</h2>
-                        <p>Non è stato possibile caricare il changelog richiesto.</p>
-                        <p>Errore: ${error.message}</p>
+                        <div class="error-message">
+                            <img src="https://placehold.co/150x150/2d2d2d/ff0000/png?text=⚠" alt="Error">
+                            <h2>Errore nel caricamento del changelog</h2>
+                            <p>${error.message}</p>
+                            <a href="index.html" class="error-button">Torna alla home</a>
+                        </div>
                     `;
                 });
         } else {
