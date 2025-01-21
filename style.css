@@ -1,0 +1,242 @@
+body {
+    font-family: 'Minecraft', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #2d2d2d;
+}
+
+header h1 {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+header h1:hover {
+    color: #ddd;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+nav a:hover {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 2px solid #2d2d2d;
+}
+
+.features {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #2d2d2d;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.changelog {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 4rem;
+    border: 2px solid #2d2d2d;
+}
+
+.changelog h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.changelog h3 {
+    color: #ffffff;
+    border-bottom: 1px solid #2d2d2d;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.changelog ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.changelog ul li {
+    position: relative;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.changelog ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+.changelog-list {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 4rem;
+    border: 2px solid #2d2d2d;
+}
+
+.changelog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.changelog-card {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.changelog-card:hover {
+    transform: translateY(-5px);
+    background-color: #3d3d3d;
+}
+
+.changelog-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: white;
+}
+
+.changelog-card p {
+    margin: 0;
+    color: #999;
+}
+
+.changelog-image {
+    width: 100%;
+    height: 160px;  /* Altezza fissa per tutti i thumbnail */
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #1a1a1a; /* Sfondo per immagini che stanno caricando */
+}
+
+.changelog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene le proporzioni e copre l'area */
+    object-position: center; /* Centra l'immagine */
+    transition: transform 0.3s ease;
+}
+
+.changelog-card:hover .changelog-image img {
+    transform: scale(1.05); /* Leggero zoom all'hover */
+}
+
+.changelog img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 4px;
+}
+
+.changelog a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.changelog a:hover {
+    text-decoration: underline;
+}
+
+.changelog blockquote {
+    border-left: 4px solid #2d2d2d;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: #1a1a1a;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #2d2d2d;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-top: 4px solid #2d2d2d;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-thumbnail {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+.post-date {
+    color: #999;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
