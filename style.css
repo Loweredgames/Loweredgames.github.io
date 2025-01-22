@@ -13,6 +13,7 @@ header {
     padding: 2rem;
     text-align: center;
     border-bottom: 4px solid #2d2d2d;
+    position: relative;  /* Aggiunto per il posizionamento assoluto del nav */
 }
 
 header h1 {
@@ -28,7 +29,13 @@ header h1:hover {
 }
 
 nav {
-    margin-top: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 nav a {
@@ -75,6 +82,35 @@ main {
 .features li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #2d2d2d;
+}
+
+.features .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;     /* Stessa dimensione del footer */
+    height: 24px;    /* Stessa dimensione del footer */
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.features .social-icon img {
+    width: 16px;      /* Stessa dimensione del footer */
+    height: 16px;     /* Stessa dimensione del footer */
+    object-fit: contain;
+}
+
+.features .social-icon:hover {
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 /* Stili changelog */
@@ -271,6 +307,16 @@ footer {
 .footer-content p {
     margin: 0;
     color: #999;
+}
+
+/* Rimuovere questi stili che non servono più */
+/* Stili per la pagina About */
+.team-grid,
+.team-member,
+.team-member img,
+.team-member h4,
+.team-member p {
+    display: none;
 }
 
 /* Rimuovi gli stili vecchi della sezione social-links che non servono più */
