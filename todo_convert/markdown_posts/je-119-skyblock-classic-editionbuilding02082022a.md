@@ -1,0 +1,5 @@
+# JE-1.19-Skyblock Classic Edition:BUILDING:02.08.2022a
+
+**Data:** 2022-08-06
+
+I release this version in between continuing custom structure. Note:in this version or added the cake to thank you for the 100K downloads, there will be a surprise when we reach the milestone :)Addedworlds and maps:aggiunte altre strutture personalizzate (attenzione non sono complete e possono essere ancora modificate)villageper il momento non spawna nel mondojungle_pyramidsper il momento non spawna nel mondo ma devi digitare "/place template minecraft:jungle_pyramids"misc and other:aggiornato alla 1.19.2aggiunta una torta all'inizio del mondo per festeggiare i 100Ksolo nell'Isola normale (in futuro verrà aggiunto anche nelle altre)Changedfunctions and datapack:riorganizzata la funzione "generated_structures"Fixedfunctions and datapack:risolto un problema dello spawn del Ender Dragon che non si generava (Issue #16) per attivare la correzione digita "/scoreboard objectives add fix_end dummy" in chatport della versione 2.1.3BUILDINGS are development versions and may be incomplete.Download

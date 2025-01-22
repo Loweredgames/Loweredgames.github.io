@@ -1,0 +1,5 @@
+# Legacy_JE-1.16-Skyblock-Classic-Edition: 1.16.5 Release
+
+**Data:** 2022-05-30
+
+note: i am releasing this version for nostalgia and remembrance onlyLegacydifferences in the fork Legacy_BUILDING:17.02.2021bquesta versione è un fork della Legacy_BUILDING:17.02.2021baggiunto datapack modernoe stato disabilitato ma può essere riabilitato per giocare nelle versioni moderne (solo nella 1.18-X.XX).basta digitare "/datapack enable "file/Skyblock Classic Edition"" in chatriabilitati i trucchi nel mondospostato il vecchi changelog e l'esportazione dei mondi custom nella cartella "misc"ripulita la generazione dell'endrimossi alcuni file del datapack come l'icona per ridurre lo spazioaggiunto messaggio di avviso all'inizioaggiunta mappa nella cassa per esplorare i dintorni (non esiste la mappa custom in questa versione).eliminato il vecchio datapack delle versionicambiata la versione nel formato modernoDownloadthis version is no longer supported and the problems are closed. to update the version just go to Github.

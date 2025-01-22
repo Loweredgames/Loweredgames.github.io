@@ -1,0 +1,5 @@
+# JE-1.18-Skyblock Classic Edition:PRE-RELEASE 4
+
+**Data:** 2022-04-07
+
+annuncio: ciao ragazzi e benvenuti nel ultima Pre-release, purtroppo non sono riuscito a sistemare il problema della generazione quindi l'overworld ritornerà com'era un tempo (solo un bioma: la taiga innevata) vi invito a segnalarlo qui e speriamo un giorno che venga risolto. ho notato che il changelog non viene tradotto quindi dora in poi verrà tradotto ma ci sarà un avviso dato che non so scrivere molto bene in inglese. credo che rilascerò la versione in prima possibile, scusate ancora.Addedworlds and maps:rimosso il multi noiose e riaggiunta la generazione personalizzata solo nel overworld (segnalate il bug qui)Changedfunctions and datapack:rimosse alcune stringe nella funzione legacyaggiunta la funzione legacy all'interno del layout al inizioazzerato ID e rimosse altre coseRemovedfunctions and datapack:rimossa la funzione wiki (scusate pensavo che potevo mantenerla)Fixedfunctions and datapack:risolti alcuni problemi nella versione legacyworlds and maps:Fix coming back from The End spawns you on the void.BUILDINGS are development versions and may be incomplete.Download

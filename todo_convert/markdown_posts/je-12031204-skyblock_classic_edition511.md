@@ -1,0 +1,5 @@
+# JE-1.20.3/1.20.4-Skyblock_Classic_Edition:5.1.1
+
+**Data:** 2024-01-05
+
+Changedquesta versione è compatibile alla 5.1.0aggiornamento di manutezioneFixedworlds and maps:level.dat: problemi con delle stringe interne (#251)ITA:pultoppo si è scoperto un problema che causava il blocco quando si apriva il mondo. per risolvere il problema basta: mettere gli oggetti nel baule e sostituire il level.dat qui e cambiare subito modalita in creativà quando si avvia il mondo per la prima volta se no cadi nel vuoto. scusate ancora ma questa sara la vera e ultima volta che tocco il level.datENG:Unfortunately, a problem was discovered that caused when opening the world. to solve the problem just: put the items in the chests and replace the level.dat here and immediately change the mode to creative when you start the world for the first time otherwise you will fall into the void. sorry again but this will be the real and last time I touch the level.datadesso il level.dat a valori nulli e rimarra nella 1.16fino a quando non servira un aggiornamento nel mondo (se la Mojang modifica qualcosa nel codice)Download
