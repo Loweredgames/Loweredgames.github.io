@@ -11,7 +11,7 @@ window.changelogList = [
         file: 'v1-0-0.md',
         date: '20 Gennaio 2024',
         title: 'Versione 1.0.0',
-        image: 'images/2024-09-23_14.21.49.png'
+        image: 'images/posts/2024-09-23_14.21.49.png'
     },
     {
         file: 'v0-9-0.md',

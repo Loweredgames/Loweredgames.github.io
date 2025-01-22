@@ -122,6 +122,7 @@ main {
     border-radius: 8px;
     margin-top: 4rem;
     border: 2px solid #2d2d2d;
+    text-align: center;
 }
 
 .changelog-grid {
@@ -224,6 +225,57 @@ footer {
     padding: 2rem;
     background-color: #1a1a1a;
     border-top: 4px solid #2d2d2d;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    gap: 1.5rem;  /* Aumentato lo spazio tra le icone */
+    justify-content: center;
+    align-items: center;  /* Allinea verticalmente le icone */
+}
+
+.footer-content .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;     /* Dimensione fissa del contenitore */
+    height: 32px;    /* Dimensione fissa del contenitore */
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+    text-decoration: none;  /* Aggiunto per nascondere la sottolineatura del link */
+}
+
+.footer-content .social-icon:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.footer-content .social-icon:focus {
+    outline: 2px solid #4a9eff;
+    border-radius: 4px;
+}
+
+.footer-content .social-icon img {
+    width: 24px;      /* Dimensione fissa dell'icona */
+    height: 24px;     /* Dimensione fissa dell'icona */
+    object-fit: contain;  /* Mantiene le proporzioni */
+}
+
+.footer-content p {
+    margin: 0;
+    color: #999;
+}
+
+/* Rimuovi gli stili vecchi della sezione social-links che non servono più */
+.social-links {
+    display: none;
 }
 
 /* Stili post singolo */
