@@ -21,15 +21,32 @@
         <div id="post-header" class="post-header"></div>
         <!-- Contenuto del changelog -->
         <div id="changelog" class="changelog"></div>
+        <!-- Aggiungo il pulsante home -->
+        <div class="home-button-container">
+            <a href="index.html" class="home-button">Torna alla Home</a>
+        </div>
     </main>
 
     <!-- Footer con copyright -->
     <footer>
-        <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://discord.gg/example" class="social-icon" title="Unisciti al nostro Discord">
+                    <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
+                </a>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/example" class="social-icon" title="Scarica da CurseForge">
+                    <img src="images/logo/modrinth.jpeg" alt="CurseForge">
+                </a>
+                <a href="https://modrinth.com/mod/example" class="social-icon" title="Scarica da Modrinth">
+                    <img src="images/logo/modrinth.jpeg" alt="Modrinth">
+                </a>
+            </div>
+            <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
+        </div>
     </footer>
 
     <!-- Script per il caricamento dei dati -->
-    <script src="js/changelog-loader.js"></script>
+    <script src="changelog-loader.js"></script>
     <script>
         // Configurazione del parser markdown
         marked.setOptions({
@@ -65,7 +82,7 @@
             }
 
             // Carica il contenuto del changelog
-            fetch(`changelogs/${file}`)
+            fetch(`posts-changelog/${file}`)
                 .then(response => {
                     if (!response.ok) throw new Error(`Changelog non trovato (${response.status})`);
                     return response.text();

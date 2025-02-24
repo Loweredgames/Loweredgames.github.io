@@ -1,4 +1,3 @@
-# Minecraft-Changelog-Website
+# Minecraft Changelog Website
 
-
-To do...
+Sito web per i changelog della custom map Minecraft.

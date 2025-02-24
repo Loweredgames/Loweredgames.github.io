@@ -15,41 +15,89 @@
     <!-- Header con titolo principale -->
     <header>
         <h1>Sito Web Alpha DA FARE</h1>
+        <nav>
+            <a href="about.html">About</a>
+        </nav>
     </header>
     
-    <main>
-        <!-- Sezione hero con descrizione -->
-        <section class="hero">
-            <h2>Benvenuto nella mia Custom Map</h2>
-            <p>Un'avventura unica nel mondo di Minecraft</p>
-        </section>
+    <div class="container">
+        <div class="main-content">
+            <!-- Sezione hero con descrizione -->
+            <section class="hero">
+                <h2>Benvenuto nella mia Custom Map</h2>
+                <p>Un'avventura unica nel mondo di Minecraft</p>
+            </section>
 
-        <!-- Griglia dei changelog -->
-        <section class="changelog-list">
-            <h2>Changelogs:</h2>
-            <div id="changelog-grid" class="changelog-grid">
-                <!-- I changelog verranno caricati qui -->
-            </div>
-        </section>
+            <!-- Griglia dei changelog -->
+            <section class="changelog-list">
+                <h2>Changelogs:</h2>
+                <div class="changelog-controls">
+                    <input type="text" 
+                           id="search-changelog" 
+                           placeholder="Cerca nei changelog..."
+                           onkeyup="searchChangelogs(this.value)">
+                    <div class="tag-filters">
+                    <!-- Aggiungere nuovi tag qui -->
+                        <button class="tag-filter active" data-tag="all">Tutti</button>
+                        <button class="tag-filter" data-tag="lts">Lts</button>
+                        <button class="tag-filter" data-tag="stable">Stable</button>
+                        <button class="tag-filter" data-tag="release-candidate">Release-Candidate</button>
+                        <button class="tag-filter" data-tag="pre-release">Pre-Release</button>
+                        <button class="tag-filter" data-tag="building">Building</button>
+                        <button class="tag-filter" data-tag="recap">Recap</button>
+                        <button class="tag-filter" data-tag="website">Website-Update</button>
+                        <button class="tag-filter" data-tag="changelog-doc">Changelog-Doc</button>
+                    </div>
+                </div>
+                <div id="changelog-grid" class="changelog-grid">
+                    <!-- I changelog verranno caricati qui -->
+                </div>
+            </section>
+        </div>
 
-        <!-- Sezione social e link -->
-        <section class="social-links">
-            <h2>Seguici e Scarica</h2>
-            <div class="social-icons">
-                <a href="#" class="social-icon">
-                    <img src="images/logo/icon_clyde_blurple_RGB.svg" alt="Discord">
-                    <span>Discord</span>
-                </a>
-                <a href="#" class="social-icon">
-                    <img src="https://media.forgecdn.net/avatars/130/458/636460203731704235.png" alt="CurseForge">
-                    <span>CurseForge</span>
-                </a>
-                <a href="#" class="social-icon">
-                    <img src="https://raw.githubusercontent.com/modrinth/art/main/Branding/Mark/mark_48.png" alt="Modrinth">
-                    <span>Modrinth</span>
-                </a>
+        <!-- Sidebar con link ai progetti -->
+        <aside class="sidebar">
+            <h2>I Miei Progetti</h2>
+            <ul class="project-links">
+                <li>
+                    <a href="https://example.com/">Nome Progetto 1</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Nome Progetto 2</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Nome Progetto 3</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Nome Progetto 4</a>
+                </li>
+            </ul>
+
+            <h2>Changelog Passati</h2>
+            <!-- Il calendario verrà generato automaticamente qui -->
+            <div class="changelog-calendar">
             </div>
-        </section>
+        </aside>
+    </div>
+
+    <!-- Sezione social e link -->
+    <section class="social-links">
+        <h2>Seguici e Scarica</h2>
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <img src="images/logo/icon_clyde_blurple_RGB.svg" alt="Discord">
+                <span>Discord</span>
+            </a>
+            <a href="#" class="social-icon">
+                <img src="https://media.forgecdn.net/avatars/130/458/636460203731704235.png" alt="CurseForge">
+                <span>CurseForge</span>
+            </a>
+            <a href="#" class="social-icon">
+                <img src="https://raw.githubusercontent.com/modrinth/art/main/Branding/Mark/mark_48.png" alt="Modrinth">
+                <span>Modrinth</span>
+            </a>
+        </div>
+    </section>
     </main>
 
     <!-- Footer con copyright -->
@@ -66,11 +114,11 @@
                     <img src="images/logo/modrinth.jpeg" alt="Modrinth">
                 </a>
             </div>
-            <p>&copy; 2024 Le Tue Custom Maps di Minecraft. Tutti i diritti riservati.</p>
+            <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
         </div>
     </footer>
 
     <!-- Script per caricare i changelog -->
-    <script src="js/changelog-loader.js"></script>
+    <script src="changelog-loader.js"></script>
 </body>
 </html>
