@@ -5,19 +5,22 @@ window.changelogList = [
         date: '25 Gennaio 2024',         // Data di pubblicazione
         title: 'Changelog Template date', // Titolo visualizzato
         image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN3wr6bMKw7ri9urVk4xUHLRy4jVlGI6k8_Q8vqLgMcbrW-BM9BURbspRWu2MwOEEf0GqBWlsET696NTXcKGjNCo0VfOwrBgI7tppuZqupJdchAWtuLcKql5NSPPmrHuElQhKVqXTc9Do4/s72-w581-c-h581/changelog.png',  // URL immagine
-        description: 'Template per i changelog' // Aggiunto campo description
+        description: 'Template per i changelog', // Aggiunto campo description
+        tags: ['blogger', 'template'] // Aggiunti i tag
     },
     {
         file: 'v1-0-0.md',
         date: '20 Gennaio 2024',
         title: 'Versione 1.0.0',
-        image: 'images/posts/2024-09-23_14.21.49.png'
+        image: 'images/posts/2024-09-23_14.21.49.png',
+        tags: ['version', 'stable'] // Aggiunti i tag
     },
     {
         file: 'v0-9-0.md',
         date: '10 Gennaio 2024',
         title: 'Versione 0.9.0',
-        image: ''
+        image: '',
+        tags: ['pre-release'] // Aggiunti i tag
     },
     {
         file: 'v1-0-0.md',
@@ -45,12 +48,20 @@ function createChangelogCard(changelog) {
     card.className = 'changelog-card';
     
     const defaultImage = 'https://placehold.co/600x400/1a1a1a/ffffff/png?text=No+Image';
+    
+    // Crea il markup HTML per i tag
+    const tagsHtml = changelog.tags ? 
+        `<div class="changelog-tags">
+            ${changelog.tags.map(tag => `<span class="tag ${tag}">${tag}</span>`).join('')}
+         </div>` : '';
+
     card.innerHTML = `
         <div class="changelog-image">
             <img src="${changelog.image || defaultImage}" 
                  alt="${changelog.title}"
                  onerror="this.src='${defaultImage}'">
         </div>
+        ${tagsHtml}
         <h3>${changelog.title}</h3>
         <p class="date">${changelog.date}</p>
         ${changelog.description ? `<p class="description">${changelog.description}</p>` : ''}
@@ -89,6 +100,14 @@ function copyChangelogLink(file) {
     const url = `${window.location.origin}/view-changelog.html?file=${file}`;
     navigator.clipboard.writeText(url)
         .then(() => alert('Link copiato negli appunti!'));
+}
+
+// Funzione per filtrare i changelog per tag
+function filterChangelogsByTag(tag) {
+    const results = window.changelogList.filter(changelog => 
+        changelog.tags && changelog.tags.includes(tag)
+    );
+    refreshChangelogGrid(results);
 }
 
 // Inizializza il caricamento quando il DOM è pronto
