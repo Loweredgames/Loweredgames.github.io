@@ -29,22 +29,40 @@ window.changelogList = [
         image: 'images/posts/2024-09-23_14.21.49.png',
         tags: ['building']
     },
+    {
+        file: 'v1-0-0.md',
+        date: '20 Gennaio 2024',
+        title: 'Versione t',
+        image: 'images/posts/2024-09-23_14.21.49.png',
+        tags: ['test']
+    },
+    {
+        file: 'v1-0-0.md',
+        date: '20 Ottobre 2004',
+        title: 'Versione t',
+        image: 'images/posts/2024-09-23_14.21.49.png',
+        tags: ['test']
+    }
 ];
 
 // Funzione per caricare la lista dei changelog nella griglia
 function loadChangelogList() {
     const changelogGrid = document.getElementById('changelog-grid');
-    changelogGrid.innerHTML = ''; // Pulisci la griglia
+            changelogGrid.innerHTML = ''; // Pulisci la griglia
     
     // Crea una card per ogni changelog
-    changelogList.forEach(changelog => {
-        const card = createChangelogCard(changelog);
-        changelogGrid.appendChild(card);
-    });
+        changelogList.forEach(changelog => {
+            const card = createChangelogCard(changelog);
+            changelogGrid.appendChild(card);
+        });
 
     // Inizializza i filtri tag
-    initializeTagFilters();
-}
+        initializeTagFilters();
+    }
+    
+    // Genera il calendario
+    generateChangelogCalendar();
+
 
 // Funzione per creare una singola card del changelog
 function createChangelogCard(changelog) {
@@ -144,6 +162,102 @@ function initializeTagFilters() {
             }
         });
     });
+}
+
+// Funzione per generare il calendario
+function generateChangelogCalendar() {
+    const calendarContainer = document.querySelector('.changelog-calendar');
+    if (!calendarContainer) return;
+
+    // Raggruppa i changelog per anno e mese
+    const groupedChangelogs = groupChangelogsByYearMonth(window.changelogList);
+    calendarContainer.innerHTML = '';
+
+    // Ordina gli anni in ordine decrescente
+    const years = Object.keys(groupedChangelogs).sort((a, b) => b - a);
+
+    years.forEach(year => {
+        const yearSection = document.createElement('div');
+        yearSection.className = 'calendar-year';
+        yearSection.innerHTML = `<h3 class="year-title">${year}</h3>`;
+
+        // Ordina i mesi in ordine decrescente
+        const months = Object.keys(groupedChangelogs[year]).sort((a, b) => b - a);
+
+        months.forEach(monthIndex => {
+            const monthLogs = groupedChangelogs[year][monthIndex];
+            const monthSection = document.createElement('div');
+            monthSection.className = 'calendar-month';
+            
+            // Ordina i changelog per giorno in ordine decrescente
+            monthLogs.sort((a, b) => {
+                const dayA = parseInt(a.date.split(' ')[0]);
+                const dayB = parseInt(b.date.split(' ')[0]);
+                return dayB - dayA;
+            });
+
+            monthSection.innerHTML = `
+                <h4 class="month-title">${getMonthName(parseInt(monthIndex))}</h4>
+                <ul>
+                    ${monthLogs.map(log => {
+                        const day = log.date.split(' ')[0].padStart(2, '0');
+                        return `
+                            <li>
+                                <span class="date">${day}</span>
+                                <a href="view-changelog.html?file=${log.file}">${log.title}</a>
+                            </li>
+                        `;
+                    }).join('')}
+                </ul>
+            `;
+            
+            yearSection.appendChild(monthSection);
+        });
+        
+        calendarContainer.appendChild(yearSection);
+    });
+}
+
+// Funzione semplificata per raggruppare i changelog
+function groupChangelogsByYearMonth(changelogs) {
+    return changelogs.reduce((groups, log) => {
+        // Parsing della data italiana (formato: "DD Mese YYYY")
+        const [day, month, year] = log.date.split(' ');
+        const monthIndex = getMonthIndex(month);
+        
+        // Crea gli oggetti anno e mese se non esistono
+        if (!groups[year]) {
+            groups[year] = {};
+        }
+        if (!groups[year][monthIndex]) {
+            groups[year][monthIndex] = [];
+        }
+        
+        // Aggiungi il changelog al gruppo appropriato
+        groups[year][monthIndex].push(log);
+        
+        return groups;
+    }, {});
+}
+
+// Funzione di utilità per ottenere il nome del mese
+function getMonthName(monthIndex) {
+    const months = [
+        'Gennaio', 'Febbraio', 'Marzo', 'Aprile',
+        'Maggio', 'Giugno', 'Luglio', 'Agosto',
+        'Settembre', 'Ottobre', 'Novembre', 'Dicembre'
+    ];
+    return months[monthIndex];
+}
+
+// Funzione di utilità per ottenere l'indice del mese
+function getMonthIndex(monthName) {
+    const months = {
+        'Gennaio': 0, 'Febbraio': 1, 'Marzo': 2, 'Aprile': 3,
+        'Maggio': 4, 'Giugno': 5, 'Luglio': 6, 'Agosto': 7,
+        'Settembre': 8, 'Ottobre': 9, 'Novembre': 10, 'Dicembre': 11
+    };
+    return months[monthName];
 }
 
 // Inizializza il caricamento quando il DOM è pronto
