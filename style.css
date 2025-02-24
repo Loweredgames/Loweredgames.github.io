@@ -193,6 +193,28 @@ main {
     -webkit-box-orient: vertical;
 }
 
+/* Stili per il pulsante home nei changelog */
+.home-button-container {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.1rem;
+}
+
+.home-button:hover {
+    background-color: #3d3d3d;
+    transform: translateY(-2px);
+}
+
 /* ===================================
    Immagini e Media
    - Thumbnails
