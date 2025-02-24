@@ -302,6 +302,10 @@ main {
     background: #6d4bc8; /* Tag per gli aggiornamenti al sito web o altro */
 }
 
+.tag.drafts {
+    background: #000000; /* Tag per i Drafts */
+}
+
 /* Stili per i filtri tag */
 .tag-filters {
     margin: 1rem 0;
