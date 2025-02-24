@@ -452,6 +452,13 @@ footer {
     color: #999;
 }
 
+.footer-content h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
 /* Rimuovi gli stili vecchi della sezione social-links che non servono più */
 .social-links {
     display: none;
