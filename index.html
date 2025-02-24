@@ -35,6 +35,16 @@
                        id="search-changelog" 
                        placeholder="Cerca nei changelog..."
                        onkeyup="searchChangelogs(this.value)">
+                <div class="tag-filters">
+                <!-- Aggiungere nuovi tag qui -->
+                    <button class="tag-filter active" data-tag="all">Tutti</button>
+                    <button class="tag-filter" data-tag="version">Version</button>
+                    <button class="tag-filter" data-tag="pre-release">Pre-release</button>
+                    <button class="tag-filter" data-tag="stable">Stable</button>
+                    <button class="tag-filter" data-tag="blogger">Blogger</button>
+                    <button class="tag-filter" data-tag="template">Template</button>
+                    <button class="tag-filter" data-tag="template">test</button>
+                </div>
             </div>
             <div id="changelog-grid" class="changelog-grid">
                 <!-- I changelog verranno caricati qui -->

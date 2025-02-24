@@ -13,32 +13,37 @@ window.changelogList = [
         date: '20 Gennaio 2024',
         title: 'Versione 1.0.0',
         image: 'images/posts/2024-09-23_14.21.49.png',
-        tags: ['version', 'stable'] // Aggiunti i tag
+        tags: ['version', 'stable']
     },
     {
         file: 'v0-9-0.md',
         date: '10 Gennaio 2024',
         title: 'Versione 0.9.0',
         image: '',
-        tags: ['pre-release'] // Aggiunti i tag
+        tags: ['pre-release']
     },
     {
         file: 'v1-0-0.md',
         date: '20 Gennaio 2024',
         title: 'Versione t',
-        image: 'images/posts/2024-09-23_14.21.49.png'
+        image: 'images/posts/2024-09-23_14.21.49.png',
+        tags: ['test']
     },
 ];
 
 // Funzione per caricare la lista dei changelog nella griglia
 function loadChangelogList() {
     const changelogGrid = document.getElementById('changelog-grid');
+    changelogGrid.innerHTML = ''; // Pulisci la griglia
     
     // Crea una card per ogni changelog
     changelogList.forEach(changelog => {
         const card = createChangelogCard(changelog);
         changelogGrid.appendChild(card);
     });
+
+    // Inizializza i filtri tag
+    initializeTagFilters();
 }
 
 // Funzione per creare una singola card del changelog
@@ -78,7 +83,18 @@ function filterChangelogsByVersion(version) {
 
 // Funzione per cercare nei changelog
 function searchChangelogs(searchTerm) {
-    const results = window.changelogList.filter(changelog => 
+    const activeTag = document.querySelector('.tag-filter.active').dataset.tag;
+    let results = window.changelogList;
+    
+    // Applica prima il filtro per tag se non è "all"
+    if (activeTag !== 'all') {
+        results = results.filter(changelog => 
+            changelog.tags && changelog.tags.includes(activeTag)
+        );
+    }
+    
+    // Poi applica il filtro di ricerca
+    results = results.filter(changelog => 
         changelog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         changelog.description?.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -108,6 +124,26 @@ function filterChangelogsByTag(tag) {
         changelog.tags && changelog.tags.includes(tag)
     );
     refreshChangelogGrid(results);
+}
+
+// Funzione per inizializzare i filtri tag
+function initializeTagFilters() {
+    const tagFilters = document.querySelectorAll('.tag-filter');
+    tagFilters.forEach(filter => {
+        filter.addEventListener('click', () => {
+            // Rimuovi la classe active da tutti i filtri
+            tagFilters.forEach(f => f.classList.remove('active'));
+            // Aggiungi la classe active al filtro cliccato
+            filter.classList.add('active');
+            
+            const tag = filter.dataset.tag;
+            if (tag === 'all') {
+                refreshChangelogGrid(window.changelogList);
+            } else {
+                filterChangelogsByTag(tag);
+            }
+        });
+    });
 }
 
 // Inizializza il caricamento quando il DOM è pronto

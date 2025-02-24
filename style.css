@@ -219,7 +219,9 @@ main {
 .changelog-controls {
     margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 #search-changelog {
@@ -289,6 +291,34 @@ main {
 
 .tag.template {
     background: #9b59b6;
+}
+
+/* Stili per i filtri tag */
+.tag-filters {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.tag-filter {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tag-filter:hover {
+    background: #3d3d3d;
+}
+
+.tag-filter.active {
+    background: #4a9eff;
 }
 
 /* ===================================
