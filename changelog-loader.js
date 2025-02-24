@@ -44,10 +44,10 @@ window.changelogList = [
         tags: ['test']
     },
     {
-        file: 'v1-0-0.md',
+        file: 'test.md',
         date: '3.10.2000',
         title: 'Versione t4',
-        image: '',
+        image: 'https://dummyimage.com/600x400/000/fff.png',
         tags: ['test']
     }
 ];
