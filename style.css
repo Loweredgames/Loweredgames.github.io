@@ -273,24 +273,33 @@ main {
 }
 
 /* Colori specifici per tipo di tag */
-.tag.pre-release {
-    background: #ff6b6b;
-}
 
-.tag.version {
-    background: #4a9eff;
+.tag.lts {
+    background: #c78b2b; /* Tag per LTS */
 }
 
 .tag.stable {
-    background: #2ecc71;
+    background: #28c413; /* Tag per gli Stable */
 }
 
-.tag.blogger {
-    background: #f39c12;
+.tag.release-candidate {
+    background: #10c17d; /* Tag per le Release Candidate */
 }
 
-.tag.template {
-    background: #9b59b6;
+.tag.pre-release {
+    background: #95a5a6; /* Tag per le Pre-Release */
+}
+
+.tag.building {
+    background: #b80f0f; /* Tag per le Building */
+}
+
+.tag.recap {
+    background: #ff00c3; /* Tag per i Recap */
+}
+
+.tag.website {
+    background: #6d4bc8; /* Tag per gli aggiornamenti al sito web o altro */
 }
 
 /* Stili per i filtri tag */

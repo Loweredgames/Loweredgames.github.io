@@ -6,28 +6,28 @@ window.changelogList = [
         title: 'Changelog Template date', // Titolo visualizzato
         image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN3wr6bMKw7ri9urVk4xUHLRy4jVlGI6k8_Q8vqLgMcbrW-BM9BURbspRWu2MwOEEf0GqBWlsET696NTXcKGjNCo0VfOwrBgI7tppuZqupJdchAWtuLcKql5NSPPmrHuElQhKVqXTc9Do4/s72-w581-c-h581/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
-        tags: ['blogger', 'template'] // Aggiunti i tag
+        tags: ['lts','stable','release-candidate','pre-release','building', 'recap','website','changelog-doc'] // Aggiunti i tag
     },
     {
         file: 'v1-0-0.md',
         date: '20 Gennaio 2024',
         title: 'Versione 1.0.0',
         image: 'images/posts/2024-09-23_14.21.49.png',
-        tags: ['version', 'stable']
+        tags: ['stable']
     },
     {
         file: 'v0-9-0.md',
         date: '10 Gennaio 2024',
         title: 'Versione 0.9.0',
         image: '',
-        tags: ['pre-release']
+        tags: ['stable', 'pre-release']
     },
     {
         file: 'v1-0-0.md',
         date: '20 Gennaio 2024',
         title: 'Versione t',
         image: 'images/posts/2024-09-23_14.21.49.png',
-        tags: ['test']
+        tags: ['building']
     },
 ];
 
