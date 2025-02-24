@@ -139,6 +139,15 @@ main {
     position: absolute;
     left: 0;
     color: #666;
+    line-height: 24px; /* Aggiunto per centrare verticalmente */
+    top: 50%; /* Aggiunto per centrare verticalmente */
+    transform: translateY(-50%); /* Aggiunto per centrare verticalmente */
+}
+
+/* Aggiungere questi stili specifici per elenchi con trattini */
+.changelog ul li.dash:before {
+    content: "-";
+    top: 45%; /* Regolato per allineare meglio i trattini */
 }
 
 .changelog-list {
