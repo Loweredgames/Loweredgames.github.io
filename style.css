@@ -533,3 +533,73 @@ footer {
 .error-button:hover {
     background-color: #4d4d4d;
 }
+
+/* Stili per il layout con sidebar */
+.container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0; /* Previene overflow su flex items */
+}
+
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 2px solid #2d2d2d;
+    padding: 1.5rem;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2d2d2d;
+}
+
+.project-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-links li {
+    margin-bottom: 1rem;
+}
+
+.project-links a {
+    display: block;
+    padding: 0.8rem;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #3d3d3d;
+    transform: translateX(5px);
+}
+
+/* Media query per rendere il layout responsive */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+}
