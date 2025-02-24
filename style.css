@@ -1,4 +1,9 @@
-/* Stili base */
+/* ===================================
+   Stili di Base
+   - Reset base
+   - Font e colori principali
+   - Layout di base
+=================================== */
 body {
     font-family: 'Minecraft', Arial, sans-serif;
     margin: 0;
@@ -7,7 +12,13 @@ body {
     color: #ffffff;
 }
 
-/* Stili header */
+/* ===================================
+   Header e Navigazione
+   - Layout header
+   - Stile titolo
+   - Menu di navigazione
+   - Effetti hover
+=================================== */
 header {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -46,6 +57,13 @@ nav a:hover {
     color: #ffffff;
 }
 
+/* ===================================
+   Contenuto Principale
+   - Container principale
+   - Sezione hero
+   - Sezione features
+   - Liste e elementi interni
+=================================== */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -77,7 +95,14 @@ main {
     border-bottom: 1px solid #2d2d2d;
 }
 
-/* Stili changelog */
+/* ===================================
+   Changelog
+   - Layout changelog
+   - Stili intestazioni
+   - Liste e bullet points
+   - Grid e cards
+   - Effetti hover
+=================================== */
 .changelog {
     background-color: #1a1a1a;
     padding: 2rem;
@@ -168,7 +193,13 @@ main {
     -webkit-box-orient: vertical;
 }
 
-/* Stili thumbnail e immagini */
+/* ===================================
+   Immagini e Media
+   - Thumbnails
+   - Immagini responsive
+   - Effetti hover
+   - Contenimento immagini
+=================================== */
 .changelog-image {
     width: 100%;
     height: 160px;
@@ -220,6 +251,13 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+/* ===================================
+   Footer
+   - Layout footer
+   - Icone social
+   - Copyright
+   - Effetti hover
+=================================== */
 footer {
     text-align: center;
     padding: 2rem;
@@ -278,6 +316,13 @@ footer {
     display: none;
 }
 
+/* ===================================
+   Componenti UI
+   - Bottoni
+   - Cards
+   - Messaggi di errore
+   - Stati hover e focus
+=================================== */
 /* Stili post singolo */
 .post-header {
     text-align: center;
