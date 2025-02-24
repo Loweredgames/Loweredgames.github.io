@@ -1,0 +1,5 @@
+# JE-1.19-Skyblock_Classic_Edition:RELEASE-CANDIDATE 1
+
+**Data:** 2022-08-26
+
+Addedfunctions and datapack:riabilitata la funzione IDse non funziona vai in chat e digiti "/scoreboard objectives remove ID_2"aggiunto un titolo alla fine della funzione "generated_structures"Changedcustom structures:aggiornato alla Skyblock Classic Edition Structures 1.0.0non ci sono cambiamentifunctions and datapack:abbassare leggermente il /clear della conversioneFixedfunctions and datapack:miglioramenti della funzione "multiplayer"rimossa la conversione in multiplayerla funzione ID a alcuni problemi con lo spawn del portale #28risolti altri piccoli problemicambiato il tag da @p a @r (i giocatori dovrebbero avviare la scoreboard singolarmente adesso)ci sono alcuni problemi di spam nella funzione "generated_structure" scusate ma non posso risolvere.soluzione: avvia il mondo singolarmente e poi dopo che viene generata l'isola e la conversione del mondo abilita il multiplayer dentro il file.BUILDINGS are development versions and may be incomplete.Download

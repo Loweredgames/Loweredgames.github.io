@@ -1,0 +1,5 @@
+# JE-1.19.3-22w46a-Skyblock_Classic_Edition:BUILDING:17.11.2022a
+
+**Data:** 2022-11-17
+
+Yes Mojang changed plans so here's a new version...happy mining and sky-blockAddedfunctions and datapack:aggiunta una nuova funzione chiamata "function skyblock:islands/structures/generated_biome"aggiunge dei biomi attorno alle strutture (per il momento saranno questi)adesso alcuni mob possono spawnare naturalmente (#77)aggiunto un messagio di avviso quando il multiplayer e disabilitato (#76)aggiunta una nuova scoreboard chiamata "multiplayer_popup"cosi le persone sanno che devono abbilitarlo il multiplayerChangedmisc and other:aggionata alla versione 22w46a della 1.19.3Custom Structures World 1.3.0:rimossa la neve in alcune strutture per adattarsi al biomaspostato il fango per adattarsi al biomamiglioramenti variRemovedfunctions and datapack:riabilitati i command block nel mondorimossa una stringa nella funzioneFixedrisolto un piccolo problema del reset del mondonon è stata cancellata la scoreboardpiccoli miglioramentiBUILDINGS are development versions and may be incomplete.Download

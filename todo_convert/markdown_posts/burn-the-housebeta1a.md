@@ -1,0 +1,5 @@
+# Burn the House:BETA:1a
+
+**Data:** 2021-03-10
+
+RecapAddedworlds and maps:aggiunta barriera nel area principaleaggiunto il limite nel area principaleaggiunto null (map reset)aggiunte alcune mappe vuotefunctions:aggiunte alcune funzioniaggiunto resistenza al fuocoaggiunto commando segnaposto nelle funzioniaggiunto spawnpoint e setworldspawn alla funzione setupaggiunto timertextures:aggiunta icona segnaposto (vera modificata in futuro)Changedfunctions:aggiunto Minecraft tag (tutte le funzioni sono unite)cambiata la funzione Maprinominata la funzione Map (da map a maps)miglioramenti nelle funzionirinominata la funzione start_lava in lavaworlds and maps:aggiornamenti varirinominato null map in test map modificato lo spawn del giocatoreaggiornate e migliorate alcune mappemisc and other:modificato il ricettario (non si può più usare)aggiornato Minecraft alla 1.16.5Fixedrisolto lo spawn della lavarisolto un problema della lava che rimaneva di sotto (adesso si cancella)BUILDINGS are development versions and may be incomplete.Bug Reporter.Download
