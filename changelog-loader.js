@@ -1,14 +1,6 @@
 // Lista dei changelog disponibili (accessibile globalmente)
 window.changelogList = [
     {
-        file: '2020-12-31-changelog.md', // Nome del file markdown
-        date: '25.01.2024',         // Formato data
-        title: 'Changelog Template date', // Titolo visualizzato
-        image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN3wr6bMKw7ri9urVk4xUHLRy4jVlGI6k8_Q8vqLgMcbrW-BM9BURbspRWu2MwOEEf0GqBWlsET696NTXcKGjNCo0VfOwrBgI7tppuZqupJdchAWtuLcKql5NSPPmrHuElQhKVqXTc9Do4/s72-w581-c-h581/changelog.png',  // URL immagine
-        description: 'Template per i changelog', // Aggiunto campo description
-        tags: ['lts','stable','release-candidate','pre-release','building', 'recap','website','changelog-doc','drafts'] // Aggiunti i tag
-    },
-    {
         file: 'drafts/v1-0-0.md',
         date: '20.01.2024',
         title: 'Versione 1.0.0',
@@ -45,10 +37,18 @@ window.changelogList = [
     },
     {
         file: 'drafts/test.md',
-        date: '3.10.2000',
+        date: '03.11.2000',
         title: 'Versione t4',
         image: 'images/drafts/draft.png',
         tags: ['test','drafts']
+    },
+    {
+        file: 'changelog-template.md', // Nome del file markdown
+        date: '03.10.2000',         // Formato data
+        title: 'Changelog Template', // Titolo visualizzato
+        image: 'images/logo/changelog.png',  // URL immagine
+        description: 'Template per i changelog', // Aggiunto campo description
+        tags: ['lts','stable','release-candidate','pre-release','building', 'recap','website','changelog-doc','drafts'] // Aggiunti i tag
     }
 ];
 
