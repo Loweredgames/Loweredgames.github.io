@@ -234,28 +234,6 @@ main {
     max-width: 400px;
 }
 
-.sort-controls {
-    display: none;
-}
-
-/* Style per il bottone di copia link */
-.copy-link-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    padding: 0.5rem;
-    background: #2d2d2d;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.changelog-card:hover .copy-link-button {
-    opacity: 1;
-}
-
 /* Stili per i tag */
 .changelog-tags {
     display: flex;
@@ -457,11 +435,6 @@ footer {
     font-size: 1.2rem;
     margin: 0 0 1rem 0;
     text-align: center;
-}
-
-/* Rimuovi gli stili vecchi della sezione social-links che non servono più */
-.social-links {
-    display: none;
 }
 
 /* ===================================
