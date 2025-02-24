@@ -31,15 +31,22 @@ window.changelogList = [
     },
     {
         file: 'v1-0-0.md',
-        date: '20.11.2024',
-        title: 'Versione t',
+        date: '20.11.2004',
+        title: 'Versione t2',
         image: '',
         tags: ['test']
     },
     {
         file: 'v1-0-0.md',
         date: '20.10.2004',
-        title: 'Versione t',
+        title: 'Versione t3',
+        image: '',
+        tags: ['test']
+    },
+    {
+        file: 'v1-0-0.md',
+        date: '3.10.2000',
+        title: 'Versione t4',
         image: '',
         tags: ['test']
     }
