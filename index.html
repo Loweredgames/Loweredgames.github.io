@@ -30,6 +30,12 @@
         <!-- Griglia dei changelog -->
         <section class="changelog-list">
             <h2>Changelogs:</h2>
+            <div class="changelog-controls">
+                <input type="text" 
+                       id="search-changelog" 
+                       placeholder="Cerca nei changelog..."
+                       onkeyup="searchChangelogs(this.value)">
+            </div>
             <div id="changelog-grid" class="changelog-grid">
                 <!-- I changelog verranno caricati qui -->
             </div>

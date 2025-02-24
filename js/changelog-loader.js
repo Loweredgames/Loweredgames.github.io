@@ -18,7 +18,13 @@ window.changelogList = [
         date: '10 Gennaio 2024',
         title: 'Versione 0.9.0',
         image: ''
-    }
+    },
+    {
+        file: 'v1-0-0.md',
+        date: '20 Gennaio 2024',
+        title: 'Versione t',
+        image: 'images/posts/2024-09-23_14.21.49.png'
+    },
 ];
 
 // Funzione per caricare la lista dei changelog nella griglia
@@ -50,6 +56,39 @@ function createChangelogCard(changelog) {
         ${changelog.description ? `<p class="description">${changelog.description}</p>` : ''}
     `;
     return card;
+}
+
+// Funzione per filtrare i changelog per versione
+function filterChangelogsByVersion(version) {
+    return window.changelogList.filter(changelog => 
+        changelog.title.toLowerCase().includes(version.toLowerCase())
+    );
+}
+
+// Funzione per cercare nei changelog
+function searchChangelogs(searchTerm) {
+    const results = window.changelogList.filter(changelog => 
+        changelog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        changelog.description?.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    refreshChangelogGrid(results);
+}
+
+// Funzione per aggiornare la griglia dei changelog
+function refreshChangelogGrid(changelogs) {
+    const grid = document.getElementById('changelog-grid');
+    grid.innerHTML = '';
+    changelogs.forEach(changelog => {
+        const card = createChangelogCard(changelog);
+        grid.appendChild(card);
+    });
+}
+
+// Funzione per copiare il link del changelog
+function copyChangelogLink(file) {
+    const url = `${window.location.origin}/view-changelog.html?file=${file}`;
+    navigator.clipboard.writeText(url)
+        .then(() => alert('Link copiato negli appunti!'));
 }
 
 // Inizializza il caricamento quando il DOM è pronto
