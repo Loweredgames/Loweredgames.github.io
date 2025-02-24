@@ -78,7 +78,7 @@
             }
 
             // Carica il contenuto del changelog
-            fetch(`changelogs/${file}`)
+            fetch(`posts-changelog/${file}`)
                 .then(response => {
                     if (!response.ok) throw new Error(`Changelog non trovato (${response.status})`);
                     return response.text();
