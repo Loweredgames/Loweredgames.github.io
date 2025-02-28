@@ -1,5 +1,0 @@
-# Scientific Underground Facility:BETA:1a
-
-**Data:** 2021-04-29
-
- RecapAddedfunctions:l'arco adesso viene rimosso ogni tantoworlds and maps:aggiunti nuovi testtextures:aggiunte nuove textureChangedworlds and maps:cambiato il nome della mappa: sono stati rinominati i nomi degli oggetti e altre cose.il nome del mondo e stato cambiato da Aperture block a Scientific Underground Facility, anche il datapack e stato rinominato e alcune funzionicambiati i vecchi test (alcuni devono essere ancora migliorati)functions:disabilitate le frecce per il momentomigliorate alcune funzionicambiata la mano della "scientific gun"textures:cambiamenti del design di quasi tutte le camerecambiate le textureil randomTickSpeed e stato impostato a 0Removed rimossa la funzione levelsrimossi alcuni testcambiato il blocco della texture della lana blu e le funzioni (questa aggiunta e stata rimossa)Fixedrisolto l'effetto resistenza che dava troppa resistenzarisolte altre cose non documentateBUILDINGS are development versions and may be incomplete.Bug Reporter.Download 

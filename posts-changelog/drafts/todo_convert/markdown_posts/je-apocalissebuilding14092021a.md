@@ -1,5 +1,0 @@
-# JE-Apocalisse:BUILDING:14.09.2021a
-
-**Data:** 2021-09-14
-
-Addedfunctions and datapack:disabilitati gli avanzamenti e aggiunto tagaggiunte alcune nuove funzioni per ottimizzare il mondoaggiunta funzione story5worlds and maps:aggiunti blocchi segnaposto per mob e altroaggiunta sequenza (story5)Changedworlds and maps:riorganizzate alcune cose vicino alla hub e altre piccole modifichefunctions and datapack:riordinate le cartelle nel datapack e modificate alcune cose per ottimizzate e migliorare tutte le funzionitextures and resources:aggiunto blocco segnaposto (blocco puzzle)aggiunti crediti in pack.mcmeta cambiato il blocco di redstonemisc and other:il nome del mondo è stato cambiato in "Apocalisse" (aggiunta lettera maiuscola)Removedworlds and maps:eliminati tutti i blocchi di comando nel mondotextures and resources:rimosse alcune texture inutilirimosse le nuvole (sono diventate invisibili)Fixedworlds and maps:risolti alcuni problemi e erroriBUILDINGS are development versions and may be incomplete.Bug ReporterPrivate

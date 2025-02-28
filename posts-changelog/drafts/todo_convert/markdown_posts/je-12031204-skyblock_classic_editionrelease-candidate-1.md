@@ -1,5 +1,0 @@
-# JE-1.20.3/1.20.4-Skyblock_Classic_Edition:RELEASE-CANDIDATE-1
-
-**Data:** 2023-12-16
-
-This is the first (and I hope) last version of 5.1.0. it will be released very soon if there are no other problems...Changedtextures and resources:il pack nel resources e stato diminuito a 20 solo per la compatibilità e nel datapack e sono stati tutti aggiornati a 20per LTS (#241)aggiornati i testi splashescustom structures world:aggiornato il mondo alla 1.20.3 (compatibilità con la 1.20.4)functions and datapack:aggiornato il cartello nella funzione "legacy_version" cosi corrisponde nella conversione legacyrimosso l'obbligo della gamerule "keepInventory" che rimane attivoanche nel datapack hardcoredi default rimangono vanillapotrebbe aiutare alcune persone se lo vogliono disabilitare o riabilitareFixedfunctions and datapack:risolto un problema nella conversione 1_2: non vengono rimpiazzati i vasi decorativi con dentro i loot. questo problema e stato risoltoaggiunto "replace" nella score per togliere i vecchi vasi decorativiBUILDING: They are development version and can be unstable, use it at your risk...Download

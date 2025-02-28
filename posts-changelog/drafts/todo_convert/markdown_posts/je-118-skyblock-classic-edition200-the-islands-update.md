@@ -1,5 +1,0 @@
-# JE-1.18-Skyblock Classic Edition:2.0.0 (The Islands Update)
-
-**Data:** 2022-01-06
-
-Addedworlds and maps:alzate le isole del mondo normale per adattarsi alla altezza della Skyblock originaleaggiornato il cartello da "1.18" alla "1.18.1" (verranno aggiunte anche le versioni minori)functions and datapack:aggiunte nuove isole (Small, Normal, Large. la Small e simile alla skyblock originale 2.0 e invece la large e una nuova isola)Changedfunctions and datapack:miglioramenti vari e ordinate alcune cose (adesso dovrebbe essere tutto piu veloce e fluido)ordinata la generazione dei blocchi nella scoreboard (modificato il modo di come si generano i blocco ad esempio: si genera per primo la terra e poi le decorazioni)spostato il changelog e aggiunta una cartellacambiata l'icona del datapack nella modalità hardcore (prima era uguale)misc and other:cambiata l'icona e il logo anche nei siti webFixedrisolto un problema della modalità hardcore che non funzionavano i comandi (sono stati abilitati i trucchi per la correzione)risolte varie cose nelle versioni betaDownload

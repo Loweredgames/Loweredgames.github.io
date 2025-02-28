@@ -1,47 +1,105 @@
 // Lista dei changelog disponibili (accessibile globalmente)
 window.changelogList = [
+
+
+// Post Rilaasciati
     {
-        file: 'drafts/v1-0-0.md',
-        date: '20.01.2024',
-        title: 'Versione 1.0.0',
-        image: 'images/posts/2024-09-23_14.21.49.png',
+        title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
+        date: '22.02.2025',
+        image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
+        file: 'drafts/SkyblockCE_1.21.4/je_skyblockce_building22.02.2025a.md',
+        tags: ['building','recap','drafts']
+    },
+    {
+        file: 'drafts/SkyblockCE_1.21/6.0.0latest.md',
+        date: '12.01.2025',
+        title: 'JE-1.21/1.21.1-6.0.0-Skyblock_Classic_Edition:6.0.0',
+        image: 'images/posts/6.0.0latest.png',
         tags: ['stable','drafts']
     },
     {
-        file: 'drafts/v0-9-0.md',
-        date: '10.11.2024',
-        title: 'Versione 0.9.0',
-        image: 'images/drafts/draft.png',
-        tags: ['stable', 'pre-release','drafts']
+        file: 'drafts/SkyblockCE_5.3.0_LTS/5.3.X_LTS.md',
+        date: '29.12.2024',
+        title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.X_LTS Maintenance Update - LTS',
+        image: 'images/posts/LTS_latest.png',
+        tags: ['lts','stable','drafts']
     },
     {
-        file: 'drafts/v1-0-0.md',
-        date: '20.11.2024',
-        title: 'Versione t',
-        image: 'images/drafts/draft.png',
-        tags: ['building','drafts']
-    },
-    {
-        file: 'drafts/v1-0-0.md',
-        date: '20.11.2004',
-        title: 'Versione t2',
-        image: 'images/drafts/draft.png',
+        file: 'drafts/SkyblockCE_5.3.0_LTS/5.3.0_LTS.md',
+        date: '27.09.2024',
+        title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
+        image: 'images/posts/LTS_latestv.png',
         tags: ['test','drafts']
     },
+
+
+// Post in Lavorazione (drafts)
     {
-        file: 'drafts/v1-0-0.md',
-        date: '20.10.2004',
-        title: 'Versione t3',
+        title: 'SkyblockCE 1.21.4 - Pre-Release 1 Draft',
+        date: '',
         image: 'images/drafts/draft.png',
-        tags: ['test','drafts']
+        file: 'drafts/SkyblockCE_1.21.4/je_skyblockce_pre1.md',
+        tags: ['pre-release','recap','drafts']
     },
     {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
         file: 'drafts/test.md',
-        date: '03.11.2000',
-        title: 'Versione t4',
-        image: 'images/drafts/draft.png',
-        tags: ['test','drafts']
+        tags: ['drafts']
     },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/posts/Apocalisse_1.17.1-1.0.0/first.png',
+        file: 'drafts/drafts.md',
+        tags: ['drafts']
+    },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/test.md',
+        tags: ['drafts']
+    },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/test.md',
+        tags: ['drafts']
+    },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/test.md',
+        tags: ['drafts']
+    },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/test.md',
+        tags: ['drafts']
+    },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/test.md',
+        tags: ['drafts']
+    },
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/test.md',
+        tags: ['drafts']
+    },
+
+
+// Changelog Template
     {
         file: 'changelog-template.md', // Nome del file markdown
         date: '03.10.2000',         // Formato data
