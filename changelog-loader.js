@@ -35,17 +35,17 @@ window.changelogList = [
 
 // Post in Lavorazione (drafts)
     {
-        title: 'SkyblockCE 1.21.4 - Pre-Release 1 Draft',
+        title: 'SkyblockCE 1.21.4 TO DO Pre-Release 1 - Draft',
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/SkyblockCE_1.21.4/je_skyblockce_pre1.md',
         tags: ['pre-release','recap','drafts']
     },
     {
-        title: 'Draft',
+        title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
+        file: 'drafts/Edge_1.20.6_1.0.0/je_building23.10.2024a.md',
         tags: ['drafts']
     },
     {
@@ -129,6 +129,12 @@ function loadChangelogList() {
     generateChangelogCalendar();
 
 
+// Funzione per troncare il testo
+function truncateText(text, maxLength = 60) {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength - 3) + '...';
+}
+
 // Funzione per creare una singola card del changelog
 function createChangelogCard(changelog) {
     const card = document.createElement('a');
@@ -150,9 +156,9 @@ function createChangelogCard(changelog) {
                  onerror="this.src='${defaultImage}'">
         </div>
         ${tagsHtml}
-        <h3>${changelog.title}</h3>
+        <h3 title="${changelog.title}">${truncateText(changelog.title)}</h3>
         <p class="date">${changelog.date}</p>
-        ${changelog.description ? `<p class="description">${changelog.description}</p>` : ''}
+        ${changelog.description ? `<p class="description">${truncateText(changelog.description, 100)}</p>` : ''}
     `;
     return card;
 }
@@ -236,7 +242,8 @@ function generateChangelogCalendar() {
 
     // Raggruppa i changelog per anno e mese
     const groupedChangelogs = groupChangelogsByYearMonth(window.changelogList);
-    calendarContainer.innerHTML = '';
+    calendarContainer.innerHTML = ''; // Ordina gli anni in ordine decrescente
+
 
     // Ordina gli anni in ordine decrescente
     const years = Object.keys(groupedChangelogs).sort((a, b) => b - a);
@@ -244,17 +251,19 @@ function generateChangelogCalendar() {
     years.forEach(year => {
         const yearSection = document.createElement('div');
         yearSection.className = 'calendar-year';
-        yearSection.innerHTML = `<h3 class="year-title">${year}</h3>`;
+        yearSection.innerHTML = `<h3 class="year-title">${year}</h// Ordina i mesi in ordine decrescente
+3>`;
 
-        // Ordina i mesi in ordine decrescente
+    // Ordina i mesi in ordine decrescente
         const months = Object.keys(groupedChangelogs[year]).sort((a, b) => b - a);
 
         months.forEach(monthIndex => {
             const monthLogs = groupedChangelogs[year][monthIndex];
             const monthSection = document.createElement('div');
-            monthSection.className = 'calendar-month';
+            monthSection.className = 'calendar-month';  // Ordina i changelog per giorno in ordine decrescente
+
             
-            // Ordina i changelog per giorno in ordine decrescente
+// Ordina i changelog per giorno in ordine decrescente
             monthLogs.sort((a, b) => {
                 const dayA = parseInt(a.date.split('.')[0]);
                 const dayB = parseInt(b.date.split('.')[0]);
@@ -269,7 +278,10 @@ function generateChangelogCalendar() {
                         return `
                             <li>
                                 <span class="date">${day}</span>
-                                <a href="view-changelog.html?file=${log.file}">${log.title}</a>
+                                <a href="view-changelog.html?file=${log.file}" 
+                                   title="${log.title}">
+                                    ${truncateText(log.title, 40)}
+                                </a>
                             </li>
                         `;
                     }).join('')}

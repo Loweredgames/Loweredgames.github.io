@@ -181,8 +181,11 @@ main {
 }
 
 .changelog-card h3 {
-    margin: 0 0 0.5rem 0;
-    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 .changelog-card p {
@@ -578,6 +581,9 @@ footer {
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .project-links a:hover {
@@ -658,6 +664,9 @@ footer {
     color: #ffffff;
     text-decoration: none;
     flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .calendar-month a:hover {
