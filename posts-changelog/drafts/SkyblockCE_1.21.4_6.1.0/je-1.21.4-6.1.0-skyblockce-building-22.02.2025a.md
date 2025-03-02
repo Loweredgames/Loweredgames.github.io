@@ -1,4 +1,4 @@
-Highlights:
+## Highlights:
 
 aggiornato alla 1.21.2/1.21.3/1.21.4 (Bundles of Bravery e The Garden Awakens)
 è stata mantenuta la compatibilità per la 1.21 e la 1.21.1 con la 1.21.3
@@ -88,4 +88,4 @@ rimossa la traduzione automatica con Crowdin di nuovo. ho avuto enormi problemi 
 questa cosa non cambierà nulla ma sarà molto piu lento il processo
 BUILDING: They are development version and can be unstable, use it at your risk...
 
-Download
+[**Download**](https://github.com/Loweredgames/Skyblock-Classic-Edition/releases/download/1.21.4_JE-0a/Skyblock.Classic.Edition.zip)

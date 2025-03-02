@@ -42,23 +42,23 @@ _<font color="red"><center>(aggiornare sempre la barra della bossbar)</center>_<
 
 **<center>PAROLE CHIAVI:</center>**
 
-### _textures and resources_: tutte le texture che vengono dal resources pack
+# _textures and resources_: tutte le texture che vengono dal resources pack
 
-### _functions and datapack_: tutte le funzioni che vengono dal datapack
+# _functions and datapack_: tutte le funzioni che vengono dal datapack
 
-### _worlds and maps_: cambiamenti del mondo e le mappe
+# _worlds and maps_: cambiamenti del mondo e le mappe
 
-### _langs_: tutte le traduzioni della mappa
+# _langs_: tutte le traduzioni della mappa
 
-### _entity_: tutte le entità e il giocatore della mappa
+# _entity_: tutte le entità e il giocatore della mappa
 
-### _effect_: vari effetti
+# _effect_: vari effetti
 
-### _custom structures_: tutte le strutture nel mondo delle strutture
+# _custom structures_: tutte le strutture nel mondo delle strutture
 
-### _misc and other_: altre cose della mappa
+# _misc and other_: altre cose della mappa
 
-### _**(altre parole chiavi): altre cose che riguardano sempre la mappa**_
+# _**(altre parole chiavi): altre cose che riguardano sempre la mappa**_
 
 ----------
 
@@ -78,7 +78,7 @@ _<font color="red"><center>(aggiornare sempre la barra della bossbar)</center>_<
 
 ## Added
 
-### _functions and datapack:_
+# _functions and datapack:_
 
 - Descrizione e info
 - - info

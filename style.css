@@ -378,6 +378,13 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+/* Titoli Markdown h1 */
+.changelog h1 {
+    font-size: 1.20em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 /* ===================================
    Footer
    - Layout footer
