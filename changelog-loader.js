@@ -44,7 +44,7 @@ window.changelogList = [
         image: 'images/drafts/draft.png',
         file: 'drafts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
         tags: ['pre-release','recap','drafts'],
-        visible: false
+        visible: true
     },
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
@@ -66,33 +66,33 @@ window.changelogList = [
         title: 'JE-1.20.4-Dimension_Infinity:BUILDING:12.12.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
+        file: 'drafts/Dimension_Infinity_1.20.6_1.0.0/je-1.20.6-1.0.0-dimension_infinity-building12.12.2023a.md',
         tags: ['building','recap','drafts'],
-        visible: false
+        visible: true
     },
     {
         title: 'JE-1.20.2-Dungeoncraft:BUILDING:30.08.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
+        file: 'drafts/Dungeoncraft_1.20.6_1.0.0/je-1.20.6-1.0.0-dungeoncraft-building30.08.2023a.md',
         tags: ['building','recap','drafts'],
-        visible: false
+        visible: true
     },
     {
         title: 'JE-1.19.4-Infernicus:BUILDING:18.10.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
+        file: 'drafts/Infernicus_1.19.4_1.0.0/je-1.19.4-1.0.0-Infernicus-building18.10.2023a.md',
         tags: ['building','recap','drafts'],
-        visible: false
+        visible: true
     },
     {
-        title: 'JE-1.19.3-BowShot:BUILDING:07.03.2023a - Draft',
+        title: 'JE-1.19.4-BowShot:BUILDING:07.03.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
+        file: 'drafts/BowShot_1.19.4_1.0.0/je-1.19.4-1.0.0-bowShot-building07.03.2023a.md',
         tags: ['building','recap','drafts'],
-        visible: false
+        visible: true
     },
 
 
