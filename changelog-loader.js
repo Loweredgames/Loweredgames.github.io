@@ -8,7 +8,7 @@ window.changelogList = [
         date: '22.02.2025',
         image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
         file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
     {
@@ -32,7 +32,7 @@ window.changelogList = [
         date: '27.09.2024',
         image: 'images/posts/LTS_latestv.png',
         file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.0_LTS.md',
-        tags: ['test','drafts'],
+        tags: ['stable','drafts'],
         visible: true
     },
 
@@ -43,7 +43,7 @@ window.changelogList = [
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
-        tags: ['pre-release','recap','drafts'],
+        tags: ['pre-release','drafts'],
         visible: true
     },
     {
@@ -51,7 +51,7 @@ window.changelogList = [
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/Edge_1.20.6_1.0.0/je-1.20.6-1.0.0-edge-building23.10.2024a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
     {
@@ -59,7 +59,7 @@ window.changelogList = [
         date: '',
         image: 'images/posts/Apocalisse_1.17.1-1.0.0/first.png',
         file: 'drafts/Apocalisse_1.17.1_1.0.0/je-1.17.1-1.0.0-apocalisse-building16.10.2022a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
     {
@@ -67,7 +67,7 @@ window.changelogList = [
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/Dimension_Infinity_1.20.6_1.0.0/je-1.20.6-1.0.0-dimension_infinity-building12.12.2023a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
     {
@@ -75,7 +75,7 @@ window.changelogList = [
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/Dungeoncraft_1.20.6_1.0.0/je-1.20.6-1.0.0-dungeoncraft-building30.08.2023a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
     {
@@ -83,7 +83,7 @@ window.changelogList = [
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/Infernicus_1.19.4_1.0.0/je-1.19.4-1.0.0-Infernicus-building18.10.2023a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
     {
@@ -91,7 +91,7 @@ window.changelogList = [
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/BowShot_1.19.4_1.0.0/je-1.19.4-1.0.0-bowShot-building07.03.2023a.md',
-        tags: ['building','recap','drafts'],
+        tags: ['building','drafts'],
         visible: true
     },
 
@@ -114,7 +114,7 @@ window.changelogList = [
         title: 'Changelog Template', // Titolo visualizzato
         image: 'images/logo/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
-        tags: ['lts','stable','release-candidate','pre-release','building', 'recap','website','changelog-doc','drafts'], // Aggiunti i tag
+        tags: ['lts','stable','release-candidate','pre-release','building','website','changelog-doc','drafts'], // Aggiunti i tag
         visible: true
     }
 ];

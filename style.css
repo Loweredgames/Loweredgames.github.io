@@ -284,16 +284,12 @@ main {
     background: #b80f0f; /* Tag per le Building */
 }
 
-.tag.recap {
-    background: #ff00c3; /* Tag per i Recap */
+.tag.drafts {
+    background: #000000; /* Tag per le Bozze */
 }
 
 .tag.website {
     background: #6d4bc8; /* Tag per gli aggiornamenti al sito web o altro */
-}
-
-.tag.drafts {
-    background: #000000; /* Tag per i Drafts */
 }
 
 /* Stili per i filtri tag */
