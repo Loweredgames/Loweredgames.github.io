@@ -7,7 +7,7 @@ window.changelogList = [
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
         date: '22.02.2025',
         image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
-        file: 'drafts/SkyblockCE_1.21.4/je_skyblockce_building22.02.2025a.md',
+        file: 'drafts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
         tags: ['building','recap','drafts'],
         visible: true
     },
@@ -42,7 +42,7 @@ window.changelogList = [
         title: 'SkyblockCE 1.21.4 TO DO Pre-Release 1 - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/SkyblockCE_1.21.4/je_skyblockce_pre1.md',
+        file: 'drafts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
         tags: ['pre-release','recap','drafts'],
         visible: false
     },
@@ -50,58 +50,53 @@ window.changelogList = [
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/Edge_1.20.6_1.0.0/je_building23.10.2024a.md',
-        tags: ['drafts'],
-        visible: false
+        file: 'drafts/Edge_1.20.6_1.0.0/je-1.20.6-1.0.0-edge-building23.10.2024a.md',
+        tags: ['building','recap','drafts'],
+        visible: true
     },
     {
-        title: 'Draft',
+        title: 'JE-1.17.1-1.0.0-Apocalisse:BUILDING:16.10.2022a - Draft',
         date: '',
         image: 'images/posts/Apocalisse_1.17.1-1.0.0/first.png',
-        file: 'drafts/drafts.md',
-        tags: ['drafts'],
-        visible: false
+        file: 'drafts/Apocalisse_1.17.1_1.0.0/je-1.17.1-1.0.0-apocalisse-building16.10.2022a.md',
+        tags: ['building','recap','drafts'],
+        visible: true
     },
     {
-        title: 'Draft',
+        title: 'JE-1.20.4-Dimension_Infinity:BUILDING:12.12.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/test.md',
-        tags: ['drafts'],
+        tags: ['building','recap','drafts'],
         visible: false
     },
     {
-        title: 'Draft',
+        title: 'JE-1.20.2-Dungeoncraft:BUILDING:30.08.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/test.md',
-        tags: ['drafts'],
+        tags: ['building','recap','drafts'],
         visible: false
     },
     {
-        title: 'Draft',
+        title: 'JE-1.19.4-Infernicus:BUILDING:18.10.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/test.md',
-        tags: ['drafts'],
+        tags: ['building','recap','drafts'],
         visible: false
     },
     {
-        title: 'Draft',
+        title: 'JE-1.19.3-BowShot:BUILDING:07.03.2023a - Draft',
         date: '',
         image: 'images/drafts/draft.png',
         file: 'drafts/test.md',
-        tags: ['drafts'],
+        tags: ['building','recap','drafts'],
         visible: false
     },
-    {
-        title: 'Draft',
-        date: '',
-        image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
-        tags: ['drafts'],
-        visible: false
-    },
+
+
+// Drafts Template
     {
         title: 'Draft',
         date: '',
