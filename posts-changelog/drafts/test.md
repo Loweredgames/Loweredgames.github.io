@@ -3,6 +3,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis laoreet 
 
 Etiam ut lacus sit amet est interdum pellentesque non eleifend ante. Vestibulum dapibus ipsum sed aliquet malesuada. Suspendisse sit amet justo neque. Curabitur placerat velit ac mauris convallis semper. Vivamus in efficitur dui. Vivamus at sem vulputate, consequat diam at, sagittis velit. Morbi pellentesque quam purus, quis ultrices elit volutpat eu.
 
+<video width="640" height="360" controls>
+  <source src="images/videos/test.mp4">
+</video>
+
 Suspendisse consequat neque eu imperdiet imperdiet. Etiam aliquet ante non diam varius sodales. Aenean sed tortor et tellus pellentesque blandit et dapibus nibh. Duis dictum iaculis lacus, quis aliquam turpis dictum eu. Donec enim erat, venenatis quis eros sed, placerat eleifend lectus. Nam quis libero mollis, varius tellus faucibus, finibus ante. Phasellus tempor, ante id pharetra pellentesque, dui libero lacinia nulla, ac faucibus eros urna et eros. Suspendisse dictum odio at turpis fermentum eleifend. Mauris auctor orci ac est egestas, quis egestas dui sollicitudin. In vel metus pretium, rutrum urna in, sodales turpis. Praesent interdum consequat ullamcorper.
 
 Mauris hendrerit dui vestibulum, euismod velit id, maximus augue. Nunc accumsan nunc at orci sodales, vel ullamcorper diam mattis. Quisque turpis ligula, porttitor vitae ante sed, tincidunt mollis purus. Nulla interdum sit amet urna in gravida. Vestibulum pharetra luctus nisl sit amet aliquet. Vivamus eu urna luctus, malesuada lacus et, euismod ligula. Pellentesque malesuada fermentum eros id accumsan. Ut maximus nec enim pulvinar convallis. Integer sed nulla enim. Quisque pulvinar lacus quis mattis auctor.

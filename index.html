@@ -1,10 +1,122 @@
 <!DOCTYPE html>
 <html lang="it">
+<head>
+    <!-- Meta tags per SEO e responsività -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Custom Map Minecraft</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    
+    <!-- Collegamenti a fogli di stile e font -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
 <body>
+    <!-- Header con titolo principale -->
+    <header>
+        <h1>Sito Web Alpha - DA FARE</h1>
+        <nav>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <!-- Sezione hero con descrizione -->
+            <section class="hero">
+                <h2>Benvenuto nella mia Custom Map</h2>
+                <p>Un'avventura unica nel mondo di Minecraft...</p>
+            </section>
 
-<h1>Coming Soon...</h1>
-<p>The new website is not available yet. come back later :)</p>
-<a href="https://minecraft-map-building-versions.blogspot.com/">> Return to old changelog website</a>
+            <!-- Griglia dei changelog -->
+            <section class="changelog-list">
+                <h2>Changelogs:</h2>
+                <div class="changelog-controls">
+                    <input type="text" 
+                           id="search-changelog" 
+                           placeholder="Cerca nei changelog..."
+                           onkeyup="searchChangelogs(this.value)">
+                    <div class="tag-filters">
+                    <!-- Aggiungere nuovi tag qui -->
+                        <button class="tag-filter active" data-tag="all">Tutti</button>
+                        <button class="tag-filter" data-tag="lts">Lts</button>
+                        <button class="tag-filter" data-tag="stable">Stable</button>
+                        <button class="tag-filter" data-tag="release-candidate">Release-Candidate</button>
+                        <button class="tag-filter" data-tag="pre-release">Pre-Release</button>
+                        <button class="tag-filter" data-tag="building">Building</button>
+                        <button class="tag-filter" data-tag="website">Website-Update</button>
+                        <button class="tag-filter" data-tag="changelog-doc">Changelog-Doc</button>
+                    </div>
+                </div>
+                <div id="changelog-grid" class="changelog-grid">
+                    <!-- I changelog verranno caricati qui -->
+                </div>
+            </section>
+        </div>
 
+        <!-- Sidebar con link ai progetti -->
+        <aside class="sidebar">
+            <h2>I Miei Progetti:</h2>
+            <ul class="project-links">
+                <li>
+                    <a href="https://example.com/">Nome Progetto 1</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Nome Progetto 2</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Nome Progetto 3</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Nome Progetto 4</a>
+                </li>
+            </ul>
+
+            <h2>Calendario:</h2>
+            <!-- Il calendario verrà generato automaticamente qui -->
+            <div class="changelog-calendar">
+            </div>
+            
+            <!-- Archivio Changelog -->
+            <h2>Archivio Changelog:</h2>
+            <ul class="project-links">
+                <li>
+                    <a href="https://web.archive.org/web/20250228193738/https://minecraft-map-building-versions.blogspot.com/2024/09/je-1206-530-skyblockclassicedition530lts.html">5.3.0 LTS</a>
+                </li>
+                <li>
+                    <a href="https://web.archive.org/web/20250228193414/https://minecraft-map-building-versions.blogspot.com/2025/01/je-1211211-600-skyblockclassicedition600.html">6.0.0</a>
+                </li>
+                <li>
+                    <a href="https://web.archive.org/web/20250228185931/https://minecraft-map-building-versions.blogspot.com/">Old Website Changelog</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer con copyright e Social Media-->
+    <footer>
+        <div class="footer-content">
+            <h3>Social Media:</h3>
+            <div class="social-icons">
+                <a href="https://discord.gg/example" class="social-icon" title="Unisciti al nostro Discord">
+                    <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
+                </a>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/example" class="social-icon" title="Scarica da CurseForge">
+                    <img src="images/logo/modrinth.jpeg" alt="CurseForge">
+                </a>
+                <a href="https://modrinth.com/mod/example" class="social-icon" title="Scarica da Modrinth">
+                    <img src="images/logo/modrinth.jpeg" alt="Modrinth">
+                </a>
+            </div>
+            <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
+            <i>Ultimo Aggiornamento: 02.03.2025 - 14:57</i>
+        </div>
+    </footer>
+
+    <!-- Script per caricare i changelog -->
+    <script src="changelog-loader.js"></script>
 </body>
 </html>

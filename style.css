@@ -139,6 +139,15 @@ main {
     position: absolute;
     left: 0;
     color: #666;
+    line-height: 24px; /* Aggiunto per centrare verticalmente */
+    top: 50%; /* Aggiunto per centrare verticalmente */
+    transform: translateY(-50%); /* Aggiunto per centrare verticalmente */
+}
+
+/* Aggiungere questi stili specifici per elenchi con trattini */
+.changelog ul li.dash:before {
+    content: "-";
+    top: 45%; /* Regolato per allineare meglio i trattini */
 }
 
 .changelog-list {
@@ -172,8 +181,11 @@ main {
 }
 
 .changelog-card h3 {
-    margin: 0 0 0.5rem 0;
-    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 .changelog-card p {
@@ -234,28 +246,6 @@ main {
     max-width: 400px;
 }
 
-.sort-controls {
-    display: none;
-}
-
-/* Style per il bottone di copia link */
-.copy-link-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    padding: 0.5rem;
-    background: #2d2d2d;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.changelog-card:hover .copy-link-button {
-    opacity: 1;
-}
-
 /* Stili per i tag */
 .changelog-tags {
     display: flex;
@@ -294,8 +284,8 @@ main {
     background: #b80f0f; /* Tag per le Building */
 }
 
-.tag.recap {
-    background: #ff00c3; /* Tag per i Recap */
+.tag.drafts {
+    background: #000000; /* Tag per le Bozze */
 }
 
 .tag.website {
@@ -388,6 +378,13 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+/* Titoli Markdown h1 */
+.changelog h1 {
+    font-size: 1.20em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 /* ===================================
    Footer
    - Layout footer
@@ -448,9 +445,11 @@ footer {
     color: #999;
 }
 
-/* Rimuovi gli stili vecchi della sezione social-links che non servono più */
-.social-links {
-    display: none;
+.footer-content h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
 }
 
 /* ===================================
@@ -585,6 +584,9 @@ footer {
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .project-links a:hover {
@@ -665,6 +667,9 @@ footer {
     color: #ffffff;
     text-decoration: none;
     flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .calendar-month a:hover {
