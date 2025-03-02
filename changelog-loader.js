@@ -7,31 +7,31 @@ window.changelogList = [
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
         date: '22.02.2025',
         image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
-        file: 'drafts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
+        file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
         tags: ['building','recap','drafts'],
         visible: true
     },
     {
-        file: 'drafts/SkyblockCE_1.21/6.0.0latest.md',
-        date: '12.01.2025',
         title: 'JE-1.21/1.21.1-6.0.0-Skyblock_Classic_Edition:6.0.0',
+        date: '12.01.2025',
         image: 'images/posts/6.0.0latest.png',
+        file: 'drafts/SkyblockCE_1.21_6.0.0/6.0.0latest.md',
         tags: ['stable','drafts'],
         visible: true
     },
     {
-        file: 'drafts/SkyblockCE_5.3.0_LTS/5.3.X_LTS.md',
-        date: '29.12.2024',
         title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.X_LTS Maintenance Update - LTS',
+        date: '29.12.2024',
         image: 'images/posts/LTS_latest.png',
+        file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
         tags: ['lts','stable','drafts'],
         visible: true
     },
     {
-        file: 'drafts/SkyblockCE_5.3.0_LTS/5.3.0_LTS.md',
-        date: '27.09.2024',
         title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
+        date: '27.09.2024',
         image: 'images/posts/LTS_latestv.png',
+        file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.0_LTS.md',
         tags: ['test','drafts'],
         visible: true
     },
@@ -42,7 +42,7 @@ window.changelogList = [
         title: 'SkyblockCE 1.21.4 TO DO Pre-Release 1 - Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
+        file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
         tags: ['pre-release','recap','drafts'],
         visible: true
     },

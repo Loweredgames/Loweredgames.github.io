@@ -88,7 +88,7 @@ _<font color="red"><center>(aggiornare sempre la barra della bossbar)</center>_<
 **![Mettere Immagine Versione dentro la cartella](images/drafts/draft.png)**
 
 
-## **Highlights**
+## Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
 - aggiungere punti salienti nella versione
