@@ -32,7 +32,7 @@ window.changelogList = [
         date: '27.09.2024',
         image: 'images/posts/LTS_latestv.png',
         file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.0_LTS.md',
-        tags: ['stable','drafts'],
+        tags: ['lts','stable','drafts'],
         visible: true
     },
 

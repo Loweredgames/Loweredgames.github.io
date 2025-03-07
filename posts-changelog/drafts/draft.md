@@ -1,6 +1,3 @@
-**![Mettere Immagine Versione dentro la cartella](images/drafts/draft.png)**
-
-
 ## Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
