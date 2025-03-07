@@ -101,7 +101,7 @@ window.changelogList = [
         title: 'Draft',
         date: '',
         image: 'images/drafts/draft.png',
-        file: 'drafts/test.md',
+        file: 'drafts/draft.md',
         tags: ['drafts'],
         visible: false
     },
