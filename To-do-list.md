@@ -1,4 +1,0 @@
-- [x] convertire tutti i post vecchi
-- [ ] fare sito web completo
-- [ ] rimuovere tutti i test fatti
-- [ ] aggiungere immagini
