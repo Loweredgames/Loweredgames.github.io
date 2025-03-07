@@ -1,6 +1,7 @@
 ## Highlights
 
-To do...
+(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
+- aggiungere punti salienti nella versione
 
 ## Added
 
