@@ -23,6 +23,13 @@
         <div id="post-header" class="post-header"></div>
         <!-- Contenuto del changelog -->
         <div id="changelog" class="changelog"></div>
+        
+        <!-- Sezione commenti GitHub -->
+        <div class="comments-section">
+            <h3>Commenti:</h3>
+            <div id="giscus-container"></div>
+        </div>
+
         <!-- Aggiungo il pulsante home -->
         <div class="home-button-container">
             <a href="index.html" class="home-button">Torna alla Home</a>
@@ -81,6 +88,24 @@
                     <p class="post-date">${metadata.date}</p>
                     ${metadata.description ? `<p class="post-description">${metadata.description}</p>` : ''}
                 `;
+
+                // Inizializza Giscus dopo che il contenuto è stato caricato
+                const giscusScript = document.createElement('script');
+                giscusScript.src = 'https://giscus.app/client.js';
+                giscusScript.setAttribute('data-repo', 'Loweredgames/Loweredgames.github.io');
+                giscusScript.setAttribute('data-repo-id', 'R_kgDONtpJlw');
+                giscusScript.setAttribute('data-category', 'General');
+                giscusScript.setAttribute('data-category-id', 'DIC_kwDONtpJl84Cnriq');
+                giscusScript.setAttribute('data-mapping', 'specific');
+                giscusScript.setAttribute('data-term', metadata.title);
+                giscusScript.setAttribute('data-strict', '0');
+                giscusScript.setAttribute('data-reactions-enabled', '1');
+                giscusScript.setAttribute('data-emit-metadata', '0');
+                giscusScript.setAttribute('data-input-position', 'top');
+                giscusScript.setAttribute('data-theme', 'preferred_color_scheme');
+                giscusScript.setAttribute('data-lang', 'it');
+                giscusScript.setAttribute('crossorigin', 'anonymous');
+                document.getElementById('giscus-container').appendChild(giscusScript);
             }
 
             // Carica il contenuto del changelog
