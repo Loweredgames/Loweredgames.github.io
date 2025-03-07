@@ -1,7 +1,7 @@
 ## Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _Tags:_
+# _tags:_
 
 - aggiungere punti salienti nella versione
 

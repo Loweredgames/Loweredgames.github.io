@@ -1,6 +1,8 @@
 ## Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
+# _tags:_
+
 - aggiungere punti salienti nella versione
 
 ## Added
@@ -31,4 +33,4 @@
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-[**Download**](To do...)
+**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
