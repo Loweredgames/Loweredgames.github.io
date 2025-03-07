@@ -130,6 +130,8 @@ _<font color="red"><center>(aggiornare sempre la barra della bossbar)</center>_<
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
+**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+
 **Download** (ricordarsi di fare collegamento diretto in GitHub)
 
 _Attenzione: per il rilascio di una versione usare lo stesso numero della versione di Minecraft. creare il branch con lo stesso nome con la versione di Minecraft (es: 1.20.X), se ci sono modifiche aggiungere versione minore o di manutenzione nel branch corrispondente._

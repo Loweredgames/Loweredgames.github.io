@@ -42,4 +42,6 @@
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
+**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+
 **Download** -> (ricordarsi di fare collegamento diretto in GitHub)
