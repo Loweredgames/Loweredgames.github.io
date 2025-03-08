@@ -129,7 +129,15 @@ window.changelogList = [
         image: 'images/logo/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
         tags: ['lts','stable','release-candidate','pre-release','building','website','changelog-doc','drafts'], // Aggiunti i tag
-        visible: true
+        visible: true,
+        maintenanceVersions: [
+            {
+                version: 'Test Changelog',
+                date: '04.10.2000',
+                file: 'drafts/test.md',
+                visible: false
+            }
+        ]
     }
 ];
 
