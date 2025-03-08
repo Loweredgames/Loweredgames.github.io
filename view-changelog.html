@@ -117,8 +117,27 @@
                 .then(text => {
                     // Rimuovi solo i tag HTML pericolosi
                     text = text.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
-                    const content = marked.parse(text);
-                    document.getElementById('changelog').innerHTML = content;
+                    let content = marked.parse(text);
+                    
+                    // Carica le versioni di manutenzione se presenti
+                    if (metadata && metadata.maintenanceVersions) {
+                        // Filtra solo le versioni visibili
+                        const visibleVersions = metadata.maintenanceVersions.filter(v => v.visible);
+                        
+                        const maintenancePromises = visibleVersions.map(v => 
+                            fetch(`posts-changelog/${v.file}`)
+                                .then(res => res.text())
+                                .then(maintenanceText => marked.parse(maintenanceText))
+                        );
+
+                        Promise.all(maintenancePromises)
+                            .then(maintenanceContents => {
+                                const maintenanceHtml = maintenanceContents.join('<hr class="maintenance-separator">');
+                                document.getElementById('changelog').innerHTML = content + maintenanceHtml;
+                            });
+                    } else {
+                        document.getElementById('changelog').innerHTML = content;
+                    }
                 })
                 .catch(error => {
                     // Gestione degli errori

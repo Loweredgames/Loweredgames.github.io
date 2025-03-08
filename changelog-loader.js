@@ -25,7 +25,21 @@ window.changelogList = [
         image: 'images/posts/LTS_latest.png',
         file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
         tags: ['lts','stable','drafts'],
-        visible: true
+        visible: true,
+        maintenanceVersions: [
+            {
+                version: '5.3.2_LTS',
+                date: '',
+                file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.2_LTS.md',
+                visible: false
+            },
+            {
+                version: '5.3.3_LTS',
+                date: '',
+                file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.3_LTS.md',
+                visible: false
+            }
+        ]
     },
     {
         title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
@@ -154,11 +168,34 @@ function createChangelogCard(changelog) {
     
     const defaultImage = 'https://placehold.co/600x400/1a1a1a/ffffff/png?text=No+Image';
     
-    // Crea il markup HTML per i tag
+    // Limita i tag mostrati a 3 e aggiungi un indicatore se ce ne sono di più
     const tagsHtml = changelog.tags ? 
         `<div class="changelog-tags">
-            ${changelog.tags.map(tag => `<span class="tag ${tag}">${tag}</span>`).join('')}
+            ${changelog.tags.slice(0, 3).map(tag => `<span class="tag ${tag}">${tag}</span>`).join('')}
+            ${changelog.tags.length > 3 ? `<span class="tag more-tags">+${changelog.tags.length - 3}</span>` : ''}
          </div>` : '';
+
+    // Limita le versioni di manutenzione mostrate a 2 e aggiungi un indicatore se ce ne sono di più
+    let maintenanceHtml = '';
+    if (changelog.maintenanceVersions && changelog.maintenanceVersions.length > 0) {
+        const versionsToShow = changelog.maintenanceVersions.slice(0, 2);
+        maintenanceHtml = `
+            <div class="maintenance-versions">
+                <div class="maintenance-header">Versioni di manutenzione:</div>
+                <div class="maintenance-list">
+                    ${versionsToShow.map(v => 
+                        `<div class="maintenance-item">
+                            <span class="version">${v.version}</span>
+                            <span class="date">${v.date}</span>
+                         </div>`
+                    ).join('')}
+                    ${changelog.maintenanceVersions.length > 2 ? 
+                        `<div class="maintenance-item more-versions">
+                            <span>+${changelog.maintenanceVersions.length - 2} altre versioni</span>
+                         </div>` : ''}
+                </div>
+            </div>`;
+    }
 
     card.innerHTML = `
         <div class="changelog-image">
@@ -170,6 +207,7 @@ function createChangelogCard(changelog) {
         <h3 title="${changelog.title}">${truncateText(changelog.title)}</h3>
         <p class="date">${changelog.date}</p>
         ${changelog.description ? `<p class="description">${truncateText(changelog.description, 100)}</p>` : ''}
+        ${maintenanceHtml}
     `;
     return card;
 }
@@ -253,10 +291,8 @@ function generateChangelogCalendar() {
     const calendarContainer = document.querySelector('.changelog-calendar');
     if (!calendarContainer) return;
 
-    // Raggruppa i changelog per anno e mese
     const groupedChangelogs = groupChangelogsByYearMonth(window.changelogList);
-    calendarContainer.innerHTML = ''; // Ordina gli anni in ordine decrescente
-
+    calendarContainer.innerHTML = '';
 
     // Ordina gli anni in ordine decrescente
     const years = Object.keys(groupedChangelogs).sort((a, b) => b - a);
@@ -264,19 +300,17 @@ function generateChangelogCalendar() {
     years.forEach(year => {
         const yearSection = document.createElement('div');
         yearSection.className = 'calendar-year';
-        yearSection.innerHTML = `<h3 class="year-title">${year}</h// Ordina i mesi in ordine decrescente
-3>`;
+        yearSection.innerHTML = `<h3 class="year-title">${year}</h3>`;
 
-    // Ordina i mesi in ordine decrescente
+        // Ordina i mesi in ordine decrescente
         const months = Object.keys(groupedChangelogs[year]).sort((a, b) => b - a);
 
         months.forEach(monthIndex => {
             const monthLogs = groupedChangelogs[year][monthIndex];
             const monthSection = document.createElement('div');
-            monthSection.className = 'calendar-month';  // Ordina i changelog per giorno in ordine decrescente
+            monthSection.className = 'calendar-month';
 
-            
-// Ordina i changelog per giorno in ordine decrescente
+            // Ordina i changelog per giorno in ordine decrescente
             monthLogs.sort((a, b) => {
                 const dayA = parseInt(a.date.split('.')[0]);
                 const dayB = parseInt(b.date.split('.')[0]);

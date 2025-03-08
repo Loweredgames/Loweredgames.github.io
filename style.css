@@ -292,6 +292,12 @@ main {
     background: #6d4bc8; /* Tag per gli aggiornamenti al sito web o altro */
 }
 
+.tag.more-tags {
+    background: #4a4a4a;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+}
+
 /* Stili per i filtri tag */
 .tag-filters {
     margin: 1rem 0;
@@ -608,9 +614,11 @@ footer {
 
 /* Stili per il calendario dei changelog */
 .changelog-calendar {
+    /* Stili generali per il calendario */
     margin-top: 1rem;
 }
 
+/* Correzione commento tronco */
 .calendar-year {
     margin-bottom: 2rem;
 }
@@ -674,4 +682,178 @@ footer {
 
 .calendar-month a:hover {
     text-decoration: underline;
+}
+
+/* Stili per le versioni di manutenzione */
+.maintenance-versions {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #2d2d2d;
+    font-size: 0.9rem;
+}
+
+.maintenance-versions small {
+    color: #999;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.maintenance-versions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.maintenance-versions li {
+    color: #999;
+    margin-bottom: 0.3rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.maintenance-versions li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+/* Stili aggiornati per le versioni di manutenzione */
+.maintenance-versions {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #2d2d2d;
+}
+
+.maintenance-header {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.maintenance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.maintenance-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #1a1a1a;
+    border-radius: 4px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.maintenance-item .version {
+    color: #4a9eff;
+}
+
+.maintenance-item .date {
+    color: #666;
+}
+
+/* Stili aggiornati per le versioni di manutenzione */
+.maintenance-versions {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #2d2d2d;
+}
+
+.maintenance-header {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.maintenance-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.maintenance-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #1a1a1a;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.maintenance-link:hover {
+    background: #3d3d3d;
+    transform: translateX(5px);
+}
+
+.maintenance-link .version {
+    color: #4a9eff;
+}
+
+.maintenance-link .date {
+    color: #666;
+}
+
+/* Stili aggiornati per le versioni di manutenzione nel changelog */
+.changelog .maintenance-versions {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2px solid #2d2d2d;
+}
+
+.changelog .maintenance-versions h3 {
+    color: #999;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: none;
+}
+
+.changelog .maintenance-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.changelog .maintenance-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    background: #2d2d2d;
+    border-radius: 4px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.changelog .maintenance-item .version {
+    color: #4a9eff;
+    font-weight: bold;
+}
+
+.changelog .maintenance-item .date {
+    color: #666;
+}
+
+/* Stile per l'indicatore delle versioni aggiuntive */
+.maintenance-item.more-versions {
+    background: #2d2d2d;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.maintenance-item.more-versions:hover {
+    background: #3d3d3d;
+}
+
+/* Separatore tra versioni di manutenzione */
+.maintenance-separator {
+    margin: 3rem 0;
+    border: none;
+    border-top: 2px solid #2d2d2d;
+    width: 100%;
 }

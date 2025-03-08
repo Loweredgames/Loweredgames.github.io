@@ -8,7 +8,7 @@ _<font color="red"><center>(aggiornare sempre la barra della bossbar)</center>_<
 - **VERSION:**(Nome Edizione JE o BE),(Versione di Minecraft),(Versione della mappa),(Nome progetto)-(numero maggiore),(numero minore),(per LTS aggiungere il nome della versione: "Maintenance Update - LTS", e aggiungere il suffisso "_LTS" solo nelle versioni LTS)
 - - aggiornare solo in Github aggiungendo le modifiche in desc, aggiungere il n. di versione solo in Github (non nei file)
 
-- - **SOLO LTS**: aggiungere sempre seconda versione rilasciata in basso come una catena. la versione è come un titolo quindi serve ## due volte
+- - **SOLO LTS**: aggiungere sempre seconda versione rilasciata in basso come una catena. da mettere in changelog-loader.js. aggiungere solo versione della mappa e la data con la visibilita.
 
 - - - **JE-1.20.6-1.0.0-Redstonecraft:1.0.1_LTS (prima da aggiungere come titolo)**
 
