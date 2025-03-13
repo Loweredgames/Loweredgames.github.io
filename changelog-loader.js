@@ -24,17 +24,17 @@ window.changelogList = [
         date: '29.12.2024',
         image: 'images/posts/LTS_latest.png',
         file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
-        tags: ['lts','stable','drafts'],
+        tags: ['lts','stable'],
         visible: true,
         maintenanceVersions: [
             {
-                version: '5.3.2_LTS',
+                version: '5.3.2_LTS???',
                 date: '',
                 file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.2_LTS.md',
                 visible: false
             },
             {
-                version: '5.3.3_LTS',
+                version: '5.3.3_LTS???',
                 date: '',
                 file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.3_LTS.md',
                 visible: false
