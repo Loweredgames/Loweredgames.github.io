@@ -23,20 +23,20 @@ window.changelogList = [
         title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.X_LTS Maintenance Update - LTS',
         date: '29.12.2024',
         image: 'images/posts/LTS_latest.png',
-        file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
+        file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
         tags: ['lts','stable','drafts'],
         visible: true,
         maintenanceVersions: [
             {
                 version: '5.3.2_LTS',
                 date: '',
-                file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.2_LTS.md',
+                file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.2_LTS.md',
                 visible: false
             },
             {
                 version: '5.3.3_LTS',
                 date: '',
-                file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.3_LTS.md',
+                file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.3_LTS.md',
                 visible: false
             }
         ]
@@ -45,8 +45,8 @@ window.changelogList = [
         title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
         date: '27.09.2024',
         image: 'images/posts/LTS_latestv.png',
-        file: 'drafts/SkyblockCE_1.20.6_5.3.0_LTS/5.3.0_LTS.md',
-        tags: ['lts','stable','drafts'],
+        file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.0_LTS.md',
+        tags: ['lts','stable'],
         visible: true
     },
 
