@@ -7,7 +7,7 @@ window.changelogList = [
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
         date: '22.02.2025',
         image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
-        file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
+        file: 'SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
         tags: ['building','drafts'],
         visible: true
     },
