@@ -20,6 +20,14 @@ window.changelogList = [
         visible: true
     },
     {
+        title: 'JE-1.21/1.21.1-6.0.0-Skyblock_Classic_Edition:RELEASE-CANDIDATE-2',
+        date: '12.01.2025',
+        image: 'images/posts/6.0.0latest.png',
+        file: 'SkyblockCE_1.21_6.0.0/JE-1.21-1.21.1-6.0.0-skyblockce-release-candidate-2.md',
+        tags: ['release-candidate'],
+        visible: true
+    },
+    {
         title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.X_LTS Maintenance Update - LTS',
         date: '29.12.2024',
         image: 'images/posts/LTS_latest.png',
@@ -58,7 +66,7 @@ window.changelogList = [
         image: 'images/drafts/draft.png',
         file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
         tags: ['pre-release','drafts'],
-        visible: true
+        visible: false
     },
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',

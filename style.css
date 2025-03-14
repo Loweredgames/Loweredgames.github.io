@@ -273,7 +273,7 @@ main {
 }
 
 .tag.release-candidate {
-    background: #10c17d; /* Tag per le Release Candidate */
+    background: #ba08ba; /* Tag per le Release Candidate */
 }
 
 .tag.pre-release {
