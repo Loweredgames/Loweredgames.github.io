@@ -1,75 +1,180 @@
 // Lista dei changelog disponibili (accessibile globalmente)
 window.changelogList = [
+
+
+// Post Rilasciati
     {
-        file: '2020-12-31-changelog.md', // Nome del file markdown
-        date: '25.01.2024',         // Formato data
-        title: 'Changelog Template date', // Titolo visualizzato
-        image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN3wr6bMKw7ri9urVk4xUHLRy4jVlGI6k8_Q8vqLgMcbrW-BM9BURbspRWu2MwOEEf0GqBWlsET696NTXcKGjNCo0VfOwrBgI7tppuZqupJdchAWtuLcKql5NSPPmrHuElQhKVqXTc9Do4/s72-w581-c-h581/changelog.png',  // URL immagine
+        title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
+        date: '22.02.2025',
+        image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
+        file: 'SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
+        tags: ['building','drafts'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21/1.21.1-6.0.0-Skyblock_Classic_Edition:6.0.0',
+        date: '12.01.2025',
+        image: 'images/posts/6.0.0latest.png',
+        file: 'SkyblockCE_1.21_6.0.0/6.0.0latest.md',
+        tags: ['stable'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21/1.21.1-6.0.0-Skyblock_Classic_Edition:RELEASE-CANDIDATE-2',
+        date: '12.01.2025',
+        image: 'images/posts/6.0.0latest.png',
+        file: 'SkyblockCE_1.21_6.0.0/JE-1.21-1.21.1-6.0.0-skyblockce-release-candidate-2.md',
+        tags: ['release-candidate'],
+        visible: true
+    },
+    {
+        title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.X_LTS Maintenance Update - LTS',
+        date: '29.12.2024',
+        image: 'images/posts/LTS_latest.png',
+        file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
+        tags: ['lts','stable'],
+        visible: true,
+        maintenanceVersions: [
+            {
+                version: '5.3.2_LTS???',
+                date: '',
+                file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.2_LTS.md',
+                visible: false
+            },
+            {
+                version: '5.3.3_LTS???',
+                date: '',
+                file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.3_LTS.md',
+                visible: false
+            }
+        ]
+    },
+    {
+        title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
+        date: '27.09.2024',
+        image: 'images/posts/LTS_latestv.png',
+        file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.0_LTS.md',
+        tags: ['lts','stable'],
+        visible: true
+    },
+
+
+// Post in Lavorazione (drafts)
+    {
+        title: 'SkyblockCE 1.21.4 TO DO Pre-Release 1 - Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
+        tags: ['pre-release','drafts'],
+        visible: false
+    },
+    {
+        title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/Edge_1.20.6_1.0.0/je-1.20.6-1.0.0-edge-building23.10.2024a.md',
+        tags: ['building','drafts'],
+        visible: false
+    },
+    {
+        title: 'JE-1.17.1-1.0.0-Apocalisse:BUILDING:16.10.2022a - Draft',
+        date: '',
+        image: 'images/posts/Apocalisse_1.17.1-1.0.0/first.png',
+        file: 'drafts/Apocalisse_1.17.1_1.0.0/je-1.17.1-1.0.0-apocalisse-building16.10.2022a.md',
+        tags: ['building','drafts'],
+        visible: false
+    },
+    {
+        title: 'JE-1.20.4-Dimension_Infinity:BUILDING:12.12.2023a - Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/Dimension_Infinity_1.20.6_1.0.0/je-1.20.6-1.0.0-dimension_infinity-building12.12.2023a.md',
+        tags: ['building','drafts'],
+        visible: false
+    },
+    {
+        title: 'JE-1.20.2-Dungeoncraft:BUILDING:30.08.2023a - Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/Dungeoncraft_1.20.6_1.0.0/je-1.20.6-1.0.0-dungeoncraft-building30.08.2023a.md',
+        tags: ['building','drafts'],
+        visible: false
+    },
+    {
+        title: 'JE-1.19.4-Infernicus:BUILDING:18.10.2023a - Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/Infernicus_1.19.4_1.0.0/je-1.19.4-1.0.0-Infernicus-building18.10.2023a.md',
+        tags: ['building','drafts'],
+        visible: false
+    },
+    {
+        title: 'JE-1.19.4-BowShot:BUILDING:07.03.2023a - Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/BowShot_1.19.4_1.0.0/je-1.19.4-1.0.0-bowShot-building07.03.2023a.md',
+        tags: ['building','drafts'],
+        visible: false
+    },
+
+
+// Drafts Template
+    {
+        title: 'Draft',
+        date: '',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/draft.md',
+        tags: ['drafts'],
+        visible: false
+    },
+
+
+// Changelog Template
+    {
+        file: 'changelog-template.md', // Nome del file markdown
+        date: '03.10.2000',         // Formato data
+        title: 'Changelog Template', // Titolo visualizzato
+        image: 'images/posts/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
-        tags: ['lts','stable','release-candidate','pre-release','building', 'recap','website','changelog-doc'] // Aggiunti i tag
-    },
-    {
-        file: 'v1-0-0.md',
-        date: '20.01.2024',
-        title: 'Versione 1.0.0',
-        image: 'images/posts/2024-09-23_14.21.49.png',
-        tags: ['stable']
-    },
-    {
-        file: 'v0-9-0.md',
-        date: '10.11.2024',
-        title: 'Versione 0.9.0',
-        image: '',
-        tags: ['stable', 'pre-release']
-    },
-    {
-        file: 'v1-0-0.md',
-        date: '20.11.2024',
-        title: 'Versione t',
-        image: '',
-        tags: ['building']
-    },
-    {
-        file: 'v1-0-0.md',
-        date: '20.11.2004',
-        title: 'Versione t2',
-        image: '',
-        tags: ['test']
-    },
-    {
-        file: 'v1-0-0.md',
-        date: '20.10.2004',
-        title: 'Versione t3',
-        image: '',
-        tags: ['test']
-    },
-    {
-        file: 'test.md',
-        date: '3.10.2000',
-        title: 'Versione t4',
-        image: 'https://dummyimage.com/600x400/000/fff.png',
-        tags: ['test']
+        tags: ['lts','stable','release-candidate','pre-release','building','website','changelog-doc','drafts'], // Aggiunti i tag
+        visible: true,
+        maintenanceVersions: [
+            {
+                version: 'Test Changelog',
+                date: '04.10.2000',
+                file: 'drafts/test.md',
+                visible: false
+            }
+        ]
     }
 ];
 
 // Funzione per caricare la lista dei changelog nella griglia
 function loadChangelogList() {
     const changelogGrid = document.getElementById('changelog-grid');
-            changelogGrid.innerHTML = ''; // Pulisci la griglia
+    changelogGrid.innerHTML = ''; // Pulisci la griglia
     
-    // Crea una card per ogni changelog
-        changelogList.forEach(changelog => {
-            const card = createChangelogCard(changelog);
-            changelogGrid.appendChild(card);
-        });
+    // Filtra i changelog visibili
+    const visibleChangelogs = window.changelogList.filter(changelog => changelog.visible);
+    
+    // Crea una card per ogni changelog visibile
+    visibleChangelogs.forEach(changelog => {
+        const card = createChangelogCard(changelog);
+        changelogGrid.appendChild(card);
+    });
 
     // Inizializza i filtri tag
-        initializeTagFilters();
-    }
+    initializeTagFilters();
     
     // Genera il calendario
     generateChangelogCalendar();
+}
 
+// Funzione per troncare il testo
+function truncateText(text, maxLength = 60) {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength - 3) + '...';
+}
 
 // Funzione per creare una singola card del changelog
 function createChangelogCard(changelog) {
@@ -79,11 +184,34 @@ function createChangelogCard(changelog) {
     
     const defaultImage = 'https://placehold.co/600x400/1a1a1a/ffffff/png?text=No+Image';
     
-    // Crea il markup HTML per i tag
+    // Limita i tag mostrati a 3 e aggiungi un indicatore se ce ne sono di più
     const tagsHtml = changelog.tags ? 
         `<div class="changelog-tags">
-            ${changelog.tags.map(tag => `<span class="tag ${tag}">${tag}</span>`).join('')}
+            ${changelog.tags.slice(0, 3).map(tag => `<span class="tag ${tag}">${tag}</span>`).join('')}
+            ${changelog.tags.length > 3 ? `<span class="tag more-tags">+${changelog.tags.length - 3}</span>` : ''}
          </div>` : '';
+
+    // Limita le versioni di manutenzione mostrate a 2 e aggiungi un indicatore se ce ne sono di più
+    let maintenanceHtml = '';
+    if (changelog.maintenanceVersions && changelog.maintenanceVersions.length > 0) {
+        const versionsToShow = changelog.maintenanceVersions.slice(0, 2);
+        maintenanceHtml = `
+            <div class="maintenance-versions">
+                <div class="maintenance-header">Versioni di manutenzione:</div>
+                <div class="maintenance-list">
+                    ${versionsToShow.map(v => 
+                        `<div class="maintenance-item">
+                            <span class="version">${v.version}</span>
+                            <span class="date">${v.date}</span>
+                         </div>`
+                    ).join('')}
+                    ${changelog.maintenanceVersions.length > 2 ? 
+                        `<div class="maintenance-item more-versions">
+                            <span>+${changelog.maintenanceVersions.length - 2} altre versioni</span>
+                         </div>` : ''}
+                </div>
+            </div>`;
+    }
 
     card.innerHTML = `
         <div class="changelog-image">
@@ -92,9 +220,10 @@ function createChangelogCard(changelog) {
                  onerror="this.src='${defaultImage}'">
         </div>
         ${tagsHtml}
-        <h3>${changelog.title}</h3>
+        <h3 title="${changelog.title}">${truncateText(changelog.title)}</h3>
         <p class="date">${changelog.date}</p>
-        ${changelog.description ? `<p class="description">${changelog.description}</p>` : ''}
+        ${changelog.description ? `<p class="description">${truncateText(changelog.description, 100)}</p>` : ''}
+        ${maintenanceHtml}
     `;
     return card;
 }
@@ -109,7 +238,7 @@ function filterChangelogsByVersion(version) {
 // Funzione per cercare nei changelog
 function searchChangelogs(searchTerm) {
     const activeTag = document.querySelector('.tag-filter.active').dataset.tag;
-    let results = window.changelogList;
+    let results = window.changelogList.filter(changelog => changelog.visible); // Filtra prima per visibilità
     
     // Applica prima il filtro per tag se non è "all"
     if (activeTag !== 'all') {
@@ -145,9 +274,11 @@ function copyChangelogLink(file) {
 
 // Funzione per filtrare i changelog per tag
 function filterChangelogsByTag(tag) {
-    const results = window.changelogList.filter(changelog => 
-        changelog.tags && changelog.tags.includes(tag)
-    );
+    const results = window.changelogList
+        .filter(changelog => changelog.visible) // Filtra prima per visibilità
+        .filter(changelog => 
+            changelog.tags && changelog.tags.includes(tag)
+        );
     refreshChangelogGrid(results);
 }
 
@@ -163,7 +294,7 @@ function initializeTagFilters() {
             
             const tag = filter.dataset.tag;
             if (tag === 'all') {
-                refreshChangelogGrid(window.changelogList);
+                refreshChangelogGrid(window.changelogList.filter(changelog => changelog.visible));
             } else {
                 filterChangelogsByTag(tag);
             }
@@ -176,7 +307,6 @@ function generateChangelogCalendar() {
     const calendarContainer = document.querySelector('.changelog-calendar');
     if (!calendarContainer) return;
 
-    // Raggruppa i changelog per anno e mese
     const groupedChangelogs = groupChangelogsByYearMonth(window.changelogList);
     calendarContainer.innerHTML = '';
 
@@ -195,7 +325,7 @@ function generateChangelogCalendar() {
             const monthLogs = groupedChangelogs[year][monthIndex];
             const monthSection = document.createElement('div');
             monthSection.className = 'calendar-month';
-            
+
             // Ordina i changelog per giorno in ordine decrescente
             monthLogs.sort((a, b) => {
                 const dayA = parseInt(a.date.split('.')[0]);
@@ -211,7 +341,10 @@ function generateChangelogCalendar() {
                         return `
                             <li>
                                 <span class="date">${day}</span>
-                                <a href="view-changelog.html?file=${log.file}">${log.title}</a>
+                                <a href="view-changelog.html?file=${log.file}" 
+                                   title="${log.title}">
+                                    ${truncateText(log.title, 40)}
+                                </a>
                             </li>
                         `;
                     }).join('')}
@@ -227,7 +360,9 @@ function generateChangelogCalendar() {
 
 // Funzione aggiornata per raggruppare i changelog
 function groupChangelogsByYearMonth(changelogs) {
-    return changelogs.reduce((groups, log) => {
+    return changelogs
+        .filter(changelog => changelog.visible) // Filtra prima per visibilità
+        .reduce((groups, log) => {
         // Parsing della data (formato: "DD.MM.YYYY")
         const [day, month, year] = log.date.split('.');
         

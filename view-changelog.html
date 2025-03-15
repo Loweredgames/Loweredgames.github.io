@@ -4,7 +4,9 @@
     <!-- Meta tags per la codifica e il viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog - La Mia Custom Map</title>
+    <title>Loweredgames Changelog Maps</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
     <!-- Collegamenti a fogli di stile e librerie -->
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -12,7 +14,7 @@
 <body>
     <!-- Header con titolo cliccabile -->
     <header>
-        <h1 onclick="window.location.href='index.html'">Nome della Tua Custom Map</h1>
+        <h1 onclick="window.location.href='index.html'">Loweredgames Changelog Maps</h1>
     </header>
 
     <!-- Contenuto principale -->
@@ -21,24 +23,44 @@
         <div id="post-header" class="post-header"></div>
         <!-- Contenuto del changelog -->
         <div id="changelog" class="changelog"></div>
+        
+        <!-- Sezione commenti GitHub -->
+        <div class="comments-section">
+            <h3>Commenti:</h3>
+            <div id="giscus-container"></div>
+        </div>
+
         <!-- Aggiungo il pulsante home -->
         <div class="home-button-container">
             <a href="index.html" class="home-button">Torna alla Home</a>
         </div>
     </main>
 
-    <!-- Footer con copyright -->
+    <!-- Footer con copyright e Link-->
     <footer>
         <div class="footer-content">
+            <h3>Link:</h3>
             <div class="social-icons">
-                <a href="https://discord.gg/example" class="social-icon" title="Unisciti al nostro Discord">
-                    <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord">
+                <a href="https://github.com/Loweredgames/" class="social-icon" title="GitHub">
+                    <img src="images/social_logo/Github.png" alt="GitHub">
                 </a>
-                <a href="https://www.curseforge.com/minecraft/mc-mods/example" class="social-icon" title="Scarica da CurseForge">
-                    <img src="images/logo/modrinth.jpeg" alt="CurseForge">
+                <a href="https://modrinth.com/user/Loweredgames/" class="social-icon" title="Modrinth">
+                    <img src="images/social_logo/Modrinth.png" alt="Modrinth">
                 </a>
-                <a href="https://modrinth.com/mod/example" class="social-icon" title="Scarica da Modrinth">
-                    <img src="images/logo/modrinth.jpeg" alt="Modrinth">
+                <a href="https://www.planetminecraft.com/member/loweredgames/" class="social-icon" title="PlanetMinecraft">
+                    <img src="images/social_logo/PlanetMinecraft.png" alt="PlanetMinecraft">
+                </a>
+                <a href="https://www.curseforge.com/members/loweredgamesdev/projects/" class="social-icon" title="CurseForge">
+                    <img src="images/social_logo/CursedForge.png" alt="CurseForge">
+                </a>
+                <a href="https://smithed.net/Loweredgames/" class="social-icon" title="Smithed">
+                    <img src="images/social_logo/Smithed.png" alt="Smithed">
+                </a>
+                <a href="https://discord.gg/T6PHxhznJ6" class="social-icon" title="Discord">
+                    <img src="images/social_logo/Discord.png" alt="Discord">
+                </a>
+                <a href="https://crowdin.com/profile/" class="social-icon" title="Crowdin">
+                    <img src="images/social_logo/Crowdin.png" alt="Crowdin">
                 </a>
             </div>
             <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
@@ -79,6 +101,24 @@
                     <p class="post-date">${metadata.date}</p>
                     ${metadata.description ? `<p class="post-description">${metadata.description}</p>` : ''}
                 `;
+
+                // Inizializza Giscus dopo che il contenuto è stato caricato
+                const giscusScript = document.createElement('script');
+                giscusScript.src = 'https://giscus.app/client.js';
+                giscusScript.setAttribute('data-repo', 'Loweredgames/Loweredgames.github.io');
+                giscusScript.setAttribute('data-repo-id', 'R_kgDONtpJlw');
+                giscusScript.setAttribute('data-category', 'General');
+                giscusScript.setAttribute('data-category-id', 'DIC_kwDONtpJl84Cnriq');
+                giscusScript.setAttribute('data-mapping', 'specific');
+                giscusScript.setAttribute('data-term', metadata.title);
+                giscusScript.setAttribute('data-strict', '0');
+                giscusScript.setAttribute('data-reactions-enabled', '1');
+                giscusScript.setAttribute('data-emit-metadata', '0');
+                giscusScript.setAttribute('data-input-position', 'top');
+                giscusScript.setAttribute('data-theme', 'preferred_color_scheme');
+                giscusScript.setAttribute('data-lang', 'it');
+                giscusScript.setAttribute('crossorigin', 'anonymous');
+                document.getElementById('giscus-container').appendChild(giscusScript);
             }
 
             // Carica il contenuto del changelog
@@ -90,8 +130,27 @@
                 .then(text => {
                     // Rimuovi solo i tag HTML pericolosi
                     text = text.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
-                    const content = marked.parse(text);
-                    document.getElementById('changelog').innerHTML = content;
+                    let content = marked.parse(text);
+                    
+                    // Carica le versioni di manutenzione se presenti
+                    if (metadata && metadata.maintenanceVersions) {
+                        // Filtra solo le versioni visibili
+                        const visibleVersions = metadata.maintenanceVersions.filter(v => v.visible);
+                        
+                        const maintenancePromises = visibleVersions.map(v => 
+                            fetch(`posts-changelog/${v.file}`)
+                                .then(res => res.text())
+                                .then(maintenanceText => marked.parse(maintenanceText))
+                        );
+
+                        Promise.all(maintenancePromises)
+                            .then(maintenanceContents => {
+                                const maintenanceHtml = maintenanceContents.join('<hr class="maintenance-separator">');
+                                document.getElementById('changelog').innerHTML = content + maintenanceHtml;
+                            });
+                    } else {
+                        document.getElementById('changelog').innerHTML = content;
+                    }
                 })
                 .catch(error => {
                     // Gestione degli errori
@@ -109,6 +168,32 @@
             // Messaggio se nessun changelog è selezionato
             document.getElementById('changelog').innerHTML = '<h2>Nessun changelog selezionato</h2>';
         }
+
+        // Script per il cambio sfondo
+        function updateBackground() {
+            const hour = new Date().getHours();
+            const body = document.body;
+            
+            // Rimuovi tutte le classi precedenti
+            body.classList.remove('morning', 'afternoon', 'evening', 'night');
+            
+            // Aggiungi la classe appropriata in base all'ora
+            if (hour >= 6 && hour < 12) {
+                body.classList.add('morning');
+            } else if (hour >= 12 && hour < 17) {
+                body.classList.add('afternoon');
+            } else if (hour >= 17 && hour < 20) {
+                body.classList.add('evening');
+            } else {
+                body.classList.add('night');
+            }
+        }
+
+        // Aggiorna lo sfondo all'avvio
+        updateBackground();
+        
+        // Aggiorna lo sfondo
+        setInterval(updateBackground, 60);
     </script>
 </body>
 </html>
