@@ -8,8 +8,25 @@ body {
     font-family: 'Minecraft', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #141414;
     color: #ffffff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: -5px; /* Estende leggermente oltre i bordi */
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    width: calc(100% + 10px); /* Compensazione per i bordi */
+    height: calc(100% + 10px);
+    background-image: url('images/background/draft.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
 }
 
 /* ===================================
