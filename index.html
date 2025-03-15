@@ -118,5 +118,33 @@
 
     <!-- Script per caricare i changelog -->
     <script src="changelog-loader.js"></script>
+    
+    <!-- Script per il cambio sfondo -->
+    <script>
+        function updateBackground() {
+            const hour = new Date().getHours();
+            const body = document.body;
+            
+            // Rimuovi tutte le classi precedenti
+            body.classList.remove('morning', 'afternoon', 'evening', 'night');
+            
+            // Aggiungi la classe appropriata in base all'ora
+            if (hour >= 6 && hour < 12) {
+                body.classList.add('morning');
+            } else if (hour >= 12 && hour < 17) {
+                body.classList.add('afternoon');
+            } else if (hour >= 17 && hour < 20) {
+                body.classList.add('evening');
+            } else {
+                body.classList.add('night');
+            }
+        }
+
+        // Aggiorna lo sfondo all'avvio
+        updateBackground();
+        
+        // Aggiorna lo sfondo
+        setInterval(updateBackground, 60);
+    </script>
 </body>
 </html>
