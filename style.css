@@ -30,7 +30,7 @@ body::before {
     filter: blur(8px) brightness(0.7);
     transform: scale(1.1);
     z-index: -1;
-    transition: background-image 1s ease;
+    transition: background-image 100s ease;
 }
 
 /* Classi per i diversi momenti del giorno */
