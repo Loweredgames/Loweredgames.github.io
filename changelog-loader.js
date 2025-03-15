@@ -134,7 +134,7 @@ window.changelogList = [
         file: 'changelog-template.md', // Nome del file markdown
         date: '03.10.2000',         // Formato data
         title: 'Changelog Template', // Titolo visualizzato
-        image: 'images/logo/changelog.png',  // URL immagine
+        image: 'images/posts/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
         tags: ['lts','stable','release-candidate','pre-release','building','website','changelog-doc','drafts'], // Aggiunti i tag
         visible: true,
