@@ -10,22 +10,26 @@ body {
     padding: 0;
     color: #ffffff;
     position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 body::before {
     content: '';
     position: fixed;
-    top: -5px; /* Estende leggermente oltre i bordi */
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    width: calc(100% + 10px); /* Compensazione per i bordi */
-    height: calc(100% + 10px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
     background-image: url('images/background/draft.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(8px);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    filter: blur(8px) brightness(0.7);
+    transform: scale(1.1);
     z-index: -1;
 }
 
