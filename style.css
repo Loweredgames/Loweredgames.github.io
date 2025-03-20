@@ -5,7 +5,7 @@
    - Layout di base
 =================================== */
 body {
-    font-family: 'Minecraft', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -894,4 +894,57 @@ footer {
     border: none;
     border-top: 2px solid #2d2d2d;
     width: 100%;
+}
+
+.discord-button.alt {
+    background-color: #5865F2;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.discord-button.alt:hover {
+    background-color: #4752C4;
+}
+
+.discord-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: rgba(26, 26, 26, 0.9);
+    margin: 2rem 0;
+}
+
+.discord-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.discord-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #4758c4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.discord-button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #0e1ba5;
+}
+
+.discord-button:hover img {
+    transform: scale(1.2);
+    opacity: 1;
 }
