@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Meta tags per SEO e responsività -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    
+    <!-- Collegamenti a fogli di stile e font -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="translate.js"></script>
+</head>
+<body>
+    <!-- Header con titolo principale -->
+    <header>
+        <h1>Loweredgames Changelog Maps</h1>
+        <nav>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <!-- Sezione hero con descrizione -->
+            <section class="hero">
+                <h2>Benvenuto nella mia Custom Map</h2>
+                <p>Un'avventura unica nel mondo di Minecraft...</p>
+            </section>
+
+            <!-- Griglia dei changelog -->
+            <section class="changelog-list">
+                <h2>Changelogs:</h2>
+                <div class="changelog-controls">
+                    <input type="text" 
+                           id="search-changelog" 
+                           placeholder="Cerca nei changelog..."
+                           onkeyup="searchChangelogs(this.value)">
+                    <div class="tag-filters">
+                    <!-- Aggiungere nuovi tag qui -->
+                        <button class="tag-filter active" data-tag="all">Tutti</button>
+                        <button class="tag-filter" data-tag="lts">Lts</button>
+                        <button class="tag-filter" data-tag="stable">Stable</button>
+                        <button class="tag-filter" data-tag="release-candidate">Release-Candidate</button>
+                        <button class="tag-filter" data-tag="pre-release">Pre-Release</button>
+                        <button class="tag-filter" data-tag="building">Building</button>
+                        <button class="tag-filter" data-tag="website">Website-Update</button>
+                        <button class="tag-filter" data-tag="changelog-doc">Changelog-Doc</button>
+                    </div>
+                </div>
+                <div id="changelog-grid" class="changelog-grid">
+                    <!-- I changelog verranno caricati qui -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar con link ai progetti -->
+        <aside class="sidebar">
+            <h2>I Miei Progetti Vari:</h2>
+            <ul class="project-links">
+                <li>
+                    <a href="https://simple-default-texturepack.blogspot.com/">Simple Default - My Resources pack</a>
+                </li>
+                <li>
+                    <a href="https://prototypemaps.blogspot.com/">Prototype Maps</a>
+                </li>
+                <li>
+                    <a href="https://uberrex-studio-changelog.blogspot.com/">Videogames</a>
+                </li>
+            </ul>
+
+            <h2>Calendario:</h2>
+            <!-- Il calendario verrà generato automaticamente qui -->
+            <div class="changelog-calendar">
+            </div>
+            
+            <!-- Archivio Changelog -->
+            <h2>Archivio Changelog:</h2>
+            <ul class="project-links">
+                <li>
+                    <a href="https://web.archive.org/web/20250228193414/https://minecraft-map-building-versions.blogspot.com/2025/01/je-1211211-600-skyblockclassicedition600.html">6.0.0 Ultima Versione</a>
+                </li>
+                <li>
+                    <a href="https://minecraft-map-building-versions.blogspot.com/">Old Website Changelog</a>
+                </li>
+                <li>
+                    <a href="https://web.archive.org/web/20250228185931/https://minecraft-map-building-versions.blogspot.com/">Old Website Changelog Archivio</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer con copyright e Link-->
+    <footer>
+        <div class="footer-content">
+            <h3>Link:</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Loweredgames/" class="social-icon" title="GitHub">
+                    <img src="images/social_logo/Github.png" alt="GitHub">
+                </a>
+                <a href="https://modrinth.com/user/Loweredgames/" class="social-icon" title="Modrinth">
+                    <img src="images/social_logo/Modrinth.png" alt="Modrinth">
+                </a>
+                <a href="https://www.planetminecraft.com/member/loweredgames/" class="social-icon" title="PlanetMinecraft">
+                    <img src="images/social_logo/PlanetMinecraft.png" alt="PlanetMinecraft">
+                </a>
+                <a href="https://www.curseforge.com/members/loweredgamesdev/projects/" class="social-icon" title="CurseForge">
+                    <img src="images/social_logo/CursedForge.png" alt="CurseForge">
+                </a>
+                <a href="https://smithed.net/Loweredgames/" class="social-icon" title="Smithed">
+                    <img src="images/social_logo/Smithed.png" alt="Smithed">
+                </a>
+                <a href="https://discord.gg/T6PHxhznJ6" class="social-icon" title="Discord">
+                    <img src="images/social_logo/Discord.png" alt="Discord">
+                </a>
+                <a href="https://crowdin.com/profile/" class="social-icon" title="Crowdin">
+                    <img src="images/social_logo/Crowdin.png" alt="Crowdin">
+                </a>
+            </div>
+            <p>&copy; 2024 La Tua Custom Map. Tutti i diritti riservati.</p>
+            <i>Ultimo Aggiornamento: 15.03.2025 - 19:17</i>
+        </div>
+    </footer>
+
+    <!-- Script per caricare i changelog -->
+    <script src="changelog-loader.js"></script>
+    
+    <!-- Script per il cambio sfondo -->
+    <script>
+        function updateBackground() {
+            const hour = new Date().getHours();
+            const body = document.body;
+            
+            // Rimuovi tutte le classi precedenti
+            body.classList.remove('morning', 'afternoon', 'evening', 'night');
+            
+            // Aggiungi la classe appropriata in base all'ora
+            if (hour >= 6 && hour < 12) {
+                body.classList.add('morning');
+            } else if (hour >= 12 && hour < 17) {
+                body.classList.add('afternoon');
+            } else if (hour >= 17 && hour < 20) {
+                body.classList.add('evening');
+            } else {
+                body.classList.add('night');
+            }
+        }
+
+        // Aggiorna lo sfondo all'avvio
+        updateBackground();
+        
+        // Aggiorna lo sfondo
+        setInterval(updateBackground, 60);
+    </script>
+</body>
+</html>
