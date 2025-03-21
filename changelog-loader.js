@@ -221,7 +221,7 @@ function createChangelogCard(changelog) {
         </div>
         ${tagsHtml}
         <h3 title="${changelog.title}">${truncateText(changelog.title)}</h3>
-        <p class="date">${changelog.date}</p>
+        <p class="date">\u{1F4C5} ${changelog.date}</p>
         ${changelog.description ? `<p class="description">${truncateText(changelog.description, 100)}</p>` : ''}
         ${maintenanceHtml}
     `;
