@@ -3,6 +3,15 @@ window.changelogList = [
 
 
 // Post Rilasciati
+    
+    {
+        title: 'Nuova Era!',
+        date: '???',
+        image: 'images/drafts/draft.png',
+        file: 'Website/benvenuti.md',
+        tags: ['website','drafts'],
+        visible: false
+    },
     {
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
         date: '22.02.2025',
@@ -121,7 +130,7 @@ window.changelogList = [
 // Drafts Template
     {
         title: 'Draft',
-        date: '',
+        date: '???',
         image: 'images/drafts/draft.png',
         file: 'drafts/draft.md',
         tags: ['drafts'],
