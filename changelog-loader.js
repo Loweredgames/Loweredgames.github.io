@@ -10,7 +10,7 @@ window.changelogList = [
         image: 'images/drafts/draft.png',
         file: 'Website/benvenuti.md',
         tags: ['website','drafts'],
-        visible: false
+        visible: true
     },
     {
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
