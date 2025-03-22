@@ -1018,6 +1018,53 @@ footer {
     .comments-section {
         padding: 1rem;
     }
+
+    /* Rimuove spazi bianchi laterali */
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    /* Regolazioni sezioni principali */
+    .hero, 
+    .features, 
+    .changelog,
+    .changelog-list {
+        margin: 1rem 0;
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+    /* Regolazioni sidebar */
+    .sidebar {
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    /* Regolazioni griglia changelog */
+    .changelog-grid {
+        margin: 1rem 0;
+    }
+
+    .changelog-card {
+        margin: 0.5rem 0;
+        border-radius: 4px;
+    }
+
+    /* Ottimizza spazi commenti */
+    .comments-section {
+        padding: 1rem;
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1045,5 +1092,31 @@ footer {
     .changelog p, .changelog li {
         font-size: 0.95rem;
         line-height: 1.4;
+    }
+
+    /* Rimuove completamente i margini laterali */
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Regolazioni header per dispositivi molto piccoli */
+    header {
+        padding: 1rem;
+    }
+
+    /* Regolazioni contenuti */
+    .hero, 
+    .features, 
+    .changelog,
+    .changelog-list {
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    /* Ottimizza spazi interni */
+    .changelog-controls {
+        padding: 0 1rem;
     }
 }
