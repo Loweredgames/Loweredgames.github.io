@@ -1065,6 +1065,42 @@ footer {
         padding: 1rem;
         margin: 0;
     }
+
+    /* Rimuove tutti i margini e padding */
+    .container, 
+    .main-content, 
+    .hero, 
+    .features, 
+    .changelog, 
+    .changelog-list,
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        width: 100%;
+    }
+
+    /* Aggiunge padding interno solo dove necessario */
+    .hero, 
+    .features, 
+    .changelog, 
+    .changelog-list {
+        padding: 1rem;
+    }
+
+    /* Rimuove bordi arrotondati dalle cards */
+    .changelog-card {
+        border-radius: 0;
+        margin: 0.5rem 0;
+    }
+
+    /* Sistema il layout della griglia */
+    .changelog-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1118,5 +1154,26 @@ footer {
     /* Ottimizza spazi interni */
     .changelog-controls {
         padding: 0 1rem;
+    }
+
+    /* Rimuove completamente tutti i margini e padding */
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 1rem 0;
+    }
+
+    .hero, 
+    .features, 
+    .changelog, 
+    .changelog-list,
+    .sidebar {
+        border: none;
+        border-radius: 0;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
     }
 }
