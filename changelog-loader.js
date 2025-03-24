@@ -17,7 +17,7 @@ window.changelogList = [
         date: '22.02.2025',
         image: 'images/posts/SkyblockCE_1.21.4/devlatest.png',
         file: 'SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-22.02.2025a.md',
-        tags: ['building','drafts'],
+        tags: ['building'],
         visible: true
     },
     {
