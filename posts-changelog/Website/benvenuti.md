@@ -17,11 +17,11 @@ Qui ci saranno log delle modifiche vari, novità sui miei progetti e novità sul
 Adesso che ho la possibilità di aggiungere molti contenuti, _tra cui video_, posso iniziare a postare anche altre cose non relative esclusivamente alle mie mappe ma anche a Minecraft in se. 
 non ci saranno sempre ma voglio iniziare ha fare blog su Minecraft pre-impostati, o opinioni, o curiosita al gioco.
 
-**Ad Esempio:** oggi, 22 Marzo 2025 nel momento della scrittura di questo blog, c'è stato il [Minecraft Live](https://www.minecraft.net/it-it/article/minecraft-live-2025-recap), evento dove vengono presentate le novità future di Minecraft. 
+**Ad Esempio:** il 22 Marzo 2025, nel momento della scrittura di questo blog, c'è stato il [Minecraft Live](https://www.minecraft.net/it-it/article/minecraft-live-2025-recap), evento dove vengono presentate le novità future di Minecraft. 
 
 Sono super contento che aggiungerano le Shader native al gioco e spero che si potranno personalizzare, secondo me si, e forse le includero nelle mie altre mappe. forse gia nella Voidblock? _ex: Skyblock Classic Edition_ forse...? 🧐
 
-comunque vi invito a visitare il mio [about](https://loweredgames.github.io/about) se volete altre informazioni sulla mia storia o altre info e ha scrivermi qui sotto se avete dei dubbi. 
+comunque vi invito a visitare il mio [about](https://loweredgames.github.io/about) se volete altre informazioni sulla mia storia o altre info e ha scrivermi qui sotto se avete dei dubbi. vi inivito anche ha premere il pulsante di Google qui in alto per tradure le pagine automaticamente, per il momento ci sono queste lingue disponibili.
 
 Il mio sito a anche una sezione commenti per ogni post che viene creato e pubblicato. Per chi è curiosamente tecnico è stato fatto grazie a [Giscus](https://giscus.app/).
 

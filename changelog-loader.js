@@ -6,10 +6,10 @@ window.changelogList = [
     
     {
         title: 'Nuova Era!',
-        date: '???',
+        date: '24.03.2025',
         image: 'images/posts/Website2025/welcome!.png',
         file: 'Website/benvenuti.md',
-        tags: ['website','drafts'],
+        tags: ['website','minecraft-news'],
         visible: true
     },
     {
@@ -145,7 +145,7 @@ window.changelogList = [
         title: 'Changelog Template', // Titolo visualizzato
         image: 'images/posts/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
-        tags: ['lts','stable','release-candidate','pre-release','building','website','changelog-doc','drafts'], // Aggiunti i tag
+        tags: ['lts','stable','release-candidate','pre-release','building','website','minecraft-news','changelog-doc','drafts'], // Aggiunti i tag
         visible: true,
         maintenanceVersions: [
             {

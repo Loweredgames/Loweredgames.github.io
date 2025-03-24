@@ -330,6 +330,10 @@ main {
     background: #6d4bc8; /* Tag per gli aggiornamenti al sito web o altro */
 }
 
+.tag.minecraft-news {
+    background: #0b589c; /* Tag per gli aggiornamenti del mondo di Minecraft */
+}
+
 .tag.more-tags {
     background: #4a4a4a;
     font-size: 0.7rem;
