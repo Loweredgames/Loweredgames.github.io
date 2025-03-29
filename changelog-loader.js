@@ -3,7 +3,14 @@ window.changelogList = [
 
 
 // Post Rilasciati
-    
+    {
+    title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:PRE-RELEASE 1',
+    date: '29.03.2025',
+    image: 'images/posts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-pre1.png',
+    file: 'SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
+    tags: ['pre-release'],
+    visible: true
+    },
     {
         title: 'Nuova Era!',
         date: '24.03.2025',
@@ -69,14 +76,6 @@ window.changelogList = [
 
 
 // Post in Lavorazione (drafts)
-    {
-        title: 'SkyblockCE 1.21.4 TO DO Pre-Release 1 - Draft',
-        date: '???',
-        image: 'images/drafts/draft.png',
-        file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
-        tags: ['pre-release','drafts'],
-        visible: false
-    },
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
