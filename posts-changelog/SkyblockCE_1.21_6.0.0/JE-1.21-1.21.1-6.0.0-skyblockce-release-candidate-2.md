@@ -1,13 +1,3 @@
-## Changed
-
-# _misc and other:_
-
-- riunificata la versione portable alla versione principale:
-- - questo non avrà alcun effetto tranne la numerazione che sarà la stessa della versione principale
-- - - è stato fatto per risparmiare tempo nel rilascio delle versioni e per una facilita.
-
-> _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
-
-**Full Changelog**: https://github.com/Loweredgames/Skyblock-Classic-Edition/compare/1.21_JE-2a...1.21_JE-3a
-
-[**Download**](https://github.com/Loweredgames/Skyblock-Classic-Edition/releases/download/1.21_JE-3a/Skyblock.Classic.Edition.zip)
+version https://git-lfs.github.com/spec/v1
+oid sha256:16bbadad98aeca81cef9a06609d7b71d0ae6f2888cb962edc9c0d983209691d5
+size 642

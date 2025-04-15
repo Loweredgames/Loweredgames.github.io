@@ -4,12 +4,12 @@ window.changelogList = [
 
 // Post Rilasciati
     {
-        title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:RELEASE-CANDIDATE 1',
-        date: '???',
+        title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:6.1.0',
+        date: '15.04.2025',
         image: 'images/posts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-pre1.png',
-        file: 'drafts/SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce-rc1.md',
-        tags: ['release-candidate','drafts'],
-        visible: false
+        file: 'SkyblockCE_1.21.4_6.1.0/je-1.21.4-6.1.0-skyblockce.md',
+        tags: ['stable'],
+        visible: true
     },
     {
     title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:PRE-RELEASE 1',

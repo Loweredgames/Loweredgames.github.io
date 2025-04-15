@@ -1,25 +1,3 @@
-## Highlights
-
-(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- aggiungere punti salienti nella versione
-
-## Added
-
-# _worlds and maps:_
-
-- aggiunte nuove mappe e miglioramenti vari
-
-## Changed
-
-# _functions and datapack:_
-
-- refactoring su tutto
-- aggiornato alla 1.19.4 (per il mometo rimarra in questa versione)
-- - aggiornato al pack 12 nel datapack e il resource pack a 13
-- - riordinate le funzioni
-
-> _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
-
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+version https://git-lfs.github.com/spec/v1
+oid sha256:79e005d015e9e9dfb54a4aa25010513509359cc6c46339383663b2662bff4d3e
+size 667
