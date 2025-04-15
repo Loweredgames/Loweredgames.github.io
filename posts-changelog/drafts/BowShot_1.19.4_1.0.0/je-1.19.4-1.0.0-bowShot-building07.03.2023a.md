@@ -1,18 +1,3 @@
-## Highlights
-
-(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- aggiungere punti salienti nella versione
-
-## Changed
-
-# _misc and other:_
-
-- migliorari i commenti nelle funzioni e migliorate le funzioni
-- >-----------------aggiornate le decorazioni nella mappa e miglioramenti vari
-- aggiornato alla 1.19.4
-
-> _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
-
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+version https://git-lfs.github.com/spec/v1
+oid sha256:67e199cf51f24db6857dc16db7720ab6f91d7d38f18854c135804f4c3e384639
+size 562

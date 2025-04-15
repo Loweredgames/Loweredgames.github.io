@@ -1,18 +1,3 @@
-## Highlights
-
-(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- aggiungere punti salienti nella versione
-
-## Added
-
-# _misc and other:_
-
-- rifatto tutto di nuovo (questa sara l'ultima volta)
-- adesso la mappa si chiamera Dimension Infinity
-- molte correzioni e migliormanenti in tutta la mappa e il mondo in se
-
-> _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
-
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+version https://git-lfs.github.com/spec/v1
+oid sha256:7eb3c88965be1bca4c06a7698cd0d4d91113782c1e48357eabe82c5bb537b1bd
+size 566
