@@ -1,7 +1,7 @@
 ## Highlights
 - ####Rebranding da Skyblock Classic Edition a Voidblock [#391](https://github.com/Loweredgames/Voidblock/pull/391)
 - - leggere il post sul vlog per [informazioni](https://minecraft-map-building-versions.blogspot.com/2025/03/migrazione-al-nuovo-sito-web.html)
-- 
+- t
 
 
 ## Added
