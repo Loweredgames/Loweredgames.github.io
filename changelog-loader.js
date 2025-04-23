@@ -4,6 +4,14 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:BUILDING:23.04.2025a',
+        date: '23.04.2025',
+        image: 'images/posts/Voidblock_1.21.X_7.0.0/2024-09-23_11.21.46.png',
+        file: 'Voidblock_1.21.5_7.0.0/voidblock_1.21.5_7.0.0_building-23.04.2025.md',
+        tags: ['building'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:6.1.0',
         date: '15.04.2025',
         image: 'images/posts/SkyblockCE_1.21.4/je-1.21.4-6.1.0-skyblockce-building-pre1.png',
@@ -84,14 +92,6 @@ window.changelogList = [
 
 
 // Post in Lavorazione (drafts)
-    {
-        title: '1.21.5 Voidblock - Draft',
-        date: '???',
-        image: 'images/drafts/draft.png',
-        file: 'Voidblock_1.21.5_7.0.0/voidblock_1.21.5_7.0.0_building-.md',
-        tags: ['building','drafts'],
-        visible: true
-    },
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',

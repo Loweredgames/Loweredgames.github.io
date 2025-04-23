@@ -25,7 +25,7 @@ _Grazie a tutti._
 
 - separata la versione hardcore da quella main
 - - da adesso si potra scaricare a parte
-- aggiornate le traduzioni [#399](https://github.com/Loweredgames/Voidblock/pull/399)
+- _______________________________________aggiornate le traduzioni [#399](https://github.com/Loweredgames/Voidblock/pull/399)
 - aggiornati i link e il logo con le icone
 
 ## Removed
@@ -39,6 +39,6 @@ _Grazie a tutti._
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.4_JE-0...1.21.5_JE-0a
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.5_JE-0a)
