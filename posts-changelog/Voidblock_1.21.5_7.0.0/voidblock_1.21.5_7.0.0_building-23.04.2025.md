@@ -25,7 +25,7 @@ _Grazie a tutti._
 
 - separata la versione hardcore da quella main
 - - da adesso si potra scaricare a parte
-- _______________________________________aggiornate le traduzioni [#399](https://github.com/Loweredgames/Voidblock/pull/399)
+- aggiornate le traduzioni [#399](https://github.com/Loweredgames/Voidblock/pull/399)
 - aggiornati i link e il logo con le icone
 
 ## Removed
