@@ -88,7 +88,7 @@ window.changelogList = [
         title: '1.21.5 Voidblock - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/draft.md',
+        file: 'Voidblock_1.21.5_7.0.0/voidblock_1.21.5_7.0.0_building-.md',
         tags: ['building','drafts'],
         visible: true
     },
