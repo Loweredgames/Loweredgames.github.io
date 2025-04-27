@@ -12,6 +12,7 @@
 - aggiunta la versione 1.21.5 ([Spring to Life](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-5)) [#402](https://github.com/Loweredgames/Voidblock/pull/402)
 - - è stata mantenuta la compatibilità per la 1.21/1.21.2/1.21.3/1.21.4
 - - aggiornate le isole e le strutture nella 1.21.5
+- - - aggiunte le nuove piante nelle isole/strutture, anche quelle predefinite
 
 ## Changed
 
@@ -38,6 +39,7 @@
 # _misc and other_:
 
 - l'area_effect_cloud entity è stata rimossa completamente. datto che l'effetto nella 1.21.5 persiste ho deciso di rimuoverlo completamente, anche per migliorare le prestazioni.
+- - questa cosa non dovrebbe cambiare la generazione delle isole/strutture (l'avevo messo per sicurezza).
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
