@@ -4,6 +4,7 @@
 
 - aggiunta la versione 1.21.5 ([Spring to Life](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-5)) [#402](https://github.com/Loweredgames/Voidblock/pull/402)
 - separate le funzioni nelle versioni
+- risolti diversi problemi
 
 ## Added
 
@@ -23,12 +24,19 @@
 - - in generale il datapack capisce in quale versione di Minecraft sei, come la 1.21,
 - - - i testi popup dove mostrano le versioni come il pvn, da adesso mostrano la versione corrente e non piu tutte le versioni disponibili, quindi sara tutto piu facile da capire,
 - - questa modifica non riflette il PID o alcune funzioni interne che rimangono nel ```data```.
-- - - i popup sono stati anche aggiornati nella 1.21.5 a causa dei cambiamenti interni del testo. piccola modifica al link Modrinth che adesso a un proprio link fasullo e che verra modificato in futuro.
-- - spostate alcune funzioni: 
+- - - i popup sono stati aggiornati nella 1.21.5 a causa dei cambiamenti interni del testo. piccola modifica al link Modrinth che adesso a un proprio link fasullo e che verra modificato in futuro.
+- - spostate alcune funzioni:
 - - - la wall_texts_sign che si trova su ```structures``` cartella,
 - - - la mc(versione di Minecraft) che si trova su ```versions``` cartella,
 
 ## Fixed
+
+# _worlds and maps_:
+
+- risolto il problema dello spawn dell'isola Pale Garden [#388](https://github.com/Loweredgames/Voidblock/issues/388)
+- - il problema è che la frequenza dell'isola che era troppo alta rendendo l'isola impossibile da generare. da adesso l'isola spawna con una separazione di 8
+- - è stata anche separata la stutture set
+- - - fatto il porting anche nella 1.21.4
 
 # _functions and datapack_:
 
