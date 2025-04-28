@@ -11,7 +11,10 @@
 # _functions and datapack_:
 
 - aggiunta la versione 1.21.5 ([Spring to Life](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-5)) [#402](https://github.com/Loweredgames/Voidblock/pull/402)
-- - è stata mantenuta la compatibilità per la 1.21/1.21.2/1.21.3/1.21.4
+- - aggiornato da 48 a 71
+- - - aggiunto overlay per la 1.21.5
+- - - nel resources pack da 34 a 55
+- - - - è stata mantenuta la compatibilità per la 1.21/1.21.2/1.21.3/1.21.4
 - - aggiornate le isole e le strutture nella 1.21.5
 - - - aggiunte le nuove piante nelle isole/strutture, anche quelle predefinite
 
@@ -28,6 +31,14 @@
 - - spostate alcune funzioni:
 - - - la wall_texts_sign che si trova su ```structures``` cartella,
 - - - la mc(versione di Minecraft) che si trova su ```versions``` cartella,
+
+# _custom structures:_
+
+- aggiornato il mondo alla 1.21.5
+- aggiunte le nuove piante nelle isole/strutture, anche quelle predefinite
+- - l'isola di sabbia da adesso avrà il fiore di cactus invece del muschio sopra
+- - aggiunto la rosa del wither nell'isola very small
+- - aggiunto cespuglio di lucciole nel loot della struttura Swamp Hut
 
 ## Fixed
 
