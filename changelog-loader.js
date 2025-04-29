@@ -3,6 +3,15 @@ window.changelogList = [
 
 
 // Post Rilasciati
+    
+{
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:BUILDING:29.04.2025a',
+        date: '29.04.2025',
+        image: 'images/posts/Voidblock_1.21.X_7.0.0/29.04.2025.png',
+        file: 'Voidblock_1.21.5_7.0.0/voidblock_1.21.5_7.0.0_building29.04.2025a.md',
+        tags: ['building'],
+        visible: true
+    },
     {
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:BUILDING:23.04.2025a',
         date: '23.04.2025',
@@ -93,14 +102,6 @@ window.changelogList = [
 
 // Post in Lavorazione (drafts)
     
-    {
-        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:BUILDING:???? - Draft',
-        date: '???',
-        image: 'images/drafts/draft.png',
-        file: 'Voidblock_1.21.5_7.0.0/voidblock_1.21.5_7.0.0_building-.md',
-        tags: ['building','drafts'],
-        visible: true
-    },
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
