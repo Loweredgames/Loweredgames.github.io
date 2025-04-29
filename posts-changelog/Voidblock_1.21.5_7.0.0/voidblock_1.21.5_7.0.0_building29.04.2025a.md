@@ -64,4 +64,4 @@
 
 **Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.5_JE-0a...1.21.5_JE-0b
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.5_JE-0b)
