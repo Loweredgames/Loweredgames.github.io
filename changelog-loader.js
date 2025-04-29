@@ -4,7 +4,7 @@ window.changelogList = [
 
 // Post Rilasciati
     
-{
+    {
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:BUILDING:29.04.2025a',
         date: '29.04.2025',
         image: 'images/posts/Voidblock_1.21.X_7.0.0/29.04.2025.png',
