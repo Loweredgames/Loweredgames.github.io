@@ -103,6 +103,14 @@ window.changelogList = [
 // Post in Lavorazione (drafts)
     
     {
+        title: '1.21.5 Pre 1 - Draft',
+        date: '???',
+        image: 'images/drafts/draft.png',
+        file: 'drafts/Voidblock_1.21.5_7.0.0/1.21.5pre1.md',
+        tags: ['pre-release','drafts'],
+        visible: true
+    },
+    {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
