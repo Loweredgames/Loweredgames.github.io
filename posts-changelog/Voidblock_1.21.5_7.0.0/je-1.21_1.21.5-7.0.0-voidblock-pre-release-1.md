@@ -25,10 +25,8 @@ _se trovate dei bug segnalateli nel mio Discord server [Qui](https://discord.gg/
 - - rimosso il link della versione portable in Github dato che non serve
 - rimosso del codice duplicato
 
-# _worlds and maps_:
-
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.5_JE-0b...1.21.5_JE-0c
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.5_JE-0c)

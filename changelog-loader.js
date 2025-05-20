@@ -5,6 +5,14 @@ window.changelogList = [
 // Post Rilasciati
     
     {
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:PRE-RELEASE 1',
+        date: '20.05.2025',
+        image: 'images/posts/Voidblock_1.21.X_7.0.0/pre1.png',
+        file: 'Voidblock_1.21.5_7.0.0/je-1.21_1.21.5-7.0.0-voidblock-pre-release-1.md',
+        tags: ['pre-release'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:BUILDING:29.04.2025a',
         date: '29.04.2025',
         image: 'images/posts/Voidblock_1.21.X_7.0.0/29.04.2025.png',
@@ -102,14 +110,6 @@ window.changelogList = [
 
 // Post in Lavorazione (drafts)
     
-    {
-        title: '1.21.5 Pre 1 - Draft',
-        date: '???',
-        image: 'images/drafts/draft.png',
-        file: 'drafts/Voidblock_1.21.5_7.0.0/1.21.5pre1.md',
-        tags: ['pre-release','drafts'],
-        visible: true
-    },
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
