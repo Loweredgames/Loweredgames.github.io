@@ -17,7 +17,7 @@ _Grazie a tutti._
 
 # _functions and datapack:_
 
-- aggiunto import per tutte le vecchie versioni legacy della mappa
+- aggiunto import per tutte le vecchie versioni legacy della mappa, compatibilità totale [#392](https://github.com/Loweredgames/Voidblock/issues/392)
 - - da adesso ci sarà una conversione veloce per tutti i pid legacy anche se stai convertendo in una versione obsoleta della mappa. questo è stato fatto per garantire la compatibilità universale, rimuovendo sempre i pid e rendendo sempre compatibile.
 - - - i vecchi mondi dovranno essere importati manualmente quando apri il mondo per la prima volta ma poi tutto funzionerà come prima, quindi basta che clicchi su ```Import``` quando decidi le isole all'inizio.
 
