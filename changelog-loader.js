@@ -5,7 +5,7 @@ window.changelogList = [
 // Post Rilasciati
     
     {
-        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 1 - Draft',
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 1',
         date: '27.05.2025',
         image: 'images/posts/Voidblock_1.21.X_7.0.0/Logo Voidblock 7.0.0.png',
         file: 'Voidblock_1.21.5_7.0.0/je-1.21_1.21.5-7.0.0-voidblock-rc1.md',
