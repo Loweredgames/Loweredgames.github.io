@@ -26,10 +26,10 @@ _<font color="red"><center>(aggiornare sempre la barra della bossbar)</center>_<
 - - per le multi versioni aggiungere un > nella sezione versioni di Minecraft: **_ESEMPIO: JE-1.20.1>1.20.6-2.1.0-Redstonecraft:BUILDING:03.12.2050a_**
 
 
-- **RELEASE_CANDIDATE**:(Nome Edizione JE o BE),(Versione di Minecraft),(Versione della mappa),(Nome progetto):RELEASE-CANDIDATE-(numero),(versione aggiuntiva)
+- **RELEASE_CANDIDATE**:(Nome Edizione JE o BE),(Versione di Minecraft),(Versione della mappa),(Nome progetto):RELEASE_CANDIDATE-(numero),(versione aggiuntiva)
 
 
-- **PRE_RELEASE**:(Nome Edizione JE o BE),(Versione di Minecraft),(Versione della mappa),(Nome progetto):PRE-RELEASE-(numero),(versione aggiuntiva)
+- **PRE_RELEASE**:(Nome Edizione JE o BE),(Versione di Minecraft),(Versione della mappa),(Nome progetto):PRE_RELEASE-(numero),(versione aggiuntiva)
 
 
 - **BUILDING**:(Nome Edizione JE o BE),(Versione di Minecraft),(Versione della mappa),(Nome progetto):BUILDING:(giorno,mese,anno,lettera correzioni),(versione aggiuntiva)
