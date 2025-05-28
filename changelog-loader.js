@@ -119,6 +119,14 @@ window.changelogList = [
 // Post in Lavorazione (drafts)
     
     {
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 2 - Draft',
+        date: '???',
+        image: 'images/posts/Voidblock_1.21.X_7.0.0/Logo Voidblock 7.0.0.png',
+        file: 'Voidblock_1.21.5_7.0.0/je-1.21_1.21.5-7.0.0-voidblock-rc2.md',
+        tags: ['release-candidate','drafts'],
+        visible: true
+    },
+    {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
