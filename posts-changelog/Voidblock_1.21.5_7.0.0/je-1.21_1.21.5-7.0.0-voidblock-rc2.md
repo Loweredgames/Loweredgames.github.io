@@ -22,11 +22,11 @@
 - - in futuro l'avviso della compatibilita verra rimosso
 - - per il momento non è tradotto
 
-## Fixed
+## Removed
 
-# _tags:_
+# _functions and datapack_:
 
-- 
+- rimosso il tag del libro delle strutture non piu usato nell'import
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
