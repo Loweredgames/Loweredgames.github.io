@@ -85,7 +85,7 @@ window.changelogList = [
         visible: true
     },
     {
-        title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.X_LTS Maintenance Update - LTS',
+        title: 'JE-1.20.6-7.0.X-Voidblock:5.3.X_LTS Maintenance Update - LTS',
         date: '29.12.2024',
         image: 'images/posts/LTS_latest.png',
         file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.X_LTS.md',
@@ -93,14 +93,14 @@ window.changelogList = [
         visible: true,
         maintenanceVersions: [
             {
-                version: '5.3.2_LTS???',
-                date: '',
+                version: '5.3.2_LTS - Draft',
+                date: '???',
                 file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.2_LTS.md',
-                visible: false
+                visible: true
             },
             {
-                version: '5.3.3_LTS???',
-                date: '',
+                version: '5.3.3_LTS - Draft',
+                date: '???',
                 file: 'SkyblockCE_1.20.6_5.3.0_LTS/5.3.3_LTS.md',
                 visible: false
             }

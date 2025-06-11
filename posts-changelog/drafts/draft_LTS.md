@@ -1,4 +1,4 @@
-## JE-1.20.6-7.0.X-Voidblock:5.3.3_LTS
+## [VERSIONE DA AGGIUNGERE]
 
 ![Aggiornamento di Manutenzione](images/posts/LTS_latest.png)
 
