@@ -3,7 +3,7 @@
 # _functions and datapack_:
 
 - separata la versione 1.21.6 e ripristino nel pack
-- risolti dei problemi <<<<<<<<<<<<<<<<<<<<<<<<TO DO DA FARE>>>>>>>>>>>>>>>>>>>>>>>>
+- risolti dei problemi
 
 # _langs_:
 
@@ -21,13 +21,14 @@
 
 - aggiunto nuovo avviso per avvertire che la sezione overlayer è ancora sperimentale
 - - in futuro l'avviso della compatibilita verra rimosso
-- - per il momento non è tradotto
+- - - per il momento non è tradotto
 
 ## Fixed
 
 # _functions and datapack_:
 
 - risolto un problema della funzione mc, le score loop non funzionavano per una svista. questo problema è stato risolto
+- piccolo problema nel pvn che veniva cancellata la precedente pvn
 
 ## Removed
 
@@ -37,6 +38,6 @@
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.5_JE-0d...1.21.5_JE-0e
 
 **Download** -> (ricordarsi di fare collegamento diretto in GitHub)
