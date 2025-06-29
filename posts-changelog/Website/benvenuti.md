@@ -6,7 +6,7 @@ Benvenuti al mio nuovo sito web, qui ci saranno gli ultimi aggiornamenti delle m
 
 Se non mi avete mai visto allora mi presento:
 
-![La mia Skin!](images/posts/Website2025/me.png "La mia Skin!")
+![La mia Skin!](images/posts/Website/me.png "La mia Skin!")
 
 Sono Loweredgames, un content creator veterano di Minecraft che crea contenuti come mappe o progetti da 14 anni, _anche se non o mai pubblicato tanto_. Sono molto bravo con l'aspetto tecnico del gioco come mcFunction, _il linguaggio script di Minecraft che viene usato dentro i blocchi di comando o le funzioni_, e i datapack. Grazie a questo creo "giochi dentro il gioco" è questo che mi piace definirlo.
 
@@ -33,6 +33,6 @@ _Scusate se ogni tanto ci saranno errori di scrittura._
 
 per finire un pò di nostalgia, chi mi dice che mappa è? 🙂
 
-![Notch Stone](images/posts/Website2025/notch_stone.png "Vi viene in mente qualcosa vedendo questa immagine?")
+![Notch Stone](images/posts/Website/notch_stone.png "Vi viene in mente qualcosa vedendo questa immagine?")
 
 _se non vi viene in mente niente allora non siete fan di Minecraft...no scherzo!_
