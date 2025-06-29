@@ -8,6 +8,6 @@
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: https://github.com/Loweredgames/Skyblock-Classic-Edition/compare/1.21_JE-2a...1.21_JE-3a
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21_JE-2a...1.21_JE-3a
 
-[**Download**](https://github.com/Loweredgames/Skyblock-Classic-Edition/releases/download/1.21_JE-3a/Skyblock.Classic.Edition.zip)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/download/1.21_JE-3a/Skyblock.Classic.Edition.zip)
