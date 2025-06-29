@@ -5,6 +5,14 @@ window.changelogList = [
 // Post Rilasciati
     
     {
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 2',
+        date: '16.06.2025',
+        image: 'images/posts/Voidblock_1.21.X_7.0.0/Logo Voidblock 7.0.0.png',
+        file: 'Voidblock_1.21.5_7.0.0/je-1.21_1.21.5-7.0.0-voidblock-rc2.md',
+        tags: ['release-candidate'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 1',
         date: '27.05.2025',
         image: 'images/posts/Voidblock_1.21.X_7.0.0/Logo Voidblock 7.0.0.png',
