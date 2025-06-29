@@ -104,7 +104,7 @@ window.changelogList = [
                 version: '5.3.2_LTS???',
                 date: '',
                 file: 'Voidblock/LTS_5.3.X/5.3.2_LTS.md',
-                visible: false
+                visible: true
             },
             {
                 version: '5.3.3_LTS???',

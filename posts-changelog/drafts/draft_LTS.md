@@ -1,6 +1,6 @@
 ## [VERSIONE DA AGGIUNGERE]
 
-![Aggiornamento di Manutenzione](images/posts/LTS_latest.png)
+![Aggiornamento di Manutenzione](images/posts/???/LTS_latest.png)
 
 ## Highlights
 
