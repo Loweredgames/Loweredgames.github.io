@@ -127,6 +127,14 @@ window.changelogList = [
 // Post in Lavorazione (drafts)
     
     {
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:7.0.0 - Draft',
+        date: '???',
+        image: 'images/posts/Voidblock/Logo Voidblock 7.0.0.png',
+        file: 'drafts/Voidblock/Voidblock7.0.0.md',
+        tags: ['stable','drafts'],
+        visible: true
+    },
+    {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
@@ -177,6 +185,7 @@ window.changelogList = [
 
 
 // Drafts Template
+
     {
         title: 'Draft',
         date: '???',
@@ -185,7 +194,6 @@ window.changelogList = [
         tags: ['drafts'],
         visible: false
     },
-
 
 // Changelog Template
     {
