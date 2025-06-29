@@ -8,7 +8,7 @@ window.changelogList = [
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 2',
         date: '16.06.2025',
         image: 'images/posts/Voidblock/Logo Voidblock 7.0.0.png',
-        file: 'Voidblock/je-1.21_1.21.5-7.0.0-voidblock-rc2.md',
+        file: 'posts-changelog/Voidblock/je-1.21_1.21.5-7.0.0-voidblock-rc2.md',
         tags: ['release-candidate'],
         visible: true
     },
