@@ -2,6 +2,9 @@ _Ciao ragazzi, finalmente ci siamo la 7.0.0 [Rebranding Update] è pronta per es
 _Grazie a tutti._
 
 ## Highlights
+
+# _functions and datapack:_
+
 - Rebranding da Skyblock Classic Edition a Voidblock [#391](https://github.com/Loweredgames/Voidblock/pull/391)
 - - leggere il post sul vlog per [informazioni](https://minecraft-map-building-versions.blogspot.com/2025/03/migrazione-al-nuovo-sito-web.html)
 - separata la versione hardcore da quella main
