@@ -5,6 +5,14 @@ window.changelogList = [
 // Post Rilasciati
     
     {
+        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:7.0.0',
+        date: '30.06.2025',
+        image: 'images/posts/Voidblock/Logo Voidblock 7.0.0.png',
+        file: 'drafts/Voidblock/Voidblock7.0.0.md',
+        tags: ['stable'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:RELEASE_CANDIDATE 2',
         date: '16.06.2025',
         image: 'images/posts/Voidblock/Logo Voidblock 7.0.0.png',
@@ -53,12 +61,12 @@ window.changelogList = [
         visible: true
     },
     {
-    title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:PRE-RELEASE 1',
-    date: '29.03.2025',
-    image: 'images/posts/Voidblock/je-1.21.4-6.1.0-skyblockce-building-pre1.png',
-    file: 'Voidblock/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
-    tags: ['pre-release'],
-    visible: true
+        title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:PRE-RELEASE 1',
+        date: '29.03.2025',
+        image: 'images/posts/Voidblock/je-1.21.4-6.1.0-skyblockce-building-pre1.png',
+        file: 'Voidblock/je-1.21.4-6.1.0-skyblockce-building-pre1.md',
+        tags: ['pre-release'],
+        visible: true
     },
     {
         title: 'Nuova Era!',
@@ -125,15 +133,7 @@ window.changelogList = [
 
 
 // Post in Lavorazione (drafts)
-    
-    {
-        title: 'JE-1.21>1.21.5-7.0.0-Voidblock:7.0.0 - Draft',
-        date: '???',
-        image: 'images/posts/Voidblock/Logo Voidblock 7.0.0.png',
-        file: 'drafts/Voidblock/Voidblock7.0.0.md',
-        tags: ['stable','drafts'],
-        visible: true
-    },
+
     {
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
