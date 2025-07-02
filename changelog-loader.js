@@ -77,6 +77,14 @@ window.changelogList = [
         visible: true
     },
     {
+        title: 'Migrazione al Nuovo Sito Web',
+        date: '24.03.2025',
+        image: 'images/posts/Website/alba.png',
+        file: 'Website/migrazione.md',
+        tags: ['website'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.4-6.1.0-Skyblock_Classic_Edition:BUILDING:22.02.2025a',
         date: '22.02.2025',
         image: 'images/posts/Voidblock/devlatest.png',
