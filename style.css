@@ -310,6 +310,10 @@ main {
     background: #28c413; /* Tag per gli Stable */
 }
 
+.tag.maintenance {
+    background: #19b48e; /* Tag per le Versioni di Manutenzione */
+}
+
 .tag.release-candidate {
     background: #ba08ba; /* Tag per le Release Candidate */
 }
