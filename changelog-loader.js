@@ -120,7 +120,7 @@ window.changelogList = [
         date: '29.12.2024',
         image: 'images/posts/Voidblock/LTS_latest.png',
         file: 'Voidblock/LTS_5.3.X/5.3.X_LTS.md',
-        tags: ['lts','stable'],
+        tags: ['lts','stable','maintenance'],
         visible: true,
         maintenanceVersions: [
             {
