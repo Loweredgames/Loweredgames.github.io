@@ -3,12 +3,19 @@ window.changelogList = [
 
 
 // Post Rilasciati
-    
+    {
+        title: 'JE-1.21>1.21.5-7.0.1-Voidblock:7.0.1',
+        date: '09.07.2025',
+        image: 'images/posts/Voidblock/7.0.1.png',
+        file: 'Voidblock/Voidblock7.0.1.md',
+        tags: ['stable','maintenance'],
+        visible: true
+    },
     {
         title: 'JE-1.21>1.21.5-7.0.0-Voidblock:7.0.0',
         date: '30.06.2025',
         image: 'images/posts/Voidblock/Logo Voidblock 7.0.0.png',
-        file: 'drafts/Voidblock/Voidblock7.0.0.md',
+        file: 'Voidblock/Voidblock7.0.0.md',
         tags: ['stable'],
         visible: true
     },
@@ -113,7 +120,7 @@ window.changelogList = [
         date: '29.12.2024',
         image: 'images/posts/Voidblock/LTS_latest.png',
         file: 'Voidblock/LTS_5.3.X/5.3.X_LTS.md',
-        tags: ['lts','stable'],
+        tags: ['lts','stable','maintenance'],
         visible: true,
         maintenanceVersions: [
             {
@@ -210,7 +217,7 @@ window.changelogList = [
         title: 'Changelog Template', // Titolo visualizzato
         image: 'images/posts/changelog.png',  // URL immagine
         description: 'Template per i changelog', // Aggiunto campo description
-        tags: ['lts','stable','release-candidate','pre-release','building','website','minecraft-news','changelog-doc','drafts'], // Aggiunti i tag
+        tags: ['lts','stable','maintenance','release-candidate','pre-release','building','website','minecraft-news','changelog-doc','drafts'], // Aggiunti i tag
         visible: true,
         maintenanceVersions: [
             {
