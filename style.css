@@ -30,24 +30,9 @@ body::before {
     filter: blur(8px) brightness(0.7);
     transform: scale(1.1);
     z-index: -1;
-    transition: background-image 10s ease;
-}
 
-/* Classi per i diversi momenti del giorno */
-body.morning::before {
-    background-image: url('images/background/background_morning.png');
-}
-
-body.afternoon::before {
-    background-image: url('images/background/background_day.png');
-}
-
-body.evening::before {
-    background-image: url('images/background/background_evening.png');
-}
-
-body.night::before {
-    background-image: url('images/background/background_night.png');
+    /* Immagine di sfondo, basta cambiare url */
+    background-image: url('images/background/Default/notch_mountain.png');
 }
 
 /* ===================================
