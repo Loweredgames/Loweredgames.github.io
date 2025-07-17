@@ -12,6 +12,7 @@ body {
     position: relative;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #1f1f1f; /* Colore di sfondo predefinito se l'immagine non viene caricata */
 }
 
 body::before {
@@ -27,27 +28,30 @@ body::before {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    filter: blur(8px) brightness(0.7);
+    filter: blur(3px) brightness(0.7);
     transform: scale(1.1);
     z-index: -1;
-    transition: background-image 10s ease;
+
+    /* Immagine di sfondo, basta cambiare url */
+    background-image: url('images/background/default/notch_mountain.png');
 }
 
-/* Classi per i diversi momenti del giorno */
-body.morning::before {
-    background-image: url('images/background/background_morning.png');
-}
-
-body.afternoon::before {
-    background-image: url('images/background/background_day.png');
-}
-
-body.evening::before {
-    background-image: url('images/background/background_evening.png');
-}
-
-body.night::before {
-    background-image: url('images/background/background_night.png');
+/* Effetto vignetta */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at center,
+        transparent 0%,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
 }
 
 /* ===================================
