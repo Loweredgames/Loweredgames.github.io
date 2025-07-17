@@ -12,6 +12,7 @@ body {
     position: relative;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #1f1f1f; /* Colore di sfondo predefinito se l'immagine non viene caricata */
 }
 
 body::before {
@@ -32,7 +33,25 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/Default/notch_mountain.png');
+    background-image: url('images/background/default/notch_mountain.png');
+}
+
+/* Effetto vignetta */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at center,
+        transparent 0%,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
 }
 
 /* ===================================
