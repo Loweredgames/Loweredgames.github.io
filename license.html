@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Meta tags per SEO e responsività -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loweredgames Changelog Maps - License</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="translate.js"></script>
+</head>
+<body>
+    <!-- Header con titolo principale e navigazione -->
+    <header>
+        <h1 onclick="window.location.href='index.html'">Loweredgames Changelog Maps</h1>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main>
+        <!-- Sezione licenza -->
+        <section class="hero">
+            <div class="license-content">
+                <h1>Custom Maps License - Loweredgames:</h1>
+
+                <p>This license applies to all custom Minecraft maps created by Loweredgames.</p>
+
+                <h3>1. PERMITTED USE:</h3>
+                <ul>
+                    <li>You may download, copy, modify, and play the maps for free, as long as they are open source and licensed under this license. I am not responsible for any modifications or distributions made to my maps by other unauthorized users.</li>
+                    <li>You may record videos and stream content while playing Loweredgames maps.</li>
+                    <li>You must share direct links to the official download pages or official Loweredgames map websites.</li>
+                </ul>
+
+                <h4>2. RESTRICTIONS:</h4>
+                <ul>
+                    <li>You may not redistribute the maps on other sites/platforms without permission from Loweredgames.</li>
+                    <li>You may not use the maps for commercial purposes, such as making the maps payable, linking to sites that require payment, placing them on the marketplace without permission, or doing anything else without permission from Loweredgames.</li>
+                    <li>You may not remove or alter the credits and references to the original author in this license or in my map files/folder.</li>
+                </ul>
+
+                <h4>3. CREDITS:</h4>
+                <ul>
+                    <li>All maps must retain the original credits to Loweredgames in the custom map files/folder.</li>
+                    <li>For video or streaming content, crediting Loweredgames as the creator is appreciated but optional.</li>
+                </ul>
+
+                <h4>4. MINECRAFT AND DISCLAIMER:</h4>
+                <ul>
+                    <li>Minecraft is a registered trademark of Mojang Studio (C) and Microsoft/Xbox Studio (C). Content created by mcfunction, datapacks, and resource packs are the property of Mojang Studio and Microsoft/Xbox Studio.</li>
+                    <li>My custom maps are content created by the Minecraft Java Edition community and are not affiliated with Mojang Studio or Microsoft, are considered third parties.</li>
+                    <li>Use of my maps must comply with the official Minecraft guidelines. Players automatically accept that they are playing with third-party content and that any damage or problem that may occur, such as a technical problem with the game or a defect in my maps, is the sole responsibility of the author, Loweredgames, for any damage resulting from the use of the Minecraft game or my custom maps.</li>
+                    <li>The maps are provided "as is" without any warranty of any kind. My maps are not software or a mod, but are content that works with the Minecraft game without Java modification.</li>
+                </ul>
+
+                <p>For any requests for unintended use or information regarding this license, please contact Loweredgames on social media or the Discord server.</p>
+
+                <p><em>Copyright (C) 2025 - Loweredgames</em></p>
+
+                <hr>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con copyright e Link-->
+    <footer>
+        <div class="footer-content">
+            <h3>Link:</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Loweredgames/" class="social-icon" title="GitHub">
+                    <img src="images/social_logo/Github.png" alt="GitHub">
+                </a>
+                <a href="https://modrinth.com/user/Loweredgames/" class="social-icon" title="Modrinth">
+                    <img src="images/social_logo/Modrinth.png" alt="Modrinth">
+                </a>
+                <a href="https://www.planetminecraft.com/member/loweredgames/" class="social-icon" title="PlanetMinecraft">
+                    <img src="images/social_logo/PlanetMinecraft.png" alt="PlanetMinecraft">
+                </a>
+                <a href="https://www.curseforge.com/members/loweredgamesdev/projects/" class="social-icon" title="CurseForge">
+                    <img src="images/social_logo/CursedForge.png" alt="CurseForge">
+                </a>
+                <a href="https://smithed.net/Loweredgames/" class="social-icon" title="Smithed">
+                    <img src="images/social_logo/Smithed.png" alt="Smithed">
+                </a>
+                <a href="https://crowdin.com/profile/" class="social-icon" title="Crowdin">
+                    <img src="images/social_logo/Crowdin.png" alt="Crowdin">
+                </a>
+            </div>
+            <p>&copy; <a href="license.html">Loweredgames Copyright</a> - Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Script per il cambio sfondo -->
+    <script>
+        function updateBackground() {
+            const hour = new Date().getHours();
+            const body = document.body;
+            
+            // Rimuovi tutte le classi precedenti
+            body.classList.remove('morning', 'afternoon', 'evening', 'night');
+            
+            // Aggiungi la classe appropriata in base all'ora
+            if (hour >= 6 && hour < 12) {
+                body.classList.add('morning');
+            } else if (hour >= 12 && hour < 17) {
+                body.classList.add('afternoon');
+            } else if (hour >= 17 && hour < 20) {
+                body.classList.add('evening');
+            } else {
+                body.classList.add('night');
+            }
+        }
+
+        // Aggiorna lo sfondo all'avvio
+        updateBackground();
+        
+        // Aggiorna lo sfondo
+        setInterval(updateBackground, 60);
+    </script>
+</body>
+</html>
