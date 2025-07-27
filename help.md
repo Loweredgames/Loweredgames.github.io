@@ -20,6 +20,10 @@
 
 > _**Risposta**: **Hai controllato se i comandi sono attivi nel mondo?** Questo accade perché i datapack richiedono un livello di sicurezza superiore a 1. Se non viene generato nulla e il mondo non ha comandi attivi, devi scaricare nuovamente la mappa e sostituire la mappa, eliminando quella precedente oppure attivando i comandi nel **level.dat**. Prima di creare il mondo, **controlla di attivare i comandi o, se ti trovi in un server, devi farlo usando il programma usato dal server**. Se non funziona, significa che stai usando una mod o un launcher di terze parti. Se usi una mod che modifica la generazione del mondo, probabilmente non funzionerà, quindi rimuovila e dovrebbe funzionare. Se usi il launcher controlla che tutti i jar delle mod sono aggiornate all'ultima versione o controlla le impostazioni del launcher. In caso di problemi guarda [il centro di assistenza del sito del launcher](https://support.modrinth.com/), forse riesci ha trovare una soluzione._
 
+# Domanda: I mob passivi si generano? e i mob ostili?
+
+> _**Risposta**: **tutti i mob si generano nella Voidblock**. Se non vedi nessun mob è probabile che le strutture generate creano questo problema, basta distruggere le strutture intorno e il problema dovrebbe risolversi. Minecraft poi ha una regola non mostrata, dove i mob spawnano in basso nel mondo. Potresti provare._
+
 # Domanda: Aiuto, non vedo niente. Solo lo schermo nero! È normale? Come posso risolvere?
 
 > _**Risposta**: Se vedi tutto lo schermo nero ma nella chat, premendo ```T``` di default, appare un messaggio in chat. significa che la mappa **funziona correttamente nel tuo mondo e non è un bug della mappa**._
