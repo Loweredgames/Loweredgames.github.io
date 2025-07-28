@@ -55,7 +55,7 @@
 
 # Domanda: Ci sono ricette personalizzate nella Voidblock? Come posso vederle?
 
-> _**Risposta**: Per vedere le ricette basta fare clic sul libro verde nel tuo inventario. Tutte le ricette personalizzate dovrebbero apparire, basta cercare le parole chiavi, come sabbia rossa. Se ciò non accade, puoi sempre cercare ricette. Le ricette vengono utilizzate solo per rinnovare alcune risorse e alcune potrebbero essere rimosse in futuro. Controlla sempre mantenendo aperto il libro delle ricette per essere sicuro cosa è cambiato, puoi sempre guardare la [wikipedia di Minecraft se non ti ricordi](https://minecraft.wiki/w/Crafting#Complete_recipe_list)._
+> _**Risposta**: **Per vedere le ricette basta fare clic sul libro verde nel tuo inventario**. Tutte le ricette personalizzate dovrebbero apparire in giro, basta cercare le parole chiavi, come "sabbia rossa". Se ciò non accade, puoi sempre cercare gli ingredienti per quella ricetta. Le ricette vengono utilizzate solo per far rinnovare alcune risorse e alcune ricette potrebbero essere rimosse in futuro. Controlla sempre mantenendo aperto il libro delle ricette per essere sicuro cosa è cambiato, puoi sempre guardare la [wikipedia di Minecraft se non ti ricordi](https://minecraft.wiki/w/Crafting#Complete_recipe_list)._
 
 # Domanda: Come si scarica la versione hardcore?
 
@@ -63,4 +63,4 @@
 
 # Domanda: Perché l'End è bloccato? Quando verrà sbloccato il l'End? l'End funziona nelle versioni precedenti della mappa Voidblock?
 
-> _**Risposta**: Sfortunatamente L'End è rotto ha causa di dei [bug seri](https://github.com/Loweredgames/Voidblock/issues/16), ho dovuto bloccarlo per non rompere nulla e non creare problemi. Lo riaprirò quando sarà risolto. Non so quando, non dipende da me ma da Mojang Studio. I mondi custom della 1.16 fino alla 1.18 sono **mondi sperimentali** e non sono ancora completi al 100%. In alcune versioni l'End era aperto, ma questo non significa che sia stato risolto, ti consiglio di non andare al The End o usare le versioni vecchie per risolvere il problema. Le vecchie versioni possono contenere bug o problemi che possono rompere il tuo mondo. Prima o poi L'End verrà risolto, basta avvere la pazienza 🍀._
+> _**Risposta**: Sfortunatamente L'End è rotto ha causa dei [bug seri](https://github.com/Loweredgames/Voidblock/issues/16), ho dovuto bloccarlo per non romperlo e non creare problemi. Lo riaprirò quando sarà risolto. Non so quando, non dipende da me, ma da Mojang Studio. I mondi custom della 1.16 fino alla 1.18 sono **mondi sperimentali** e non sono ancora completi al 100%. In alcune versioni l'End era aperto, ma questo non significa che sia stato risolto, ti consiglio di non andare al The End o usare le versioni vecchie per risolvere il problema. Le vecchie versioni possono contenere bug o problemi che possono rompere il tuo mondo. Prima o poi L'End verrà risolto, basta avvere pazienza 🍀._

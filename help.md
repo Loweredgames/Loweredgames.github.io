@@ -6,15 +6,15 @@
 
 > _**Risposta**: Se ci sono dei problemi con il tuo server o non riesci a capire alcune cose, come installare il server, puoi cercare sulla [wiki di Minecraft](https://minecraft.wiki/w/Server) o su [internet](https://www.google.com/search?q=minecraft+server+help&sxsrf=AE3TifNHPKXjYRIw2oEB5vv0Ab0_j66FXg%3A1753610481317). Se hai trovato qualcosa che danneggia la mappa, segnalalo sul [forum Discord](https://discord.gg/2WRSZsf4tC). **Purtroppo non posso aiutarti perché sono solo un creatore di mappe e non so molto di gestione dei server**. Mi occupo solo di comandi/funzioni/datapack e alcuni aspetti tecnici. **Questo non è un forum per i Server ma solo per le mie mappe**, Grazie._
 
-# Domanda: Questa mappa funziona su Realms?
+# Domanda: Le mappe funziona su Realms?
 
-> _**Risposta**: Non lo so, non ho mai fatto dei test. tecnicamente funziona._
+> _**Risposta**: Non lo so, non ho mai fatto dei test. tecnicamente funzionano._
 
 ### Problemi per la mappa Voidblock:
 
 # Domanda: Come faccio a installare la mappa su Aternos?
 
-> _**Risposta**: In caso di problemi con **Aternos**, puoi consultare il centro assistenza del [sito web](https://support.aternos.org/hc/en-us). Hanno anche creato dei video in cui spiegano come creare [un server in modo semplice e facile](https://www.youtube.com/@AternosORG/videos). **I problemi che potrebbero verificarsi non verranno risolti e questo non è un forum per Aternos**, quindi consiglio di utilizzare il centro di assistenza del sito. La mia mappa Voidblock dovrebbe tecnicamente supportare Aternos, a patto che i comandi siano attivi e il datapack e il resources pack sianno presenti nelle cartelle del mondo. Se ci sono errori, [segnalateli su Aternos](https://support.aternos.org/hc/en-us), Grazie._
+> _**Risposta**: In caso di problemi con **Aternos**, **puoi consultare il centro assistenza del [sito web](https://support.aternos.org/hc/en-us)**. Hanno anche creato dei video in cui spiegano come creare [un server in modo semplice e facile](https://www.youtube.com/@AternosORG/videos). **I problemi che potrebbero verificarsi non verranno risolti e questo non è un forum per Aternos**, quindi consiglio di utilizzare il centro di assistenza del sito. La mia mappa Voidblock dovrebbe tecnicamente supportare Aternos, a patto che i comandi siano attivi e il datapack e il resources pack sianno presenti nelle cartelle del mondo. Se ci sono errori, [segnalateli su Aternos](https://support.aternos.org/hc/en-us), Grazie._
 
 # Domanda: Aiuto, le isole/strutture non vengono generate nelle dimensioni o nel mondo. Come si fa?
 
@@ -22,7 +22,7 @@
 
 # Domanda: I mob passivi si generano? e i mob ostili?
 
-> _**Risposta**: **tutti i mob si generano nella Voidblock**. Se non vedi nessun mob è probabile che le strutture generate creano questo problema, basta distruggere le strutture intorno e il problema dovrebbe risolversi. Minecraft poi ha una regola non mostrata, dove i mob spawnano in basso nel mondo. Potresti provare._
+> _**Risposta**: **Tutti i mob si generano nella Voidblock**. Se non vedi nessun mob è probabile che le strutture generate creano questo problema, basta distruggere le strutture intorno e il problema dovrebbe risolversi. Minecraft poi ha una regola non mostrata, dove i mob spawnano in basso nel mondo. Potresti provare._
 
 # Domanda: Aiuto, non vedo niente. Solo lo schermo nero! È normale? Come posso risolvere?
 
@@ -51,4 +51,4 @@
 
 > _**Risposta**: **Per motivi di sicurezza alcune gamerules rimangono impostate come predefinite**, in modo che il mondo non venga danneggiato. Per abilitare o disabilitare le gamerules basta andare nel datapack, e cercare il file ```voidblock_setup.mcfunction```, il percorso varia dalle versioni ma è sempre il file principale e si trova subito all'inizio. All'interno del file ```voidblock_setup.mcfunction```, vai alla sezione delle gamerules e imposta o elimina tutte le gamerules che si desidera._
 
-__Se hai altre domande, pubblicale su Discord e aggiornero qui i problemi. Grazie mille 💯.__
+__Se hai altre domande, pubblicale su Discord e aggiornero qui i problemi. Grazie 💯.__
