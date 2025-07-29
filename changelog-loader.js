@@ -128,12 +128,6 @@ window.changelogList = [
                 date: '29.07.2025',
                 file: 'Voidblock/LTS_5.3.X/5.3.2_LTS.md',
                 visible: true
-            },
-            {
-                version: '5.3.3_LTS???',
-                date: '',
-                file: 'Voidblock/LTS_5.3.X/5.3.3_LTS.md',
-                visible: false
             }
         ]
     },
