@@ -124,8 +124,8 @@ window.changelogList = [
         visible: true,
         maintenanceVersions: [
             {
-                version: '5.3.2_LTS???',
-                date: '',
+                version: '5.3.2_LTS',
+                date: '29.07.2025',
                 file: 'Voidblock/LTS_5.3.X/5.3.2_LTS.md',
                 visible: true
             },
