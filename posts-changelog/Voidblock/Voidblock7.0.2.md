@@ -24,6 +24,7 @@
 - - molte correzzioni e miglioramenti minori nelle funzioni
 - - questa versione da adesso non sara piu supportata. attivato l'avviso obsoleto e versione di sviluppo
 > - - i mondi dei test rimangono come prima ma potrebbero verificarsi dei problemi gravi che non verranno risolti
+- spostata la funzione ```pvn_remove``` e ```pid_remove``` e resa globale nel ```data``` cartella
 
 # _misc and other_:
 
