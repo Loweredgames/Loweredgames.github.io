@@ -33,7 +33,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/desert/mesa.png');
+    background-image: url('images/posts/Voidblock/7.0.2.png');
 }
 
 /* Effetto vignetta */
