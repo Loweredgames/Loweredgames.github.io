@@ -1,9 +1,13 @@
+## Known Issue:
+
+- _il pack nel resources pack mostra che è incompatibile anche se funziona normalmente. verra risolto in futuro 👌._
+
 ## Highlights
 
 # _functions and datapack_:
 
 - aggiunta la 1.21.9 (Drop Estivo)
-- aggiornato il test alla nuova struttura
+- aggiornato il test alla nuova struttura del datapack [#419](https://github.com/Loweredgames/Voidblock/issues/419)
 
 # _misc and other_:
 
@@ -16,7 +20,7 @@
 - aggiunta la 1.21.9 (Drop Estivo)
 - - per il momento è in fase sperimentale (aggiornato all'ultimo snapshots, il 25w33a)
 - aggiornato il test alla nuova struttura del datapack:
-- - è stato fatto un grande refactoring con diversi cambiamenti e rimozioni alla logica
+- - è stato fatto un grande refactoring con diversi cambiamenti e rimozioni alla logica [#419](https://github.com/Loweredgames/Voidblock/issues/419)
 - - molte correzzioni e miglioramenti minori nelle funzioni
 - - questa versione da adesso non sara piu supportata. attivato l'avviso obsoleto e versione di sviluppo
 > - - i mondi dei test rimangono come prima ma potrebbero verificarsi dei problemi gravi che non verranno risolti
@@ -31,7 +35,8 @@
 # _misc and other_:
 
 - risolti dei problemi minori nei test
+- vari miglioramenti minori
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.6_JE-0...1.21.8_JE-0
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.8_JE-0)
