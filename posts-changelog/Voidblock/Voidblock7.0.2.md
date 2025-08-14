@@ -18,6 +18,7 @@
 # _functions and datapack_:
 
 - aggiunta la 1.21.9 (Drop Estivo)
+- - aggiornato alla 1.21.8, aggiornamento minore che risolve solo dei problemi. nessuna modifica
 - - per il momento è in fase sperimentale (aggiornato all'ultimo snapshots, il 25w33a)
 - aggiornato il test alla nuova struttura del datapack:
 - - è stato fatto un grande refactoring con diversi cambiamenti e rimozioni alla logica [#419](https://github.com/Loweredgames/Voidblock/issues/419)
@@ -28,7 +29,7 @@
 
 # _misc and other_:
 
-- aggiornato il pack.mcmeta al nuovo formato nel datapack e nel resources pack. adesso la [Voidblock supporta le versioni minori.](https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a)
+- aggiornato il ```pack.mcmeta``` al nuovo formato nel datapack e nel resources pack. adesso la [Voidblock supporta le versioni minori.](https://www.minecraft.net/en-us/article/minecraft-snapshot-25w31a)
 - aggiornata la [licenza della mappa](https://loweredgames.github.io/license.html) (verrà fatto anche nelle mie future mappe).
 
 ## Fixed
