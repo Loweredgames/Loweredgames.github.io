@@ -33,7 +33,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/posts/Voidblock/7.0.2.png');
+    background-image: url('images/background/nether/crimson_forest.png');
 }
 
 /* Effetto vignetta */
