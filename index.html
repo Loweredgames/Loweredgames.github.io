@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="translate.js"></script>
 </head>
-<body>
+<body class="index-page">
     <!-- Header con titolo principale -->
     <header>
         <h1>Loweredgames Changelog Maps</h1>
@@ -132,8 +132,47 @@
         </div>
     </footer>
 
+    <!-- Freccia laterale: torna in cima alla pagina -->
+    <a id="scroll-arrow" href="#" title="Torna all'inizio" aria-label="Torna all'inizio">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12l-8-8-8 8z" />
+        </svg>
+    </a>
+
     <!-- Script per caricare i changelog -->
     <script src="changelog-loader.js"></script>
+    <script>
+        (function(){
+            const arrow = document.getElementById('scroll-arrow');
+            const hero = document.querySelector('.hero');
+            const heroTitle = hero ? hero.querySelector('h2') : null;
+
+            if (!arrow) return;
+
+            function updateArrow() {
+                if (heroTitle) {
+                    const rect = heroTitle.getBoundingClientRect();
+                    const showWhenPx = 56;
+                    if (rect.bottom <= showWhenPx) arrow.classList.add('visible');
+                    else arrow.classList.remove('visible');
+                    return;
+                }
+
+                // fallback: mostra quando scroll > 120px
+                if ((window.pageYOffset || document.documentElement.scrollTop) > 120) arrow.classList.add('visible');
+                else arrow.classList.remove('visible');
+            }
+
+            window.addEventListener('scroll', updateArrow, { passive: true });
+            window.addEventListener('resize', updateArrow);
+            document.addEventListener('DOMContentLoaded', updateArrow);
+
+            arrow.addEventListener('click', function(e){
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
 
 </body>
 </html>
