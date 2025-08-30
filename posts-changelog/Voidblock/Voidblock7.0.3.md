@@ -16,6 +16,7 @@
 
 - aggiornato il titolo della 1.21.9 da "The Copper Age Drop"
 - - è ancora sperimentale la versione
+- - aggiornato il pack alla 85.0
 
 # _langs_:
 
@@ -29,7 +30,8 @@
 
 # _functions and datapack_:
 
-- risolto il problema nel pack del resources pack #########################################
+- risolto il problema nel pack del resources pack
+- - aggiornato alla 64 invece della 65 nel pack
 
 **Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
 
