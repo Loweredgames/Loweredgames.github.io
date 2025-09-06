@@ -4,8 +4,8 @@ window.changelogList = [
 
 // Post Rilasciati
     {
-        title: 'JE-1.21>1.21.9-7.0.3-Voidblock:7.0.3 - Draft',
-        date: '???',
+        title: 'JE-1.21>1.21.9-7.0.3-Voidblock:7.0.3',
+        date: '06.09.2025',
         image: 'images/posts/Voidblock/7.0.1.png',
         file: 'Voidblock/Voidblock7.0.3.md',
         tags: ['stable','maintenance'],
