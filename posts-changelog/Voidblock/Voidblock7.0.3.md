@@ -38,6 +38,6 @@
 - - aggiornato alla 64 versione minore invece della 65 nel pack
 - mi sono dimenticato di aggiornare i link esterni da ```voidblock``` nel progetto di Modrinth. questo problema è stato risolto quando aprite con la mod i link
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.8_JE-0...1.21.8_JE-1
 
 **Download** -> (ricordarsi di fare collegamento diretto in GitHub)
