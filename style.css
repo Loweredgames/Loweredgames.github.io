@@ -33,7 +33,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/nether/crimson_forest.png');
+    background-image: url('images/background/desert/desert_villager.png');
 }
 
 /* Effetto vignetta */
