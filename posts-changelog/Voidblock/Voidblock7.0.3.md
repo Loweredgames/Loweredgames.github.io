@@ -36,6 +36,7 @@
 
 - risolto il problema nel pack del resources pack
 - - aggiornato alla 64 versione minore invece della 65 nel pack
+- mi sono dimenticato di aggiornare i link esterni da ```voidblock``` nel progetto di Modrinth. questo problema è stato risolto quando aprite con la mod i link
 
 **Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
 
