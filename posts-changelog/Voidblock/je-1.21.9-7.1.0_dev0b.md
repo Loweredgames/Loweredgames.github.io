@@ -23,6 +23,6 @@
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**:
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.8_JE-1...1.21.9_JE-0b
 
-[**Download**]()
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.9_JE-0b)
