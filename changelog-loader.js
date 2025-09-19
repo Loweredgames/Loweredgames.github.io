@@ -4,6 +4,14 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'JE-1.21>1.21.9-7.1.0-Voidblock:BUILDING:19.09.2025a',
+        date: '19.09.2025',
+        image: 'images/posts/Voidblock/je-1.21.9-7.1.0_dev0.png',
+        file: 'Voidblock/je-1.21.9-7.1.0_dev0.md',
+        tags: ['building'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.9-7.0.3-Voidblock:7.0.3',
         date: '06.09.2025',
         image: 'images/posts/Voidblock/7.0.1.png',
