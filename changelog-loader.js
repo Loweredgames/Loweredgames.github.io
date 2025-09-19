@@ -9,7 +9,15 @@ window.changelogList = [
         image: 'images/posts/Voidblock/je-1.21.9-7.1.0_dev0.png',
         file: 'Voidblock/je-1.21.9-7.1.0_dev0.md',
         tags: ['building'],
-        visible: true
+        visible: true,
+        maintenanceVersions: [
+            {
+            version: 'JE-1.21>1.21.9-7.1.0-Voidblock:BUILDING:19.09.2025b',
+            date: '04.10.2000',
+            file: 'Voidblock/je-1.21.9-7.1.0_dev0b.md',
+            visible: true
+            }
+        ]
     },
     {
         title: 'JE-1.21>1.21.9-7.0.3-Voidblock:7.0.3',
