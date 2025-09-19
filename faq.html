@@ -28,10 +28,14 @@
             <div class="loading">Caricamento delle FAQ in corso...</div>
         </div>
 
-        <!-- Aggiungo il pulsante home -->
-        <div class="home-button-container">
-            <a href="index.html" class="home-button">Torna alla Home</a>
-        </div>
+        <!-- Freccia laterale: appare quando si scorre il contenuto -->
+    </main>
+
+    <a id="scroll-arrow" href="#" title="Torna all'inizio" aria-label="Torna all'inizio">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.59 5.58L20 12l-8-8-8 8z" />
+        </svg>
+    </a>
     </main>
 
     <!-- Sezione Discord -->
@@ -91,6 +95,8 @@
                 const htmlContent = marked.parse(markdownText);
                 
                 document.getElementById('faq-content').innerHTML = htmlContent;
+                // Notifica che il contenuto è stato inserito (usato dallo script della freccia)
+                document.dispatchEvent(new Event('changelog:loaded'));
             } catch (error) {
                 console.error('Errore:', error);
                 document.getElementById('faq-content').innerHTML = `
@@ -106,6 +112,56 @@
 
         // Carica le FAQ quando la pagina è pronta
         document.addEventListener('DOMContentLoaded', loadFAQ);
+    </script>
+    <script>
+        (function(){
+            const arrow = document.getElementById('scroll-arrow');
+            const content = document.getElementById('faq-content');
+            const postHeader = document.getElementById('post-header');
+
+            if (!arrow || !content) return;
+
+            function isContainerScrollable(el) { return el && el.scrollHeight > el.clientHeight; }
+
+            function updateArrow() {
+                const titleEl = postHeader ? postHeader.querySelector('.post-title') : null;
+                if (titleEl) {
+                    const titleRect = titleEl.getBoundingClientRect();
+                    const showWhenPx = 56;
+                    if (titleRect.bottom <= showWhenPx) arrow.classList.add('visible');
+                    else arrow.classList.remove('visible');
+                    return;
+                }
+
+                const threshold = 80;
+                if (isContainerScrollable(content)) {
+                    if (content.scrollTop > threshold) arrow.classList.add('visible');
+                    else arrow.classList.remove('visible');
+                    return;
+                }
+
+                const rect = content.getBoundingClientRect();
+                const pageOffset = window.pageYOffset || document.documentElement.scrollTop;
+                const contentTopAbsolute = rect.top + pageOffset;
+                if (pageOffset > (contentTopAbsolute + threshold)) arrow.classList.add('visible');
+                else arrow.classList.remove('visible');
+            }
+
+            content.addEventListener('scroll', updateArrow, { passive: true });
+            window.addEventListener('scroll', updateArrow, { passive: true });
+            window.addEventListener('resize', updateArrow);
+            document.addEventListener('changelog:loaded', updateArrow);
+
+            arrow.addEventListener('click', function(e){
+                e.preventDefault();
+                if (isContainerScrollable(content)) content.scrollTo({ top: 0, behavior: 'smooth' });
+                else window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            document.addEventListener('DOMContentLoaded', updateArrow);
+            const observer = new MutationObserver(() => updateArrow());
+            observer.observe(content, { childList: true, subtree: true });
+        })();
     </script>
 </body>
 </html>
