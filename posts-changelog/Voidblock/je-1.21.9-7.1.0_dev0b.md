@@ -18,6 +18,7 @@
 # _misc and other_:
 
 - risolto il link nel PVN
+- - mancava la lettera nel PVN. risolto mettendo b in ```PVN_0_mc1219b```
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
