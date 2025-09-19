@@ -13,7 +13,7 @@ window.changelogList = [
         maintenanceVersions: [
             {
             version: 'JE-1.21>1.21.9-7.1.0-Voidblock:BUILDING:19.09.2025b',
-            date: '04.10.2000',
+            date: '19.09.2025',
             file: 'Voidblock/je-1.21.9-7.1.0_dev0b.md',
             visible: true
             }
