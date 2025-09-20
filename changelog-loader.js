@@ -17,7 +17,8 @@ window.changelogList = [
             file: 'Voidblock/7.1.0/je-1.21.9-7.1.0_dev0b.md',
             visible: true
             }
-        ]
+        ],
+        useCorrectiveStyle: true
     },
     {
         title: 'JE-1.21>1.21.9-7.0.3-Voidblock:7.0.3',
@@ -252,7 +253,8 @@ window.changelogList = [
                 file: 'drafts/test.md',
                 visible: false
             }
-        ]
+        ],
+        useCorrectiveStyle: true
     }
 ];
 
@@ -302,9 +304,11 @@ function createChangelogCard(changelog) {
     let maintenanceHtml = '';
     if (changelog.maintenanceVersions && changelog.maintenanceVersions.length > 0) {
         const versionsToShow = changelog.maintenanceVersions.slice(0, 2);
+        const headerText = changelog.useCorrectiveStyle ? 'Versioni Correttive:' : 'Versioni di Manutenzione:';
+
         maintenanceHtml = `
             <div class="maintenance-versions">
-                <div class="maintenance-header">Versioni di manutenzione:</div>
+                <div class="maintenance-header">${headerText}</div>
                 <div class="maintenance-list">
                     ${versionsToShow.map(v => 
                         `<div class="maintenance-item">
