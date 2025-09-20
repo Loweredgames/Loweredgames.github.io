@@ -9,7 +9,7 @@ window.changelogList = [
         image: 'images/drafts/draft.png',
         file: 'Voidblock/7.1.0/je-1.21.9-7.1.0_dev1.md',
         tags: ['building','drafts'],
-        visible: false
+        visible: true
     },
     {
         title: 'JE-1.21>1.21.9-7.1.0-Voidblock:BUILDING:19.09.2025a',
