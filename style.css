@@ -111,6 +111,9 @@ main {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -152,6 +155,10 @@ main {
     border-radius: 8px;
     margin-top: 4rem;
     border: 2px solid #2d2d2d;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .changelog h2 {
@@ -461,6 +468,8 @@ main {
     display: block;
     margin: 1rem auto;
     border-radius: 4px;
+    object-fit: contain;
+    width: auto;
 }
 
 .changelog a {
@@ -716,6 +725,43 @@ footer {
     .sidebar {
         width: 100%;
         position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 0.5rem;
+    }
+
+    .changelog {
+        padding: 1rem;
+    }
+
+    .changelog img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .post-title {
+        font-size: 1.8rem;
+    }
+
+    .post-thumbnail {
+        margin: 0 -0.5rem 1.5rem;
+        border-radius: 0;
+    }
+
+    .changelog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
     }
 }
 
