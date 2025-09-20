@@ -27,6 +27,47 @@
         <div id="faq-content" class="changelog">
             <div class="loading">Caricamento delle FAQ in corso...</div>
         </div>
+        <script>
+            // Gestione delle immagini e video responsive
+            function handleMediaContent() {
+                // Gestione immagini
+                document.querySelectorAll('#faq-content img').forEach(img => {
+                    img.style.maxWidth = '100%';
+                    img.style.height = 'auto';
+                    img.loading = 'lazy';
+                    img.decoding = 'async';
+                });
+
+                // Gestione video
+                document.querySelectorAll('#faq-content video').forEach(video => {
+                    if (!video.parentElement.classList.contains('video-container')) {
+                        const container = document.createElement('div');
+                        container.className = 'video-container';
+                        video.parentNode.insertBefore(container, video);
+                        container.appendChild(video);
+                    }
+                });
+
+                // Gestione iframe video (es. YouTube)
+                document.querySelectorAll('#faq-content iframe').forEach(iframe => {
+                    if (iframe.src.includes('youtube.com') || iframe.src.includes('vimeo.com')) {
+                        if (!iframe.parentElement.classList.contains('video-container')) {
+                            const container = document.createElement('div');
+                            container.className = 'video-container';
+                            iframe.parentNode.insertBefore(container, iframe);
+                            container.appendChild(iframe);
+                        }
+                    }
+                });
+            }
+
+            // Osserva i cambiamenti del contenuto
+            const observer = new MutationObserver(handleMediaContent);
+            observer.observe(document.getElementById('faq-content'), { 
+                childList: true, 
+                subtree: true 
+            });
+        </script>
 
         <!-- Aggiungo il pulsante home -->
         <div class="home-button-container">

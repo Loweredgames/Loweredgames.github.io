@@ -109,7 +109,9 @@
                     <div class="post-thumbnail">
                         <img src="${metadata.image || defaultImage}" 
                              alt="${metadata.title}"
-                             onerror="this.src='${defaultImage}'">
+                             onerror="this.src='${defaultImage}'"
+                             loading="lazy"
+                             decoding="async">
                     </div>
                     <h1 class="post-title">${metadata.title}</h1>
                     <p class="post-date">\u{1F4C5} ${metadata.date}</p>
@@ -163,7 +165,22 @@
                                 document.getElementById('changelog').innerHTML = content + maintenanceHtml;
                             });
                     } else {
+                        // Aggiusta le immagini nel contenuto
+                        content = content.replace(/<img/g, '<img loading="lazy" decoding="async"');
+                        
+                        // Carica il contenuto del changelog
                         document.getElementById('changelog').innerHTML = content;
+                        
+                        // Aggiusta le immagini dopo il caricamento
+                        document.querySelectorAll('#changelog img').forEach(img => {
+                            img.style.maxWidth = '100%';
+                            img.style.height = 'auto';
+                            img.addEventListener('load', function() {
+                                // Ricalcola il layout dopo il caricamento dell'immagine
+                                this.style.display = 'block';
+                                this.style.margin = '1rem auto';
+                            });
+                        });
                     }
                 })
                 .catch(error => {
