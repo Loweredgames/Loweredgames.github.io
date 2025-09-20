@@ -161,6 +161,34 @@ main {
     overflow-wrap: break-word;
 }
 
+/* Gestione responsive dei video */
+.changelog video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Contenitore responsivo per video incorporati */
+.changelog .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Rapporto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+.changelog .video-container iframe,
+.changelog .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .changelog h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -207,13 +235,20 @@ main {
     margin-top: 4rem;
     border: 2px solid #2d2d2d;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .changelog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .changelog-card {
@@ -223,6 +258,12 @@ main {
     text-decoration: none;
     color: white;
     transition: transform 0.2s;
+    width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
 }
 
 .changelog-card:hover {
@@ -524,9 +565,15 @@ footer {
 
 .footer-content .social-icons {
     display: flex;
-    gap: 1.5rem;  /* Aumentato lo spazio tra le icone */
+    gap: 1.5rem;
     justify-content: center;
-    align-items: center;  /* Allinea verticalmente le icone */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .footer-content .social-icon {
@@ -679,6 +726,8 @@ footer {
     height: fit-content;
     position: sticky;
     top: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .sidebar h2 {
@@ -692,10 +741,13 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .project-links li {
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .project-links a {
@@ -709,6 +761,8 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .project-links a:hover {
@@ -720,11 +774,53 @@ footer {
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
+        padding: 0 1rem;
     }
     
     .sidebar {
         width: 100%;
         position: static;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    .project-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .project-links li {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .sidebar {
+        padding: 1rem;
+    }
+
+    .project-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.25rem;
+    }
+
+    .sidebar {
+        margin-top: 1rem;
+    }
+
+    .project-links a {
+        padding: 0.6rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -751,10 +847,6 @@ footer {
         margin: 0 -0.5rem 1.5rem;
         border-radius: 0;
     }
-
-    .changelog-grid {
-        grid-template-columns: 1fr;
-    }
     
     header {
         padding: 1rem;
@@ -762,6 +854,60 @@ footer {
 
     header h1 {
         font-size: 2rem;
+    }
+
+    .changelog-list {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .changelog-grid {
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .changelog-card {
+        width: 280px;
+    }
+
+    .changelog-card .description {
+        font-size: 0.9rem;
+    }
+
+    .changelog-image {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .changelog-list {
+        padding: 0.5rem;
+    }
+
+    .changelog-grid {
+        gap: 1rem;
+    }
+
+    .changelog-card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .changelog-card {
+        padding: 1rem;
+    }
+
+    .changelog-image {
+        height: 120px;
+    }
+
+    .changelog-card h3 {
+        font-size: 1rem;
+    }
+
+    .changelog-controls {
+        padding: 0 0.5rem;
     }
 }
 
