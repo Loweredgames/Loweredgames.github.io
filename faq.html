@@ -27,6 +27,24 @@
         <div id="faq-content" class="changelog">
             <div class="loading">Caricamento delle FAQ in corso...</div>
         </div>
+        <script>
+            // Gestione delle immagini responsive
+            function handleImages() {
+                document.querySelectorAll('#faq-content img').forEach(img => {
+                    img.style.maxWidth = '100%';
+                    img.style.height = 'auto';
+                    img.loading = 'lazy';
+                    img.decoding = 'async';
+                });
+            }
+
+            // Osserva i cambiamenti del contenuto
+            const observer = new MutationObserver(handleImages);
+            observer.observe(document.getElementById('faq-content'), { 
+                childList: true, 
+                subtree: true 
+            });
+        </script>
 
         <!-- Aggiungo il pulsante home -->
         <div class="home-button-container">
