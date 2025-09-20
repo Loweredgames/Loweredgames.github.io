@@ -27,6 +27,24 @@
         <div id="help-content" class="changelog">
             <div class="loading">Caricamento delle Risoluzione dei problemi in corso...</div>
         </div>
+        <script>
+            // Gestione delle immagini responsive
+            function handleImages() {
+                document.querySelectorAll('#help-content img').forEach(img => {
+                    img.style.maxWidth = '100%';
+                    img.style.height = 'auto';
+                    img.loading = 'lazy';
+                    img.decoding = 'async';
+                });
+            }
+
+            // Osserva i cambiamenti del contenuto
+            const observer = new MutationObserver(handleImages);
+            observer.observe(document.getElementById('help-content'), { 
+                childList: true, 
+                subtree: true 
+            });
+        </script>
 
         <!-- Freccia laterale: appare quando si scorre il contenuto -->
     </main>
