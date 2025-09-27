@@ -1,46 +1,32 @@
-_In questa versione di sviluppo ho deciso di cambiare i poster promozionali rendendoli piu vicini al vanilla. Non ci saranno piu shaders ma solo screenshots fatti con il motore di gioco di Minecraft._
+_In questa versione di sviluppo ho deciso di cambiare i poster promozionali rendendoli piu vicini al vanilla. Non ci saranno piu shaders ma solo screenshots fatti con il motore di gioco di Minecraft e usando i nuovi Mannequin._
 
 ## Highlights
 
-(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+# _textures and resources_:
 
-- aggiungere punti salienti nella versione
+- aggiornato il panorama al nuovo "The Copper Age Drop"
+
+# _functions and datapack_:
+
+- aggiunta versione sperimentale per il prossimo drop (1.21.10?) #####################################################
+- piccoli cambiamenti e correzioni
 
 ## Added
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- PER LE NUOVE FUNZIONALITÀ.
+# _functions and datapack_:
+- aggiunta versione sperimentale per il prossimo drop (1.21.10?) #####################################################
 
 ## Changed
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+# _textures and resources_:
 
-- PER LE MODIFICHE E FUNZIONALITÀ ESISTENTI.
+- aggiornato il panorama al nuovo "The Copper Age Drop"
 
-## Removed
+# _functions and datapack_:
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- PER FUNZIONALITÀ RIMOSSE IN QUESTA VERSIONE.
-
-## Fixed
-
-# _tags:_
-
-- PER TUTTI I BUG FIX.
-- - ESEMPIO: (spiegazione),(collegamento bug fix Github)
-
-## Backport
-
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- BACKPORT DELLE FUNZIONI DI UNA VERSIONE PRECEDENTE
+- cambiato il nome della funzione da ```old_pid``` a ```pid_old```
+- aggiornata la funzione ```pid_remove```
+- - rimuovera sempre i pid che sono molto vecchi e lasciera convertire quelli meno vecchi. come in ```pvn_remove```
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
