@@ -34,7 +34,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/posts/Voidblock/7.1.0/je-1.21.9-7.1.0_dev0.png');
+    background-image: url('images/background/special/minecon2025.jpg');
 }
 
 /* Gestione sfondo per dispositivi mobili */
