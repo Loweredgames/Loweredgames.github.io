@@ -29,6 +29,12 @@ _In questa versione di sviluppo ho deciso di cambiare i poster promozionali rend
 - aggiornata la funzione ```pid_remove```
 - - rimuovera sempre i pid che sono molto vecchi e lasciera convertire quelli meno vecchi. come in ```pvn_remove```
 
+## Fixed
+
+# _worlds and maps_:
+
+- regressione nel caricamento e generazione del mondo nelle versioni dalla 1.21.9 ##################################### [#431](https://github.com/Loweredgames/Voidblock/issues/431)
+
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
 **Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0a...1.21.9_JE-0c
