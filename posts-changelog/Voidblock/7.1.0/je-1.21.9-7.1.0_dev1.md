@@ -33,7 +33,7 @@ _In questa versione di sviluppo ho deciso di cambiare i poster promozionali rend
 
 # _worlds and maps_:
 
-- regressione nel caricamento e generazione del mondo nelle versioni dalla 1.21.9 ##################################### [#431](https://github.com/Loweredgames/Voidblock/issues/431)
+- regressione nel caricamento e generazione del mondo nelle versioni dalla 1.21.9 [#431](https://github.com/Loweredgames/Voidblock/issues/431)
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
