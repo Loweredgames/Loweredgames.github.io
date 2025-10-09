@@ -40,4 +40,4 @@ _In questa versione di sviluppo ho deciso di cambiare i poster promozionali rend
 
 **Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0a...1.21.9_JE-0c
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.9_JE-0c)
