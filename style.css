@@ -34,7 +34,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/special/minecon2025.jpg');
+    background-image: url('images/background/halloween/black_cat.png');
 }
 
 /* Gestione sfondo per dispositivi mobili */
