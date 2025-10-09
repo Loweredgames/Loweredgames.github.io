@@ -1,49 +1,43 @@
-_In questa versione di sviluppo ho deciso di cambiare i poster promozionali rendendoli piu vicini al vanilla. Non ci saranno piu shaders ma solo screenshots fatti con il motore di gioco di Minecraft._
+_In questa versione di sviluppo ho deciso di cambiare i poster promozionali rendendoli piu vicini al vanilla. Non ci saranno piu shaders ma solo screenshots fatti con il motore di gioco di Minecraft e usando i nuovi Mannequin._
 
 ## Highlights
 
-(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+# _textures and resources_:
 
-- aggiungere punti salienti nella versione
+- aggiornato il panorama al nuovo "The Copper Age Drop"
+
+# _functions and datapack_:
+
+- aggiunta versione sperimentale per il prossimo Mounts of Mayhem Drop (1.21.11)
+- piccoli cambiamenti e correzioni
 
 ## Added
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- PER LE NUOVE FUNZIONALITÀ.
+# _functions and datapack_:
+- aggiunta versione sperimentale per il prossimo Mounts of Mayhem Drop (1.21.11)
 
 ## Changed
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+# _textures and resources_:
 
-- PER LE MODIFICHE E FUNZIONALITÀ ESISTENTI.
+- aggiornato il panorama al nuovo "The Copper Age Drop"
 
-## Removed
+# _functions and datapack_:
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- PER FUNZIONALITÀ RIMOSSE IN QUESTA VERSIONE.
+- aggiunta la 1.21.9/1.21.10 ufficialmente
+- cambiato il nome della funzione da ```old_pid``` a ```pid_old```
+- aggiornata la funzione ```pid_remove```
+- - rimuovera sempre i pid che sono molto vecchi e lasciera convertire quelli meno vecchi. come in ```pvn_remove```
 
 ## Fixed
 
-# _tags:_
+# _worlds and maps_:
 
-- PER TUTTI I BUG FIX.
-- - ESEMPIO: (spiegazione),(collegamento bug fix Github)
-
-## Backport
-
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
-
-- BACKPORT DELLE FUNZIONI DI UNA VERSIONE PRECEDENTE
+- regressione nel caricamento e generazione del mondo nelle versioni dalla 1.21.9 [#431](https://github.com/Loweredgames/Voidblock/issues/431)
+- - risolto nella 1.21.10, rimane per sicurezza
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0a...1.21.9_JE-0c
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.9_JE-0c)
