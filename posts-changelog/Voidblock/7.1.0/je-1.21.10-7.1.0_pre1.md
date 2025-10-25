@@ -1,3 +1,5 @@
+_Scusate per il ritardo. la versione è completa e verra presto rilasciata._
+
 ## Highlights
 
 # _functions and datapack_:
@@ -20,6 +22,6 @@
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0c...1.21.9_JE-0d
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.9_JE-0d)
