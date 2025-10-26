@@ -4,6 +4,14 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'RC 1 - Draft',
+        date: '???',
+        image: 'images/drafts/draft.png',
+        file: 'Voidblock/7.1.0/je-1.21.10-7.1.0_rc1.md',
+        tags: ['release-candidate','drafts'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.10-7.1.0-Voidblock:PRE_RELEASE-1',
         date: '25.10.2025',
         image: 'images/posts/Voidblock/7.1.0/je-1.21.10-7.1.0_pre1.png',
