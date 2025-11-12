@@ -25,4 +25,4 @@ _Scusate ancora per il ritardo ma avevo degli impegni. la versione verra presto 
 
 **Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0d...1.21.9_JE-0e
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.9_JE-0e)
