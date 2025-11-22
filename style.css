@@ -34,7 +34,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/casual/strange_mountain.png');
+    background-image: url('images/background/snows/snow_taiga.png');
 }
 
 /* Gestione sfondo per dispositivi mobili */
@@ -1233,8 +1233,8 @@ footer {
 /* Scroll arrow styles (usato in view-changelog.html) */
 #scroll-arrow {
     position: fixed;
-    right: 250px;
-    bottom: 20%;
+    right: 90px;
+    bottom: 30%;
     width: 56px;
     height: 56px;
     background: rgba(32, 32, 32, 0.7);
@@ -1268,7 +1268,7 @@ footer {
 
 /* Override posizione per la sola pagina index: evita sovrapposizioni con elementi della pagina */
 .index-page #scroll-arrow {
-    right: 180px;    /* più vicino al bordo destro su index */
-    bottom: 18%;
+    right: 60px;    /* più vicino al bordo destro su index */
+    bottom: 30%;
     z-index: 1200;  /* assicurati sia sopra gli altri elementi */
 }
