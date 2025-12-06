@@ -6,7 +6,7 @@ window.changelogList = [
     {
         title: 'Roadmap e Cambio di Versioni di Minecraft - Draft',
         date: '???',
-        image: 'images/drafts/draft.png',
+        image: 'images/posts/Website/new-versions-mc.jpg',
         file: 'Website/minecraft-versions-system.md',
         tags: ['drafts','minecraft-news'],
         visible: true
