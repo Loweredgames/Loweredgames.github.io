@@ -2,7 +2,7 @@
 
 ## Nuova Numerazione di Minecraft
 
-Minecraft sta cambiando numerazione dopo 14 anni dalla 1.0.0. **Questo non sarà un cambiamento importantissimo per quanto riguarda il sistema delle versioni delle mie mappe**, ma sarà un cambiamento positivo e piu semplice per tutte le mie future mappe e per la Voidblock. Grazie alla nuova numerazione sarà piu semplice scriverre e numerare le versioni, come ad esempio: ```JE-26.1-7.1.0-Voidblock:7.1.0```. non notate un miglioramento? 😄 (si, puo rimanere ancora un po confuso per alcuni, ma molto meglio di prima!).
+Minecraft sta cambiando numerazione dopo 14 anni dalla 1.0.0. **Questo non sarà un cambiamento importantissimo per quanto riguarda il sistema delle versioni delle mie mappe**, ma sarà un cambiamento positivo e piu semplice per tutte le mie future mappe e per la Voidblock. Grazie alla nuova numerazione sarà piu semplice scriverre e numerare le versioni, come ad esempio: ```JE-26.0-7.1.0-Voidblock:7.1.0```. non notate un miglioramento? 😄 (si, puo rimanere ancora un po confuso per alcuni, ma molto meglio di prima!).
 
 Questo non è un gigantesco cambiamento lo so e non vuole esserlo, ma si spera che sara piu semplice per il pubblico casual capire in quale versione è la mia mappa e quale versione usare.
 
@@ -25,6 +25,6 @@ Invece la versione ```JE-1.20.6-5.3.X-Voidblock:5.3.X_LTS``` la voglio continuar
 - Sara piu semplice capire, si spera, il numero della versione;
 - Per il momento ci saranno 2 LTS, 1 LTS che sarà la ```JE-1.20.6-5.3.X-Voidblock:5.3.X_LTS``` continuera ad essere supportata in una data non ancora stabilita;
 
-Sto anche lavorando alla 1.21.11 ma non so quando verrà aggiunta alle versioni stabili. **Sarà pero molto piu veloce della 1.21.10, promesso!.**
+Sto anche lavorando alla 1.21.11, che sara anche la prossima LTS, ma non so quando verrà aggiunta alle versioni stabili. **Sarà pero molto piu veloce della 1.21.10, promesso!.**
 
 Grazie per aver letto. ❤️❤️
