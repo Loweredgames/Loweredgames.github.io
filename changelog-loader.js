@@ -4,11 +4,11 @@ window.changelogList = [
 
 // Post Rilasciati
     {
-        title: 'Roadmap e Cambio di Versioni di Minecraft - Draft',
-        date: '???',
+        title: 'Roadmap e Cambio di Versioni di Minecraft',
+        date: '23.12.2025',
         image: 'images/posts/Website/new-versions-mc.jpg',
         file: 'Website/minecraft-versions-system.md',
-        tags: ['drafts','minecraft-news'],
+        tags: ['minecraft-news'],
         visible: true
     },
     {
