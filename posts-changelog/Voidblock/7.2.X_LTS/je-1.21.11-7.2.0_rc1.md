@@ -15,14 +15,15 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 
 # _worlds and maps_:
 
-- ### aggiunto blocco di stalattite nel Nether cosi diventa rinovabbile
-- - ### aggiunto il SUBPID_2 per tutte le versioni di Minecraft.
+- aggiunto blocco di stalattite nel Nether cosi diventa rinovabbile
+- - spostata la testa di Piglin nella cassa che si trova nell'isola bastione
+- - ### aggiunto il SUBPID_2 per tutte le versioni di Minecraft
 
 ## Changed
 
 # _functions and datapack_:
 
-- ## TESTARE aggiunta la versione 1.21.11 ufficialmente
+- aggiunta la versione 1.21.11 ufficialmente
 - - aggiornato il pack alla 1.21.11
 - - - nel datapack alla 94.1
 - - - nel resources pack alla 75.0
