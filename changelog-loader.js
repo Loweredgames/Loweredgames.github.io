@@ -4,6 +4,14 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'Draft',
+        date: '???',
+        image: 'images/drafts/draft.png',
+        file: 'Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.md',
+        tags: ['release-candidate','drafts'],
+        visible: true
+    },
+    {
         title: 'Roadmap e Cambio di Versioni di Minecraft',
         date: '23.12.2025',
         image: 'images/posts/Website/new-versions-mc.jpg',
