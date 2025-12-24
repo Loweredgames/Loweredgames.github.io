@@ -22,7 +22,7 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 
 # _functions and datapack_:
 
-- aggiunta la versione 1.21.11 ufficialmente
+- ## TESTARE aggiunta la versione 1.21.11 ufficialmente
 - - aggiornato il pack alla 1.21.11
 - - - nel datapack alla 94.1
 - - - nel resources pack alla 75.0
