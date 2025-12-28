@@ -17,7 +17,7 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 
 - aggiunto blocco di stalattite nel Nether cosi diventa rinovabbile
 - - spostata la testa di Piglin nella cassa che si trova nell'isola bastione
-- - ### aggiunto il SUBPID_2 per tutte le versioni di Minecraft
+- - - aggiunto il SUBPID_1 per tutte le versioni di Minecraft
 
 ## Changed
 
