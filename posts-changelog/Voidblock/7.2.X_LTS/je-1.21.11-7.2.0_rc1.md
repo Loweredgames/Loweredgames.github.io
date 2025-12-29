@@ -33,7 +33,7 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 
 # _langs_:
 
-- ### aggiornate le traduzioni e piccoli fix
+- ### aggiornate le traduzioni e piccoli fix [#437](https://github.com/Loweredgames/Voidblock/pull/437)
 
 ## Fixed
 
