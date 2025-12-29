@@ -6,7 +6,7 @@ window.changelogList = [
     {
         title: 'Draft',
         date: '???',
-        image: 'images/drafts/draft.png',
+        image: 'images/posts/Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.png',
         file: 'Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.md',
         tags: ['release-candidate','drafts'],
         visible: true
