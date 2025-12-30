@@ -45,6 +45,6 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
 
-**Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
+**Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0...1.21.11_JE-0a
 
 **Download** -> (ricordarsi di fare collegamento diretto in GitHub)
