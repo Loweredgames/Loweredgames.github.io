@@ -29,7 +29,7 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 - - - nel resources pack alla 75.0
 - - - - aggiornate le gamerules nel test per la 1.21.11
 - - - - aggiornato il mondo delle strutture nella 1.21.11
-- - ##### aggiornato il panorama al nuovo "The Copper Age Drop"
+- - aggiornato il panorama al nuovo "Mounts of Mayhem Drop"
 
 # _langs_:
 
