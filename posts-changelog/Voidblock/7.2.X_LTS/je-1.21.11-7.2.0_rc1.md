@@ -44,7 +44,7 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 - - questo problema è stato risolto. adesso si puo trovare nel Nether
 
 > _**⚠️BUILDING: They are development version and can be unstable, use it at your risk⚠️**_
-### TO DO FARE TEST
+
 **Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
 
 **Download** -> (ricordarsi di fare collegamento diretto in GitHub)
