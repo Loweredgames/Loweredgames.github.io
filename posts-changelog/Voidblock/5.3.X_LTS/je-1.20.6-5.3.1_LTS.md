@@ -1,6 +1,8 @@
 ## JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.1_LTS
 
-_Finally here is the first fix of this LTS. to see the whole list of bugs and backporting click here: [List LTS](https://github.com/Loweredgames/SkyOsirion/issues/294)._
+_Finally here is the first fix of this LTS. to see the whole list of bugs and backporting click here: [List LTS](https://github.com/Loweredgames/Voidblock/issues/294)._
+
+![Aggiornamento di Manutenzione](images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.X_LTS.png)
 
 ## Changed
 

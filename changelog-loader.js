@@ -197,13 +197,19 @@ window.changelogList = [
         visible: true
     },
     {
-        title: 'JE-1.20.6-5.3.X-Voidblock:5.3.X_LTS Maintenance Update - LTS',
-        date: '29.12.2024',
-        image: 'images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.X_LTS.png',
-        file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.1_LTS.md',
+        title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.0_LTS Maintenance Update - LTS',
+        date: '27.09.2024',
+        image: 'images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.png',
+        file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.md',
         tags: ['lts','stable','maintenance'],
         visible: true,
         maintenanceVersions: [
+            {
+                version: '5.3.1_LTS',
+                date: '29.12.2024',
+                file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.1_LTS.md',
+                visible: true
+            },
             {
                 version: '5.3.2_LTS',
                 date: '29.07.2025',
@@ -211,14 +217,6 @@ window.changelogList = [
                 visible: true
             }
         ]
-    },
-    {
-        title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
-        date: '27.09.2024',
-        image: 'images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.png',
-        file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.md',
-        tags: ['lts','stable'],
-        visible: true
     },
 
 
