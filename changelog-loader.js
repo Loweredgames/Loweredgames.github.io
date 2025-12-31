@@ -4,11 +4,11 @@ window.changelogList = [
 
 // Post Rilasciati
     {
-        title: 'Draft',
+        title: 'JE-1.21>1.21.11-7.2.0-Voidblock:RELEASE_CANDIDATE-1_LTS',
         date: '???',
         image: 'images/posts/Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.png',
         file: 'Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.md',
-        tags: ['release-candidate','drafts'],
+        tags: ['release-candidate'],
         visible: true
     },
     {
