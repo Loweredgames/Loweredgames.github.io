@@ -47,4 +47,4 @@ _[Come ho detto nel precedente post](https://loweredgames.github.io./view-change
 
 **Full Changelog**: https://github.com/Loweredgames/Voidblock/compare/1.21.9_JE-0...1.21.11_JE-0a
 
-**Download** -> (ricordarsi di fare collegamento diretto in GitHub)
+[**Download**](https://github.com/Loweredgames/Voidblock/releases/tag/1.21.11_JE-0a)
