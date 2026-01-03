@@ -1,6 +1,6 @@
 ## JE-1.20.6-5.3.X-Voidblock:5.3.3_LTS
 
-![Aggiornamento di Manutenzione](images/posts/Voidblock/LTS_latest.png)
+![Aggiornamento di Manutenzione](images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.X_LTS.png)
 
 ## Highlights
 

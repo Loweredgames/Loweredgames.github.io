@@ -2,7 +2,7 @@
 
 _Scusate se ci è voluto cosi tanto tempo per questa versione ma ho dovuto fare il backporting di "Rebranding da Skyblock Classic Edition a Voidblock" #411 per il futuro, non verrano fatti piu questi cambiamenti cosi importanti d'ora in poi. ecco quindi la nuova versione 😸._
 
-![Aggiornamento di Manutenzione](images/posts/Voidblock/LTS_latest.png)
+![Aggiornamento di Manutenzione](images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.X_LTS.png)
 
 ## Highlights
 
