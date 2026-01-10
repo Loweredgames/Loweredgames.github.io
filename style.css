@@ -34,7 +34,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/snows/snow_taiga.png');
+    background-image: url('images/background/snows/snow_mountain.png');
 }
 
 /* Gestione sfondo per dispositivi mobili */
