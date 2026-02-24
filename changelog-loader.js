@@ -4,6 +4,14 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'JE-26.1-7.3.0-Voidblock:PRE_RELEASE-1',
+        date: '24.02.2026',
+        image: 'images/posts/Voidblock/7.3.0/je-26.1-7.3.0_pre1.png',
+        file: 'Voidblock/7.3.0/je-26.1-7.3.0_pre1.md',
+        tags: ['pre-release'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.11-7.2.X-Voidblock:7.2.0',
         date: '10.01.2026',
         image: 'images/posts/Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.png',
