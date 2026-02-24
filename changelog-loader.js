@@ -5,7 +5,7 @@ window.changelogList = [
 // Post Rilasciati
     {
         title: 'JE-26.1-7.3.0-Voidblock:PRE_RELEASE-1',
-        date: '???',
+        date: '24.02.2026',
         image: 'images/posts/Voidblock/7.3.0/je-26.1-7.3.0_pre1.png',
         file: 'Voidblock/7.3.0/je-26.1-7.3.0_pre1.md',
         tags: ['pre-release'],
