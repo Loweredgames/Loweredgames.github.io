@@ -1,38 +1,38 @@
-## JE-1.20.6-5.3.X-Voidblock:5.3.3_LTS
+# JE-1.20.6-5.3.X-Voidblock:5.3.3_LTS
 
 ![Aggiornamento di Manutenzione](images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.X_LTS.png)
 
-## Highlights
+# Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - aggiungere punti salienti nella versione
 
-## Backport
+# Backport
 
 - (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - BACKPORT DELLE FUNZIONI DI UNA VERSIONE PRECEDENTE
 
-## Changed
+# Changed
 
 - (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - PER LE MODIFICHE E FUNZIONALITÀ ESISTENTI.
 
-## Removed
+# Removed
 
 - (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - PER FUNZIONALITÀ RIMOSSE IN QUESTA VERSIONE.
 
-## Fixed
+# Fixed
 
-# _tags:_
+## _tags:_
 
 - PER TUTTI I BUG FIX.
 - - ESEMPIO: (spiegazione),(collegamento bug fix Github)

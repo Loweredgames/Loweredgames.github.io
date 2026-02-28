@@ -152,6 +152,9 @@
                 .then(text => {
                     // Rimuovi solo i tag HTML pericolosi
                     text = text.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+                    // normalizza i livelli dei titoli nel markdown
+                    text = text.replace(/^##\s+Highlights\s*$/m, '# Highlights');
+                    text = text.replace(/^#\s+(_[^_]+_:?)/gmi, '## $1');
                     let content = marked.parse(text);
                     
                     // Carica le versioni di manutenzione se presenti

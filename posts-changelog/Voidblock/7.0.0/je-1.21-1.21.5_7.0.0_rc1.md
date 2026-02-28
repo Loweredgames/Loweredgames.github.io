@@ -1,19 +1,19 @@
-## Highlights
+# Highlights
 
-# _textures and resources_:
+## _textures and resources_:
 
 - fix panorama e aggiornato a uno nuovo
 - aggiornate le traduzioni [#405](https://github.com/Loweredgames/Voidblock/pull/405)
 
-## Changed
+# Changed
 
-# _misc and other_:
+## _misc and other_:
 
 - aggiornate le traduzioni [#405](https://github.com/Loweredgames/Voidblock/pull/405)
 
-## Fixed
+# Fixed
 
-# _textures and resources_:
+## _textures and resources_:
 
 - fix panorama e aggiornato a uno nuovo
 - - rimosso overlay (aggiunto quello default)

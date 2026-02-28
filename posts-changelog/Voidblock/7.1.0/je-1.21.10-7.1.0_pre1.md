@@ -1,22 +1,22 @@
 _Scusate per il ritardo. la versione è completa e verra presto rilasciata._
 
-## Highlights
+# Highlights
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - le gamerule da adesso saranno settate solo all'inizio
 
-## Changed
+# Changed
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - le gamerule da adesso saranno settate solo all'inizio
 - - questo significa che si potranno modificare alla fine della conversione dei PID
 - - - *molti utenti l'hanno chiesto e finalmente mi sono deciso di farlo 😄*
 
-## Fixed
+# Fixed
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - rimossa la stringa di debug nella 1.21.2/1.21.3
 

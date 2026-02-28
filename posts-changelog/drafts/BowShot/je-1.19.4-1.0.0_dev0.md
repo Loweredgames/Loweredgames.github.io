@@ -1,13 +1,13 @@
-## Highlights
+# Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - aggiungere punti salienti nella versione
 
-## Changed
+# Changed
 
-# _misc and other:_
+## _misc and other:_
 
 - migliorari i commenti nelle funzioni e migliorate le funzioni
 - >-----------------aggiornate le decorazioni nella mappa e miglioramenti vari

@@ -2,7 +2,7 @@ _Finally my Skyblock CE version 1.21 is complete. now I can start the various po
 _ps: I noticed that the End has no problems even if I did a quick test. maybe I create an experimental setting for those who want to have End?_
 _as always thank you very much._
 
-## Highlights:
+# Highlights:
 
 - aggiunte le "Trial Chamber" nel mondo [#232](https://github.com/Loweredgames/Voidblock/issues/232)
 - rimosse molte score vecchie nella 1.21/1.21.1 [#347](https://github.com/Loweredgames/Voidblock/issues/347)
@@ -11,9 +11,9 @@ _as always thank you very much._
 - le strutture e le isole nella cartella "generated" sono stati migrati nella cartella worldgen [#362](https://github.com/Loweredgames/Voidblock/issues/362)
 - - la cartella "generated" è stata rimossa e adesso serve solo il datapack e il resources pack
 
-## Added
+# Added
 
-# _functions and datapack:_
+## _functions and datapack:_
 
 - raggiunta la score che rimuove gli avanzamenti nel mondo custom quando si avvia la Skyblock per la prima volta
 - cambiato il messaggio nel popup dei test [#363](https://github.com/Loweredgames/Voidblock/issues/363)
@@ -30,12 +30,12 @@ _as always thank you very much._
 - - - per il "PID" e il "SUBPID" viene usato "chime". nel SUBPID il pitch è a 1 invece che a 2
 - - - per le strutture nei test invece viene usato il blocco di ametista
 
-# _worlds and maps:_
+## _worlds and maps:_
 
 - aggiunte le "Trial Chamber" nel mondo [#232](https://github.com/Loweredgames/Voidblock/issues/232)
 - - adesso si possono rinnovare la maggior parte degli oggetti e blocchi della 1.21
 
-# _misc and other:_
+## _misc and other:_
 
 - miglioranti vari
 - - riunificata la versione portable alla versione principale:
@@ -49,20 +49,20 @@ _as always thank you very much._
 - - aggiunti altri link per le versioni portable
 - - aggiunti i link mancanti
 
-# _custom structures:_
+## _custom structures:_
 
 - aggiornato il mondo alla 1.21.1
 - piccoli miglioranti vari
 
-## Changed
+# Changed
 
-# _functions and datapack:_
+## _functions and datapack:_
 
 - riordinato il popup UI all'inizio quando si prendono le decisioni delle isole
 - - anche nel mondo dei test
 - - - la versione separata del mondo dei test è stata rimossa e non piu supportata
 
-# _langs:_
+## _langs:_
 
 - aggiornate le traduzioni
 - - aggiunte stringe per:
@@ -72,7 +72,7 @@ _as always thank you very much._
 - - e aggiunte nuove lingue per la 1.21,
 - miglioramenti vari e correzioni
 
-# _custom structures:_
+## _custom structures:_
 
 - le strutture e le isole nella cartella "generated" sono stati migrati nella cartella worldgen [#362](https://github.com/Loweredgames/Voidblock/issues/362)
 - - le strutture del mondo delle dimensioni/test adesso usano una loro cartella chiamata "structures_test"
@@ -81,7 +81,7 @@ _as always thank you very much._
 - - la cartella "generated" è stata rimossa e adesso serve solo il datapack e il resources pack, nel mondo della Skyblock CE.
 - spostata l'isola fungo nella sezione isole nel mondo delle strutture
 
-# _Fixed_
+## _Fixed_
 
 ## _langs:_
 

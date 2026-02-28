@@ -1,15 +1,15 @@
 _Scusate ancora per il ritardo ma avevo degli impegni. la versione verra presto rilasciata._
 
-## Highlights
+# Highlights
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - resa la Bossbar delle versioni di sviluppo e il messaggio Warning locali che globali
 - aggiornate le traduzioni
 
-## Changed
+# Changed
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - resa la Bossbar delle versioni di sviluppo e il messaggio Warning locali che globali:
 - - la versione sarà in sviluppo solo quando overlay della versione è ancora sperimentale o in fase di sviluppo e non in tutti gli overlays nel pack.
@@ -17,7 +17,7 @@ _Scusate ancora per il ritardo ma avevo degli impegni. la versione verra presto 
 - - - se la versione non è in sviluppo, è stabile come prima e può essere aggiornata tranquillamente (guardare sempre il tag nel sito web e fare sempre dei backups per sicurezza).
 - - - - il test rimarrà fisso in sviluppo per sempre
 
-# _langs_:
+## _langs_:
 
 - aggiornate le traduzioni e piccoli fix
 
