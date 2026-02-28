@@ -1,23 +1,23 @@
-## Highlights
+# Highlights
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - potenziati il PID e fatto un refactoring interno al sistema delle conversioni [#421](https://github.com/Loweredgames/Voidblock/issues/421) [#422](https://github.com/Loweredgames/Voidblock/pull/422)
 - aggiunta la versione 1.21.9 ufficialmente
 - - aggiornato il pack alla 1.21.9
 
-## Added
+# Added
 
-# _misc and other_:
+## _misc and other_:
 
 - aggiunta la versione 1.21.9 ufficialmente
 - - - aggiornato il pack alla 1.21.9 (pre-2)
 - - - - nel datapack alla 88.0
 - - - - nel resources pack alla 69.0
 
-## Changed
+# Changed
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - potenziati il PID e fatto un refactoring interno al sistema delle conversioni [#421](https://github.com/Loweredgames/Voidblock/issues/421) [#422](https://github.com/Loweredgames/Voidblock/pull/422)
 - - adesso i PID saranno locali invece che globali. questo avrà dei vantaggi come l'aggiornamento specifico in quella versione e altri miglioramenti

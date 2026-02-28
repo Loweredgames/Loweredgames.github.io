@@ -1,8 +1,8 @@
-# Benvenuti a Tutti al Mio Nuovo Sito Web!
+### Benvenuti a Tutti al Mio Nuovo Sito Web!
 
 Benvenuti al mio nuovo sito web, qui ci saranno gli ultimi aggiornamenti delle mie mappe e dei miei progetti di Minecraft.
 
-## Me
+# Me
 
 Se non mi avete mai visto allora mi presento:
 
@@ -12,7 +12,7 @@ Sono Loweredgames, un content creator veterano di Minecraft che crea contenuti c
 
 Qui ci saranno log delle modifiche vari, novità sui miei progetti e novità sul mondo di Minecraft.
 
-## Minecraft News?
+# Minecraft News?
 
 Adesso che ho la possibilità di aggiungere molti contenuti, _tra cui video_, posso iniziare a postare anche altre cose non relative esclusivamente alle mie mappe ma anche a Minecraft in se. 
 non ci saranno sempre ma voglio iniziare ha fare blog su Minecraft pre-impostati, o opinioni, o curiosita al gioco.
@@ -29,7 +29,7 @@ Se trovate dei bug sul sito o avete dubbi o altro scrivetemi sul mio [Discord Se
 
 _Scusate se ogni tanto ci saranno errori di scrittura._
 
-# Grazie e alla prossima!!!
+## Grazie e alla prossima!!!
 
 per finire un pò di nostalgia, chi mi dice che mappa è? 🙂
 

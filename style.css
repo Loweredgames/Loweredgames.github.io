@@ -209,16 +209,23 @@ main {
     border: none;
 }
 
-.changelog h2 {
+.changelog h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .changelog h3 {
+    /* tertiary headings should be smaller than h2 and visually distinct */
     color: #ffffff;
+    font-size: 0.90em;
     border-bottom: 1px solid #2d2d2d;
     padding-bottom: 0.5rem;
     margin-top: 2rem;
+    transition: color 0.5s;
+}
+
+.changelog h3:hover {
+    color: #bebebe;
 }
 
 .changelog ul {
@@ -549,14 +556,20 @@ main {
     background: #1a1a1a;
 }
 
-h2 {
+/* Titoli Markdown h1 (solo all'interno dei changelog) */
+.changelog h1 {
+    /* Highlights principale: grande, centrato, evidente */
+    font-size: 2.0em; /* slightly reduced size */
+    margin-top: 1.2em;
+    margin-bottom: 0.8em;
     color: #ffffff;
     border-bottom: 2px solid #2d2d2d;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    transition: color 0.2s;
 }
 
-/* Titoli Markdown h1 */
-.changelog h1 {
+/* Titoli Markdown h2 */
+.changelog h2 {
     font-size: 1.20em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -701,7 +714,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-.error-message h2 {
+.error-message h1 {
     color: #ff0000;
     border-bottom: none;
     margin-bottom: 1rem;
@@ -750,7 +763,7 @@ footer {
     overflow: hidden;
 }
 
-.sidebar h2 {
+.sidebar h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
@@ -872,7 +885,7 @@ footer {
         padding: 1rem;
     }
 
-    header h1 {
+    header h2 {
         font-size: 2rem;
     }
 

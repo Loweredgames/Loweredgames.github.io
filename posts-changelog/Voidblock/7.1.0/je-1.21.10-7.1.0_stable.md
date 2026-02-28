@@ -4,29 +4,29 @@ _Oggi è il compleanno della Voidblock (Skyblock CE in precedenza). Grazie per l
 
 _Mi scuso se non c'è stato nessun regalo ma sono stato molto occupato. in futuro vorrei festeggiarlo ogni anno il compleanno. 😃_
 
-## Highlights
+# Highlights
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - potenziati il PID e fatto un refactoring interno al sistema delle conversioni [#421](https://github.com/Loweredgames/Voidblock/issues/421) [#422](https://github.com/Loweredgames/Voidblock/pull/422)
 - aggiunta la versione 1.21.9/1.21.10 ufficialmente
 - - aggiornato il pack alla 1.21.9/1.21.10
 - - aggiornato il panorama al nuovo "The Copper Age Drop"
 
-# _langs_:
+## _langs_:
 
 - aggiornate le traduzioni e piccoli fix
 
-## Added
+# Added
 
-# _misc and other_:
+## _misc and other_:
 
 - aggiunta la versione 1.21.9/1.21.10 ufficialmente
 - - - aggiornato il pack alla 1.21.9/1.21.10
 - - - - nel datapack alla 88.0
 - - - - nel resources pack alla 69.0
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - aggiunta una ricetta nella 1.21.9/1.21.10 per potenziare il rame
 - - questo è un piccolo bilanciamento che viene fatto per il set di rame dato che è diventato importante.
@@ -35,9 +35,9 @@ _Mi scuso se non c'è stato nessun regalo ma sono stato molto occupato. in futur
 - - i drops verrano aggiunti anche nelle versioni di manutezione.
 - - > *Mi sto concentrando in delle versioni di manutenzione invece di versioni minori. cosi sara tutto piu veloce. Gli aggiornamenti grandi e minori riprenderano in futuro.*
 
-## Changed
+# Changed
 
-# _functions and datapack_:
+## _functions and datapack_:
 
 - potenziati il PID e fatto un refactoring interno al sistema delle conversioni [#421](https://github.com/Loweredgames/Voidblock/issues/421) [#422](https://github.com/Loweredgames/Voidblock/pull/422)
 - - adesso i PID saranno locali invece che globali. questo avrà dei vantaggi come l'aggiornamento specifico in quella versione e altri miglioramenti
@@ -69,17 +69,17 @@ _Mi scuso se non c'è stato nessun regalo ma sono stato molto occupato. in futur
 - - questo significa che si potranno modificare alla fine della conversione dei PID
 - - - > *molti utenti l'hanno chiesto e finalmente mi sono deciso di farlo 😄.*
 
-# _langs_:
+## _langs_:
 
 - aggiornate le traduzioni e piccoli fix
 
-# _textures and resources_:
+## _textures and resources_:
 
 - aggiornato il panorama al nuovo "The Copper Age Drop"
 
-## Fixed
+# Fixed
 
-# _worlds and maps_:
+## _worlds and maps_:
 
 - regressione nel caricamento e generazione del mondo nelle versioni dalla 1.21.9 [#431](https://github.com/Loweredgames/Voidblock/issues/431)
 - - risolto nella 1.21.10, rimane per sicurezza.

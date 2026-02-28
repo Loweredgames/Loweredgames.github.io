@@ -1,13 +1,13 @@
-## Highlights
+# Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - aggiungere punti salienti nella versione
 
-## Added
+# Added
 
-# _misc and other:_
+## _misc and other:_
 
 - rifatto tutto di nuovo (questa sara l'ultima volta)
 - adesso la mappa si chiamera Dimension Infinity

@@ -1,19 +1,19 @@
-## Highlights
+# Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - aggiungere punti salienti nella versione
 
-## Added
+# Added
 
-# _worlds and maps:_
+## _worlds and maps:_
 
 - aggiunte nuove mappe e miglioramenti vari
 
-## Changed
+# Changed
 
-# _functions and datapack:_
+## _functions and datapack:_
 
 - refactoring su tutto
 - aggiornato alla 1.19.4 (per il mometo rimarra in questa versione)
