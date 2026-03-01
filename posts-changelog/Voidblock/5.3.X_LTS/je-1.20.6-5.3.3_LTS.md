@@ -4,38 +4,30 @@
 
 # Highlights
 
-(specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-## _tags:_
-
-- aggiungere punti salienti nella versione
+- 
 
 # Backport
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-## _tags:_
+## _functions and datapack_:
 
-- BACKPORT DELLE FUNZIONI DI UNA VERSIONE PRECEDENTE
+- spostata la funzione `pvn_remove` e `pid_remove` e resa globale nella cartella data
+- - rinominta la funzione `voidblock_mc_setup` che adesso è `setup_global`
+- - - la funzione `setup_global` controlla tutte le funzioni a livello globale come i cartelli che si trovanno all'inizio delle isole
+- - - - in futuro ci saranno altre funzionalita
+- ### rinominata la funzione `custom_structures` in `generated_structures` per coerrenza
+- 
 
 # Changed
 
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-## _tags:_
+## _functions and datapack_:
 
-- PER LE MODIFICHE E FUNZIONALITÀ ESISTENTI.
-
-# Removed
-
-- (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-## _tags:_
-
-- PER FUNZIONALITÀ RIMOSSE IN QUESTA VERSIONE.
+- aggiunto l'avviso del termine LTS. _è una stima non accurata al 100%._
 
 # Fixed
 
-## _tags:_
+## _functions and datapack_:
 
-- PER TUTTI I BUG FIX.
-- - ESEMPIO: (spiegazione),(collegamento bug fix Github)
+- rimosso l'avviso warning che per sbaglio non l'avevo tolto
 
 **Full Changelog**: -> (ricordarsi di aggiungere Github versione tag compare)
 
