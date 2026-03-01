@@ -305,7 +305,6 @@ window.changelogList = [
         date: '03.10.2000',         // Formato data
         title: 'Changelog Template', // Titolo visualizzato
         image: 'images/posts/changelog.png',  // URL immagine
-        description: 'Template per i changelog', // Aggiunto campo description
         tags: ['lts','stable','maintenance','release-candidate','pre-release','building','website','minecraft-news','changelog-doc','drafts'], // Aggiunti i tag
         visible: true,
         maintenanceVersions: [
@@ -395,7 +394,6 @@ function createChangelogCard(changelog) {
         ${tagsHtml}
         <h3 title="${changelog.title}">${truncateText(changelog.title)}</h3>
         <p class="date">\u{1F4C5} ${changelog.date}</p>
-        ${changelog.description ? `<p class="description">${truncateText(changelog.description, 100)}</p>` : ''}
         ${maintenanceHtml}
     `;
     return card;
@@ -422,8 +420,7 @@ function searchChangelogs(searchTerm) {
     
     // Poi applica il filtro di ricerca
     results = results.filter(changelog => 
-        changelog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        changelog.description?.toLowerCase().includes(searchTerm.toLowerCase())
+        changelog.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
     refreshChangelogGrid(results);
 }
