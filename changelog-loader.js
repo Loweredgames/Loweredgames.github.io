@@ -4,6 +4,62 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'JE-26.1-7.3.0-Voidblock:PRE_RELEASE-1',
+        date: '24.02.2026',
+        image: 'images/posts/Voidblock/7.3.0/je-26.1-7.3.0_pre1.png',
+        file: 'Voidblock/7.3.0/je-26.1-7.3.0_pre1.md',
+        tags: ['pre-release'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21>1.21.11-7.2.X-Voidblock:7.2.0',
+        date: '10.01.2026',
+        image: 'images/posts/Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.png',
+        file: 'Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_stable.md',
+        tags: ['lts','stable','maintenance'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21>1.21.11-7.2.0-Voidblock:RELEASE_CANDIDATE-1_LTS',
+        date: '03.01.2026',
+        image: 'images/posts/Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.png',
+        file: 'Voidblock/7.2.X_LTS/je-1.21.11-7.2.0_rc1.md',
+        tags: ['release-candidate'],
+        visible: true
+    },
+    {
+        title: 'Roadmap e Cambio di Versioni di Minecraft',
+        date: '23.12.2025',
+        image: 'images/posts/Website/new-versions-mc.jpg',
+        file: 'Website/minecraft-versions-system.md',
+        tags: ['minecraft-news'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21>1.21.10-7.1.0-Voidblock:7.1.0',
+        date: '22.11.2025',
+        image: 'images/posts/Voidblock/7.1.0/je-1.21.10-7.1.0_rc1.png',
+        file: 'Voidblock/7.1.0/je-1.21.10-7.1.0_stable.md',
+        tags: ['stable'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21>1.21.10-7.1.0-Voidblock:RELEASE_CANDIDATE-1',
+        date: '12.11.2025',
+        image: 'images/posts/Voidblock/7.1.0/je-1.21.10-7.1.0_rc1.png',
+        file: 'Voidblock/7.1.0/je-1.21.10-7.1.0_rc1.md',
+        tags: ['release-candidate'],
+        visible: true
+    },
+    {
+        title: 'JE-1.21>1.21.10-7.1.0-Voidblock:PRE_RELEASE-1',
+        date: '25.10.2025',
+        image: 'images/posts/Voidblock/7.1.0/je-1.21.10-7.1.0_pre1.png',
+        file: 'Voidblock/7.1.0/je-1.21.10-7.1.0_pre1.md',
+        tags: ['pre-release'],
+        visible: true
+    },
+    {
         title: 'JE-1.21>1.21.10-7.1.0-Voidblock:BUILDING:07.10.2025a',
         date: '07.10.2025',
         image: 'images/posts/Voidblock/7.1.0/je-1.21.9-7.1.0_dev1.png',
@@ -157,13 +213,19 @@ window.changelogList = [
         visible: true
     },
     {
-        title: 'JE-1.20.6-5.3.X-Voidblock:5.3.X_LTS Maintenance Update - LTS',
-        date: '29.12.2024',
-        image: 'images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.X_LTS.png',
-        file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.1_LTS.md',
+        title: 'JE-1.20.6-5.3.X-Skyblock_Classic_Edition:5.3.0_LTS Maintenance Update - LTS',
+        date: '27.09.2024',
+        image: 'images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.png',
+        file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.md',
         tags: ['lts','stable','maintenance'],
         visible: true,
         maintenanceVersions: [
+            {
+                version: '5.3.1_LTS',
+                date: '29.12.2024',
+                file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.1_LTS.md',
+                visible: true
+            },
             {
                 version: '5.3.2_LTS',
                 date: '29.07.2025',
@@ -171,14 +233,6 @@ window.changelogList = [
                 visible: true
             }
         ]
-    },
-    {
-        title: 'JE-1.20.6-5.3.0-Skyblock_Classic_Edition:5.3.0_LTS',
-        date: '27.09.2024',
-        image: 'images/posts/Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.png',
-        file: 'Voidblock/5.3.X_LTS/je-1.20.6-5.3.0_LTS_stable.md',
-        tags: ['lts','stable'],
-        visible: true
     },
 
 
@@ -251,7 +305,6 @@ window.changelogList = [
         date: '03.10.2000',         // Formato data
         title: 'Changelog Template', // Titolo visualizzato
         image: 'images/posts/changelog.png',  // URL immagine
-        description: 'Template per i changelog', // Aggiunto campo description
         tags: ['lts','stable','maintenance','release-candidate','pre-release','building','website','minecraft-news','changelog-doc','drafts'], // Aggiunti i tag
         visible: true,
         maintenanceVersions: [
@@ -341,7 +394,6 @@ function createChangelogCard(changelog) {
         ${tagsHtml}
         <h3 title="${changelog.title}">${truncateText(changelog.title)}</h3>
         <p class="date">\u{1F4C5} ${changelog.date}</p>
-        ${changelog.description ? `<p class="description">${truncateText(changelog.description, 100)}</p>` : ''}
         ${maintenanceHtml}
     `;
     return card;
@@ -368,8 +420,7 @@ function searchChangelogs(searchTerm) {
     
     // Poi applica il filtro di ricerca
     results = results.filter(changelog => 
-        changelog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        changelog.description?.toLowerCase().includes(searchTerm.toLowerCase())
+        changelog.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
     refreshChangelogGrid(results);
 }

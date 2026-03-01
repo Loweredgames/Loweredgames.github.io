@@ -1,6 +1,6 @@
-## Changed
+# Changed
 
-# _misc and other:_
+## _misc and other:_
 
 - riunificata la versione portable alla versione principale:
 - - questo non avrà alcun effetto tranne la numerazione che sarà la stessa della versione principale

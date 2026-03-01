@@ -1,39 +1,39 @@
-## [VERSIONE DA AGGIUNGERE]
+# [VERSIONE DA AGGIUNGERE]
 
 ![Aggiornamento di Manutenzione](images/posts/???/LTS_latest.png)
 
-## Highlights
+# Highlights
 
 (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - aggiungere punti salienti nella versione
 
-## Backport
+# Backport
 
 - (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - BACKPORT DELLE FUNZIONI DI UNA VERSIONE PRECEDENTE
 
-## Changed
+# Changed
 
 - (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - PER LE MODIFICHE E FUNZIONALITÀ ESISTENTI.
 
-## Fixed
+# Fixed
 
-# _tags:_
+## _tags:_
 
 - PER TUTTI I BUG FIX.
 - - ESEMPIO: (spiegazione),(collegamento bug fix Github)
 
-## Removed
+# Removed
 
 - (specificare sempre dove viene aggiunto, cambiato o rimosso. guardare le parole chiavi per informazioni)
-# _tags:_
+## _tags:_
 
 - PER FUNZIONALITÀ RIMOSSE IN QUESTA VERSIONE.
 

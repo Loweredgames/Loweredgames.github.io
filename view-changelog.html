@@ -9,8 +9,10 @@
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
     <!-- Collegamenti a fogli di stile e librerie -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="translate.js"></script>
+    <script defer src="lightbox.js"></script>
 </head>
 <body>
     <!-- Header con titolo cliccabile -->
@@ -119,7 +121,6 @@
                     </div>
                     <h1 class="post-title">${metadata.title}</h1>
                     <p class="post-date">\u{1F4C5} ${metadata.date}</p>
-                    ${metadata.description ? `<p class="post-description">${metadata.description}</p>` : ''}
                 `;
 
                 // Inizializza Giscus dopo che il contenuto è stato caricato
@@ -150,6 +151,9 @@
                 .then(text => {
                     // Rimuovi solo i tag HTML pericolosi
                     text = text.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+                    // normalizza i livelli dei titoli nel markdown
+                    text = text.replace(/^##\s+Highlights\s*$/m, '# Highlights');
+                    text = text.replace(/^#\s+(_[^_]+_:?)/gmi, '## $1');
                     let content = marked.parse(text);
                     
                     // Carica le versioni di manutenzione se presenti
