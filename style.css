@@ -18,6 +18,7 @@ body {
     background-color: #1f1f1f; /* Colore di sfondo predefinito se l'immagine non viene caricata */
 }
 
+
 body::before {
     content: '';
     position: fixed;
