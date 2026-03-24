@@ -4,6 +4,14 @@ window.changelogList = [
 
 // Post Rilasciati
     {
+        title: 'JE-26.1-7.3.0-Voidblock:7.3.0',
+        date: '24.03.2026',
+        image: 'images/posts/Voidblock/7.3.0/je-26.1-7.3.0_stable.png',
+        file: 'Voidblock/7.3.0/je-26.1-7.3.0_stable.md',
+        tags: ['stable'],
+        visible: true
+    },
+    {
         title: 'JE-26.1-7.3.0-Voidblock:RELEASE_CANDIDATE-1',
         date: '19.03.2026',
         image: 'images/posts/Voidblock/7.3.0/je-26.1-7.3.0_pre1.png',
@@ -250,7 +258,7 @@ window.changelogList = [
         title: 'JE-1.20.6-1.0.0-Edge:BUILDING:23.10.2024a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/Edge/je-1.20.6-1.0.0_dev0.md',
+        file: 'Edge/je-1.20.6-1.0.0_dev0.md',
         tags: ['building','drafts'],
         visible: false
     },
@@ -258,7 +266,7 @@ window.changelogList = [
         title: 'JE-1.17.1-1.0.0-Apocalisse:BUILDING:16.10.2022a - Draft',
         date: '???',
         image: 'images/posts/Apocalisse/first.png',
-        file: 'drafts/Apocalisse/je-1.17.1-1.0.0_dev0.md',
+        file: 'Apocalisse/je-1.17.1-1.0.0_dev0.md',
         tags: ['building','drafts'],
         visible: false
     },
@@ -266,7 +274,7 @@ window.changelogList = [
         title: 'JE-1.20.4-Dimension_Infinity:BUILDING:12.12.2023a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/Dimension_Infinity/je-1.20.6-1.0.0_dev0.md',
+        file: 'Dimension_Infinity/je-1.20.6-1.0.0_dev0.md',
         tags: ['building','drafts'],
         visible: false
     },
@@ -274,7 +282,7 @@ window.changelogList = [
         title: 'JE-1.20.2-Dungeoncraft:BUILDING:30.08.2023a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/Dungeoncraft/je-1.20.6-1.0.0_dev0.md',
+        file: 'Dungeoncraft/je-1.20.6-1.0.0_dev0.md',
         tags: ['building','drafts'],
         visible: false
     },
@@ -282,7 +290,7 @@ window.changelogList = [
         title: 'JE-1.19.4-Infernicus:BUILDING:18.10.2023a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/Infernicus/je-1.19.4-1.0.0_dev0.md',
+        file: 'Infernicus/je-1.19.4-1.0.0_dev0.md',
         tags: ['building','drafts'],
         visible: false
     },
@@ -290,7 +298,7 @@ window.changelogList = [
         title: 'JE-1.19.4-BowShot:BUILDING:07.03.2023a - Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/BowShot/je-1.19.4-1.0.0_dev0.md',
+        file: 'BowShot/je-1.19.4-1.0.0_dev0.md',
         tags: ['building','drafts'],
         visible: false
     },
@@ -302,7 +310,7 @@ window.changelogList = [
         title: 'Draft',
         date: '???',
         image: 'images/drafts/draft.png',
-        file: 'drafts/draft.md',
+        file: 'draft.md',
         tags: ['drafts'],
         visible: false
     },
