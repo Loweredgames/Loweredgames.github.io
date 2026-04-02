@@ -163,12 +163,14 @@ const themeEvents = [
     {
         id: 'april-fools',
         month: 3,
-        day: 1,
+        startDay: 1,
+        endDay: 3,
         className: 'april-fools',
         iconPath: 'images/icons/april_fools/favicon.ico'
     },
 
-    // Natale (intervallo di giorni)
+
+    // Christmas
     {
         id: 'christmas',
         startMonth: 11,
@@ -176,7 +178,21 @@ const themeEvents = [
         startDay: 24,
         endDay: 26,
         className: 'christmas',
-        iconPath: 'images/icons/favicon-christmas.ico'
+        iconPath: 'images/icons/christmas/favicon.ico'
+    },
+
+    
+    // Template
+    {
+        id: 'template', // id per il funzionamento qui sotto
+        month: 3, // mese singolo
+        day: 1, // giorno singolo
+        startMonth: 11, // Inizio mese nel
+        endMonth: 11, // fine mese nel
+        startDay: 24, // inizio giorno nel
+        endDay: 26, // fine giorno nel
+        className: 'template', // id class per sytle.css
+        iconPath: 'images/icons/festivita/favicon.ico' // favicon icon. creare una cartella per ordine.
     }
 ];
 
