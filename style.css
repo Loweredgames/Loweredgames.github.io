@@ -36,7 +36,7 @@ body::before {
     z-index: -1;
 
     /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/casual/strange_mountain.png');
+    background-image: url('images/background/default/notch_day.png');
 }
 
 /* Gestione sfondo per dispositivi mobili */
@@ -75,6 +75,356 @@ body::after {
         rgba(0, 0, 0, 0) 45%,
         rgba(0, 0, 0, 0.4) 100%
     );
+}
+
+/*CHRISTMAS - TO DO DA FARE*/
+
+body.christmas::before {
+    background-color: #0b2f3a;
+    background-image: url('images/background/snows/snowstorm.png');
+    background-blend-mode: normal, screen, screen;
+    filter: blur(2px) brightness(1.05);
+}
+
+body.christmas::after {
+    background:
+        radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.18) 0%, transparent 22%),
+        radial-gradient(circle at 70% 25%, rgba(0, 255, 115, 0.12) 0%, transparent 18%),
+        radial-gradient(circle at 45% 75%, rgba(255, 255, 255, 0.08) 0%, transparent 30%),
+        radial-gradient(circle at center, transparent 45%, rgba(0, 0, 0, 0.38) 100%);
+}
+
+body.christmas header {
+    background-color: #10220e;
+    border-color: #3e8e44;
+}
+
+body.christmas header h1 {
+    color: #f3f9e6;
+    text-shadow: 0 0 18px rgba(120, 221, 123, 0.75);
+}
+
+body.christmas nav a {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #eef5e4;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+body.christmas nav a:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+body.christmas .hero {
+    background-color: rgba(12, 28, 13, 0.95);
+    border-color: #3e8e44;
+    box-shadow: 0 0 40px rgba(62, 142, 68, 0.20);
+}
+
+body.christmas .tag-filter {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #edf7e6;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+body.christmas .tag-filter:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+body.christmas .tag-filter.active {
+    background-color: #2d7b2f;
+    color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(110, 194, 100, 0.35);
+}
+
+body.christmas .footer-content {
+    border-top: 4px solid rgba(62, 142, 68, 0.75);
+}
+
+body.christmas .sidebar {
+    background-color: rgba(8, 23, 11, 0.98);
+    border-color: #2b6b24;
+}
+
+body.christmas .project-links a {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #edf7e6;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+body.christmas .project-links a:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+body.christmas .social-icon img {
+    filter: saturate(1.2) brightness(1.15);
+}
+
+body.christmas .christmas-snow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+body.christmas .christmas-snowflake {
+    position: absolute;
+    top: -10px;
+    background: #ffffff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+    animation-name: christmas-snow-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes christmas-snow-fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(110vh) translateX(20px);
+        opacity: 0.1;
+    }
+}
+
+/*APRIL FOOLS*/
+
+body.april-fools::before {
+    background-color: #14122a;
+    background-image: url('images/background/april_fools/april_fools2026.png');
+    background-size: cover;
+    background-blend-mode: screen, screen, screen;
+    filter: blur(2px) brightness(1.08);
+}
+
+body.april-fools::after {
+    background:
+        radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.14) 0%, transparent 18%),
+        radial-gradient(circle at 80% 20%, rgba(255, 118, 218, 0.14) 0%, transparent 20%),
+        radial-gradient(circle at 50% 85%, rgba(255, 255, 255, 0.08) 0%, transparent 32%),
+        radial-gradient(circle at center, transparent 45%, rgba(0, 0, 0, 0.38) 100%);
+}
+
+body.april-fools header {
+    background-color: #4e007b;
+    border-color: #ffb300;
+}
+
+body.april-fools header h1 {
+    color: #fff5a8;
+    text-shadow: 0 0 18px #ffb700;
+}
+
+body.april-fools nav a {
+    background-color: #4b0082;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+body.april-fools nav a:hover {
+    background-color: #53119f;
+}
+
+body.april-fools .hero {
+    border: 1px dashed #ffe599;
+    box-shadow: 0 0 40px #ff4081;
+}
+
+body.april-fools input#search-changelog {
+    border-color: #ff56c2;
+    background-color: #2b0048;
+    color: #ffffff;
+}
+
+body.april-fools .tag-filter {
+    background-color: #51167f;
+    color: #ffffff;
+    border: 1px solid #ae3bc7;
+}
+
+body.april-fools .tag-filter:hover {
+    background-color: #6d2bba;
+}
+
+body.april-fools .tag-filter.active {
+    background-color: #ff4081;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+body.april-fools footer {
+    background-color: #120025;
+    border-top: 4px solid #ff4081;
+}
+
+body.april-fools .footer-content {
+    border-top: none;
+}
+
+body.april-fools .sidebar {
+    background-color: #1f002e;
+    border-color: #7e27d9;
+}
+
+body.april-fools .project-links a {
+    background-color: #2a0040;
+    color: #f8f2ff;
+    border: 1px solid #8d4dc4;
+}
+
+body.april-fools .project-links a:hover {
+    background-color: #39005f;
+}
+
+body.april-fools .tag-filters {
+    background-color: #3c0055;
+    padding: 0.4rem 0.6rem;
+    border-radius: 28px;
+    border: 1px solid #bf54d3;
+}
+
+body.april-fools .changelog-card {
+    background-color: #1f002e;
+}
+
+body.april-fools .changelog-controls {
+    background-color: #37004e;
+    border: 1px solid #ff48ab;
+    border-radius: 18px;
+    padding: 1rem;
+}
+
+body.april-fools .changelog-list {
+    background-color: #2d003f;
+    border-color: #d54fb2;
+}
+
+body.april-fools .main-content,
+body.april-fools .sidebar {
+    background-color: #210032;
+}
+
+body.april-fools .sidebar h1 {
+    color: #8e5aca;
+}
+body.april-fools .footer-content h3 {
+    color: #6f40a5;
+}
+body.april-fools .changelog h1 {
+    color: #a97cdb;
+}
+body.april-fools .project-links a {
+    color: #926bbe;
+}
+
+body.april-fools .tag-filter {
+    color: #b07deb;
+}
+
+body.april-fools .sidebar h1 {
+    border-color: #ff4081;
+}
+
+body.april-fools .hero {
+    background-color: #3f007b;
+    border-color: #ffb300;
+}
+
+body.april-fools .social-icon img {
+    filter: saturate(1.25) brightness(1.1);
+}
+
+body.april-fools .features,
+body.april-fools .hero,
+body.april-fools .changelog,
+body.april-fools .discord-section {
+    background-color: #210032;
+    border-color: #8d4dc4;
+}
+
+body.april-fools .features li,
+body.april-fools .calendar-month li,
+body.april-fools .post-date {
+    border-color: #9f44d2;
+}
+
+body.april-fools .calendar-year .year-title,
+body.april-fools .calendar-month .month-title,
+body.april-fools .post-title {
+    color: #f8d8ff;
+}
+
+body.april-fools .calendar-month li {
+    background-color: #2d003f;
+}
+
+body.april-fools .calendar-month li:hover {
+    background-color: #3f0068;
+}
+
+body.april-fools .calendar-month a,
+body.april-fools .calendar-month .date {
+    color: #ffd7ff;
+}
+
+body.april-fools .calendar-month a:hover {
+    color: #ffffff;
+}
+
+body.april-fools .post-date {
+    background-color: #3f005d;
+    color: #f0d8ff;
+}
+
+body.april-fools .discord-button,
+body.april-fools .discord-button.alt {
+    background-color: #a139d4;
+}
+
+body.april-fools .discord-button:hover,
+body.april-fools .discord-button.alt:hover {
+    background-color: #7a1f8d;
+}
+
+body.april-fools .footer-content,
+body.april-fools .footer-content h3,
+body.april-fools .footer-content p,
+body.april-fools .footer-content nav a {
+    color: #f8f2ff;
+}
+
+body.april-fools .footer-content {
+    border-top-color: #ff4081;
+}
+
+body.april-fools .april-fools-confetti {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+body.april-fools .april-fools-confetti span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.85;
+    animation: april-fools-confetti 2.5s ease-out forwards;
+}
+
+@keyframes april-fools-confetti {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) translateX(20px) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 /* ===================================
