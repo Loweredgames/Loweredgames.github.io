@@ -162,7 +162,8 @@ const themeEvents = [
     // April Fools'
     {
         id: 'april-fools',
-        month: 3,
+        startMonth: 3,
+        endMonth: 3,
         startDay: 1,
         endDay: 3,
         className: 'april-fools',
@@ -181,7 +182,7 @@ const themeEvents = [
         iconPath: 'images/icons/christmas/favicon.ico'
     },
 
-    
+
     // Template
     {
         id: 'template', // id per il funzionamento qui sotto
@@ -269,6 +270,26 @@ function launchAprilFoolsConfetti() {
     }, 6500);
 }
 
+// Crea un effetto neve esclusivo per il Natale.
+function launchChristmasSnow() {
+    const overlay = document.createElement('div');
+    overlay.className = 'christmas-snow';
+
+    for (let i = 0; i < 60; i++) {
+        const snowflake = document.createElement('span');
+        snowflake.className = 'christmas-snowflake';
+        snowflake.style.left = `${Math.random() * 100}%`;
+        snowflake.style.width = `${4 + Math.random() * 6}px`;
+        snowflake.style.height = snowflake.style.width;
+        snowflake.style.opacity = `${0.5 + Math.random() * 0.5}`;
+        snowflake.style.animationDelay = `${Math.random() * 10}s`;
+        snowflake.style.animationDuration = `${8 + Math.random() * 6}s`;
+        overlay.appendChild(snowflake);
+    }
+
+    document.body.appendChild(overlay);
+}
+
 // Applica il tema del sito in base alla data odierna, se c'è un evento corrispondente.
 function applySiteTheme() {
     // Cerca un evento che corrisponda alla data odierna.
@@ -282,6 +303,9 @@ function applySiteTheme() {
     // Aggiungi effetti speciali per eventi specifici.
     if (event.id === 'april-fools') {
         launchAprilFoolsConfetti();
+    }
+    if (event.id === 'christmas') {
+        launchChristmasSnow();
     }
 }
 

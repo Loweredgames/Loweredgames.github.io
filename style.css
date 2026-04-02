@@ -160,6 +160,36 @@ body.christmas .social-icon img {
     filter: saturate(1.2) brightness(1.15);
 }
 
+body.christmas .christmas-snow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+body.christmas .christmas-snowflake {
+    position: absolute;
+    top: -10px;
+    background: #ffffff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+    animation-name: christmas-snow-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes christmas-snow-fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(110vh) translateX(20px);
+        opacity: 0.1;
+    }
+}
+
 /*APRIL FOOLS*/
 
 body.april-fools::before {
