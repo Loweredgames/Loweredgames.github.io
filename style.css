@@ -78,11 +78,8 @@ body::after {
 /*CHRISTMAS - TO DO DA FARE*/
 
 body.christmas::before {
-    background-color: #081b0f;
-    background-image:
-        linear-gradient(135deg, #0a2b14 0%, #1f4a1f 45%, #521715 100%),
-        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 20%),
-        radial-gradient(circle at 80% 35%, rgba(255, 20, 147, 0.12) 0%, transparent 18%);
+    background-color: #0b2f3a;
+    background-image: url('images/background/snows/snowstorm.png');
     background-blend-mode: normal, screen, screen;
     filter: blur(2px) brightness(1.05);
 }
@@ -158,6 +155,36 @@ body.christmas .project-links a:hover {
 
 body.christmas .social-icon img {
     filter: saturate(1.2) brightness(1.15);
+}
+
+body.christmas .christmas-snow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+body.christmas .christmas-snowflake {
+    position: absolute;
+    top: -10px;
+    background: #ffffff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.9));
+    animation-name: christmas-snow-fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes christmas-snow-fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(110vh) translateX(20px);
+        opacity: 0.1;
+    }
 }
 
 /*APRIL FOOLS*/
