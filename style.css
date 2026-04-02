@@ -78,11 +78,8 @@ body::after {
 /*CHRISTMAS - TO DO DA FARE*/
 
 body.christmas::before {
-    background-color: #081b0f;
-    background-image:
-        linear-gradient(135deg, #0a2b14 0%, #1f4a1f 45%, #521715 100%),
-        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 20%),
-        radial-gradient(circle at 80% 35%, rgba(255, 20, 147, 0.12) 0%, transparent 18%);
+    background-color: #0b2f3a;
+    background-image: url('images/background/snows/snowstorm.png');
     background-blend-mode: normal, screen, screen;
     filter: blur(2px) brightness(1.05);
 }
