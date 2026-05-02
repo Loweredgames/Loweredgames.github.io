@@ -189,7 +189,7 @@ const holidays = [
         className: 'febbraio-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
-    
+
     // Maggio (SEASONS MESI)
     {
         id: 'maggio-seasons',
@@ -249,7 +249,7 @@ function getTodayThemeEvent() {
 
     // TEST: forza data (commenta questa riga per disabilitare)
     // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
-    // const today = new Date(2026, 4, 13); // 25 dicembre 2026
+    // const today = new Date(2026, 11, 25); // anno, mese, giorno
     const today = new Date(); // usa questa per produzione
     
     // Prima cerca negli eventi (priorità alta)
