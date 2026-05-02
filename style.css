@@ -77,10 +77,52 @@ body::after {
 
 /* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
 
-/* Maggio (SEASONS MESI) */
-body.maggio-seasons::before {
+/* Febbraio 1 (SEASONS MESI) TO DO*/
+body.febbraio1-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/end/ender_dragon.png');
+}
+
+/* Febbraio 2 (SEASONS MESI) TO DO*/
+body.febbraio2-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/night/bed.png');
+}
+
+/* Maggio 1 (SEASONS MESI) TO DO*/
+body.maggio1-seasons::before {
     background-color: #66b447;
-    background-image: url('images/background/holiday/casual/flowers.png');
+    background-image: url('images/background/holiday/seasons/maggio/flowers.png');
+}
+
+/* Maggio 2 (SEASONS MESI) TO DO */
+body.maggio2-seasons::before {
+    background-color: #66b447;
+    background-image: url('images/background/holiday/casual/picasso_nose_mountain.png');
+}
+
+/* Giugno 1 (SEASONS MESI) TO DO */
+body.giugno1-seasons::before {
+    background-color: #333c87;
+    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+}
+
+/* Giugno 2 (SEASONS MESI) TO DO */
+body.giugno2-seasons::before {
+    background-color: #333c87;
+    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+}
+
+/* Luglio 1 (SEASONS MESI) TO DO */
+body.luglio1-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/luglio/dromedary.png');
+}
+
+/* Luglio 2 (SEASONS MESI) TO DO */
+body.luglio2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/desert/mesa.png');
 }
 
 /* COMPLEANO DI Minecraft */
@@ -90,11 +132,11 @@ body.mc-birthday::before {
     background-image: url('images/background/events/nostalgic/old_cobblestone.png');
 }
 
-/*CHRISTMAS - TO DO DA FARE*/
+/*CHRISTMAS*/
 
 body.christmas::before {
     background-color: #0b253a;
-    background-image: url('images/background/holiday/snows/snowstorm.png');
+    background-image: url('images/background/holiday/christmas/snowstorm.png');
     background-blend-mode: normal, screen, screen;
     filter: blur(2px) brightness(1.05);
 }
@@ -108,68 +150,245 @@ body.christmas::after {
 }
 
 body.christmas header {
-    background-color: #10220e;
-    border-color: #3e8e44;
+    background-color: #0a1f3c;
+    border-color: #00bfff;
+}
+
+body.christmas #scroll-arrow {
+    background: #0d51b1;
 }
 
 body.christmas header h1 {
-    color: #f3f9e6;
-    text-shadow: 0 0 18px rgba(120, 221, 123, 0.75);
+    color: #e6f7ff;
+    text-shadow: 0 0 18px rgba(0, 191, 255, 0.75);
 }
 
 body.christmas nav a {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #eef5e4;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(135deg, #0066ff 0%, #00bfff 100%);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+body.christmas nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.822) 100%);
+    clip-path: polygon(
+        0% 50%,
+        5% 55%, 10% 52%, 15% 58%, 20% 53%, 25% 60%, 
+        30% 55%, 35% 62%, 40% 56%, 45% 65%, 50% 58%,
+        55% 65%, 60% 56%, 65% 62%, 70% 55%, 75% 60%,
+        80% 53%, 85% 58%, 90% 52%, 95% 55%, 100% 50%,
+        100% 0%, 0% 0%
+    );
+    pointer-events: none;
+    z-index: 1;
 }
 
 body.christmas nav a:hover {
-    background-color: rgba(255, 255, 255, 0.16);
+    background: linear-gradient(135deg, #0052cc 0%, #0099ff 100%);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 body.christmas .hero {
-    background-color: rgba(12, 28, 13, 0.95);
-    border-color: #3e8e44;
-    box-shadow: 0 0 40px rgba(62, 142, 68, 0.20);
+    background-color: rgba(10, 31, 60, 0.95);
+    border-color: #00bfff;
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+body.christmas .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35%;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.822) 100%);
+    clip-path: polygon(
+        0% 50%,
+        5% 55%, 10% 52%, 15% 58%, 20% 53%, 25% 60%, 
+        30% 55%, 35% 62%, 40% 56%, 45% 65%, 50% 58%,
+        55% 65%, 60% 56%, 65% 62%, 70% 55%, 75% 60%,
+        80% 53%, 85% 58%, 90% 52%, 95% 55%, 100% 50%,
+        100% 0%, 0% 0%
+    );
+    pointer-events: none;
+    z-index: 1;
 }
 
 body.christmas .tag-filter {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #edf7e6;
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.4) 0%, rgba(0, 191, 255, 0.3) 100%);
+    color: #ffffff;
+    border: 1px solid rgba(0, 191, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+body.christmas .tag-filter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.822) 100%);
+    clip-path: polygon(
+        0% 50%,
+        5% 55%, 10% 52%, 15% 58%, 20% 53%, 25% 60%, 
+        30% 55%, 35% 62%, 40% 56%, 45% 65%, 50% 58%,
+        55% 65%, 60% 56%, 65% 62%, 70% 55%, 75% 60%,
+        80% 53%, 85% 58%, 90% 52%, 95% 55%, 100% 50%,
+        100% 0%, 0% 0%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+body.christmas .tag-filter::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
 }
 
 body.christmas .tag-filter:hover {
-    background-color: rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, #0052cc 0%, #0099ff 100%);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 body.christmas .tag-filter.active {
-    background-color: #2d7b2f;
+    background: linear-gradient(135deg, #0066ff 0%, #00bfff 100%);
     color: #ffffff;
-    box-shadow: 0 0 0 2px rgba(110, 194, 100, 0.35);
+    box-shadow: 0 0 0 2px rgba(0, 191, 255, 0.5);
 }
 
-body.christmas .footer-content {
-    border-top: 4px solid rgba(62, 142, 68, 0.75);
+body.christmas .changelog-list {
+    background-color: #0a1f3c;
+    border-color: #00bfff;
+    position: relative;
+    overflow: hidden;
+}
+
+body.christmas input#search-changelog {
+    background-color: #133e7a;
+    border-color: #00bfff;
+    color: #ffffff;
 }
 
 body.christmas .sidebar {
-    background-color: rgba(8, 23, 11, 0.98);
-    border-color: #2b6b24;
+    background-color: #0a1f3c;
+    border-color: #00bfff;
+}
+
+body.christmas .sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2%;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.822) 100%);
+    clip-path: polygon(
+        0% 50%,
+        5% 55%, 10% 52%, 15% 58%, 20% 53%, 25% 60%, 
+        30% 55%, 35% 62%, 40% 56%, 45% 65%, 50% 58%,
+        55% 65%, 60% 56%, 65% 62%, 70% 55%, 75% 60%,
+        80% 53%, 85% 58%, 90% 52%, 95% 55%, 100% 50%,
+        100% 0%, 0% 0%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+body.christmas .discord-section {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.4) 0%, rgba(0, 191, 255, 0.10) 100%);
+    color: #ffffff;
+    border: 1px solid rgba(0, 191, 255, 0.5);
+    position: relative;
+    overflow: hidden;
 }
 
 body.christmas .project-links a {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #edf7e6;
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.4) 0%, rgba(0, 191, 255, 0.3) 100%);
+    color: #ffffff;
+    border: 1px solid rgba(0, 191, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+body.christmas .project-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.822) 100%);
+    clip-path: polygon(
+        0% 50%,
+        5% 55%, 10% 52%, 15% 58%, 20% 53%, 25% 60%, 
+        30% 55%, 35% 62%, 40% 56%, 45% 65%, 50% 58%,
+        55% 65%, 60% 56%, 65% 62%, 70% 55%, 75% 60%,
+        80% 53%, 85% 58%, 90% 52%, 95% 55%, 100% 50%,
+        100% 0%, 0% 0%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+
+body.christmas .changelog-card {
+    background-color: #125083;
+}
+
+
+body.christmas .changelog {
+    background-color: #0a1f3c;
+    border-color: #00bfff;
 }
 
 body.christmas .project-links a:hover {
-    background-color: rgba(255, 255, 255, 0.16);
+    background: linear-gradient(135deg, #0052cc 0%, #0099ff 100%);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 body.christmas .social-icon img {
     filter: saturate(1.2) brightness(1.15);
+}
+
+body.christmas .calendar-month li {
+    position: relative;
+    overflow: hidden;
+}
+
+body.christmas .calendar-month li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.822) 100%);
+    clip-path: polygon(
+        0% 50%,
+        5% 55%, 10% 52%, 15% 58%, 20% 53%, 25% 60%, 
+        30% 55%, 35% 62%, 40% 56%, 45% 65%, 50% 58%,
+        55% 65%, 60% 56%, 65% 62%, 70% 55%, 75% 60%,
+        80% 53%, 85% 58%, 90% 52%, 95% 55%, 100% 50%,
+        100% 0%, 0% 0%
+    );
+    pointer-events: none;
+    z-index: 1;
 }
 
 body.christmas .christmas-snow {
