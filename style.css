@@ -33,8 +33,8 @@ body::before {
     filter: blur(3px) brightness(0.7);
     z-index: -1;
 
-    /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/default/notch_day.png');
+    /* Immagine di sfondo default */
+    background-image: url('images/background/default/minecraft.png');
 }
 
 /* Gestione sfondo per dispositivi mobili */
@@ -75,11 +75,26 @@ body::after {
     );
 }
 
+/* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
+
+/* Maggio (SEASONS MESI) */
+body.maggio-seasons::before {
+    background-color: #66b447;
+    background-image: url('images/background/holiday/casual/flowers.png');
+}
+
+/* COMPLEANO DI Minecraft */
+
+body.mc-birthday::before {
+    background-color: #00ff15;
+    background-image: url('images/background/events/nostalgic/old_cobblestone.png');
+}
+
 /*CHRISTMAS - TO DO DA FARE*/
 
 body.christmas::before {
-    background-color: #0b2f3a;
-    background-image: url('images/background/snows/snowstorm.png');
+    background-color: #0b253a;
+    background-image: url('images/background/holiday/snows/snowstorm.png');
     background-blend-mode: normal, screen, screen;
     filter: blur(2px) brightness(1.05);
 }
@@ -191,7 +206,7 @@ body.christmas .christmas-snowflake {
 
 body.april-fools::before {
     background-color: #14122a;
-    background-image: url('images/background/april_fools/april_fools2026.png');
+    background-image: url('images/background/holiday/april_fools/april_fools2026.png');
     background-size: cover;
     background-blend-mode: screen, screen, screen;
     filter: blur(2px) brightness(1.08);
@@ -424,6 +439,314 @@ body.april-fools .april-fools-confetti span {
         opacity: 0;
     }
 }
+
+/* ===================================
+   TEMPLATE TEMA - GUIDA COMPLETA PER CREARE UN NUOVO TEMA
+   
+   ISTRUZIONI DI BASE:
+   1. Copiare questo template
+   2. Sostituire "nome-tema" con il nome del tema (es: halloween, pasqua, estate)
+   3. Sostituire i placeholder con valori reali seguendo gli esempi sottostanti
+   4. Aggiungere l'immagine di sfondo in images/background/tema/nome-tema/
+   5. Testare il tema aggiungendo la classe al body tramite JavaScript
+   
+   PLACEHOLDER E VALORI COMUNI:
+   - #COLORE_SFONDO: Colore esadecimale di base (es: #0b3a0f per tema verde)
+   - #COLORE_HEADER: Colore header leggermente più scuro del tema (es: #10220e)
+   - #COLORE_BORDO: Colore bordi (es: #3e8e44, solitamente una variante del colore principale)
+   - #COLORE_TESTO: Colore testo (preferibilmente #ffffff o variazioni chiare come #eef5e4)
+   - #COLORE_ATTIVO: Colore per elementi selezionati (es: #2d7b2f, versione scura del tema)
+   - #COLORE_PULSANTE: Colore pulsanti principali (es: #a139d4 per April Fools)
+   - #COLORE_HOVER: Colore hover pulsanti (versione più scura, es: #7a1f8d)
+   - VALORE_PX: Pixel per blur e shadow (es: 3, 18, 40)
+   - VALORE (brightness): Moltiplicatore luminosità (es: 0.7, 1.05, 1.15)
+   - OPACITA: Valore alpha (es: 0.08, 0.14, 0.18, 0.38)
+   - POSIZIONE: Posizione gradiente (es: 25% 15%, 70% 25%, 45% 75%)
+   - PERCENTUALE: Raggio gradiente (es: 18%, 20%, 22%, 30%, 45%)
+   - VALORE_REM: Padding/margin in rem (es: 1rem, 1.5rem, 0.8rem)
+   - VALORE (saturate): Saturazione colori (1.0 = normale, 1.2 = +20%, 0.8 = -20%)
+   
+   BACKGROUND DEL TEMA:
+   body.nome-tema::before {
+       background-color: #COLORE_SFONDO;
+       background-image: url('images/background/tema/nome-immagine.png');
+       background-blend-mode: normal, screen, screen;
+       filter: blur(VALORE_PX) brightness(VALORE);
+   }
+   Colore di base dello sfondo: usa un colore che richiama il tema
+   Esempio: #0b3a0f (verde scuro per tema verde), #14122a (blu scuro per april fools)
+   Percorso immagine sfondo: la cartella deve esistere in images/background/
+   Esempio: url('images/background/holiday/snows/snowstorm.png') per Natale
+   Modalità fusione: normal = nessun effetto | screen = schiarisce | multiply = scurisce
+   Consiglio: usare 'screen' per immagini scure, 'normal' per immagini brillanti
+   Sfocatura (blur) e luminosità dell'intera immagine
+   Esempio: blur(3px) brightness(0.7) oppure blur(2px) brightness(1.05)
+   blur: 2-5px (più alto = più sfocato) | brightness: 0.5-1.5 (0.7 = più scuro, 1.1 = più luminoso)
+   
+   EFFETTI VISIVI AGGIUNTIVI - Vignetta e gradienti radiali:
+   body.nome-tema::after {
+       background:
+           radial-gradient(circle at POSIZIONE, rgba(COLORE, OPACITA) 0%, transparent PERCENTUALE%),
+           radial-gradient(circle at POSIZIONE, rgba(COLORE, OPACITA) 0%, transparent PERCENTUALE%),
+           radial-gradient(circle at center, transparent PERCENTUALE%, rgba(COLORE, OPACITA) 100%);
+   }
+   Crea effetti di luce/ombra radiali per dare profondità alla pagina
+   Primo gradiente: luci in alto a sinistra (25%, 15%) con opacità 0.18
+   Secondo gradiente: effetto di colore in alto a destra (70%, 25%)
+   Terzo gradiente: vignetta scura ai bordi e centro luminoso
+   Esempio completo:
+   background:
+       radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.18) 0%, transparent 22%),
+       radial-gradient(circle at 70% 25%, rgba(0, 255, 115, 0.12) 0%, transparent 18%),
+       radial-gradient(circle at center, transparent 45%, rgba(0, 0, 0, 0.38) 100%);
+   
+   HEADER DEL TEMA - Colore e bordo dell'intestazione principale:
+   body.nome-tema header {
+       background-color: #COLORE_HEADER;
+       border-color: #COLORE_BORDO;
+   }
+   Esempio: #10220e (più scuro rispetto al background), #3e8e44 (colore accent del tema)
+   
+   TITOLO HEADER - Testo principale con effetto di luminosità:
+   body.nome-tema header h1 {
+       color: #COLORE_TESTO;
+       text-shadow: 0 0 VALORE_PX rgba(COLORE, OPACITA);
+   }
+   Colore testo: #f3f9e6 (bianco crema per contrasto)
+   Text-shadow: 0 0 18px rgba(120, 221, 123, 0.75)
+   Il text-shadow crea un "glow" attorno al titolo che riflette il colore tematico
+   
+   LINK NAVIGAZIONE - Pulsanti del menu:
+   body.nome-tema nav a {
+       background-color: rgba(COLORE, OPACITA);
+       color: #COLORE_TESTO;
+       border: 1px solid rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(255, 255, 255, 0.08) per semi-trasparente
+   Testo: #eef5e4 (testo chiaro), bordo: rgba(255, 255, 255, 0.18)
+   
+   HOVER NAVIGAZIONE:
+   body.nome-tema nav a:hover {
+       background-color: rgba(COLORE, OPACITA);
+   }
+   Usa rgba(255, 255, 255, 0.16) versione più opaca
+   
+   SEZIONE HERO:
+   body.nome-tema .hero {
+       background-color: rgba(COLORE, OPACITA);
+       border-color: #COLORE_BORDO;
+       box-shadow: 0 0 VALORE_PX rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(12, 28, 13, 0.95), #3e8e44, 0 0 40px rgba(62, 142, 68, 0.20)
+   
+   FILTRI TAG - Bottoni per filtrare il changelog:
+   body.nome-tema .tag-filter {
+       background-color: rgba(COLORE, OPACITA);
+       color: #COLORE_TESTO;
+       border: 1px solid rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(255, 255, 255, 0.08), #edf7e6, rgba(255, 255, 255, 0.14)
+   
+   HOVER FILTRI TAG:
+   body.nome-tema .tag-filter:hover {
+       background-color: rgba(COLORE, OPACITA);
+   }
+   Aumenta opacità: rgba(255, 255, 255, 0.14)
+   
+   TAG ATTIVO - Stile quando il filtro è selezionato:
+   body.nome-tema .tag-filter.active {
+       background-color: #COLORE_ATTIVO;
+       color: #COLORE_TESTO;
+       box-shadow: 0 0 0 2px rgba(COLORE, OPACITA);
+   }
+   Colore più vivido e scuro: #2d7b2f
+   Box-shadow: 0 0 0 2px rgba(110, 194, 100, 0.35)
+   
+   FOOTER - Linea di separazione decorativa:
+   body.nome-tema .footer-content {
+       border-top: 4px solid rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(62, 142, 68, 0.75)
+   
+   SIDEBAR - Barra laterale con progetti:
+   body.nome-tema .sidebar {
+       background-color: rgba(COLORE, OPACITA);
+       border-color: #COLORE_BORDO;
+   }
+   Esempio: rgba(8, 23, 11, 0.98), #2b6b24
+   
+   LINK PROGETTI - Bottoni dei progetti nella sidebar:
+   body.nome-tema .project-links a {
+       background-color: rgba(COLORE, OPACITA);
+       color: #COLORE_TESTO;
+       border: 1px solid rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(255, 255, 255, 0.08), #edf7e6, rgba(255, 255, 255, 0.14)
+   
+   HOVER LINK PROGETTI:
+   body.nome-tema .project-links a:hover {
+       background-color: rgba(COLORE, OPACITA);
+   }
+   Usa rgba(255, 255, 255, 0.16)
+   
+   ICONE SOCIAL - Filtri per le icone social nel footer:
+   body.nome-tema .social-icon img {
+       filter: saturate(VALORE) brightness(VALORE);
+   }
+   Esempio: saturate(1.2) brightness(1.15)
+   saturate: 1.0 = normale | 1.2 = +20% colore | 0.8 = -20% colore
+   brightness: 1.0 = normale | 1.2 = +20% luminoso | 0.8 = -20% luminoso
+   
+   CONTROLLI CHANGELOG - Contenitore della ricerca e filtri:
+   body.nome-tema .changelog-controls {
+       background-color: rgba(COLORE, OPACITA);
+       border: 1px solid rgba(COLORE, OPACITA);
+       border-radius: VALORE_PX;
+       padding: VALORE_REM;
+   }
+   Esempio: rgba(37, 4, 78, 0.95), 1px solid rgba(255, 72, 171, 0.5), 18px, 1rem
+   
+   LISTA CHANGELOG - Sfondo della sezione changelog:
+   body.nome-tema .changelog-list {
+       background-color: rgba(COLORE, OPACITA);
+       border-color: #COLORE_BORDO;
+   }
+   Esempio: rgba(45, 0, 63, 0.95), #d54fb2
+   
+   CONTENUTO PRINCIPALE E SIDEBAR - Sfondo generale pagine interne:
+   body.nome-tema .main-content, body.nome-tema .sidebar {
+       background-color: rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(33, 0, 50, 0.98)
+   
+   TITOLI SIDEBAR:
+   body.nome-tema .sidebar h1 {
+       color: #COLORE_TESTO;
+       border-color: #COLORE_BORDO;
+   }
+   Esempio: #8e5aca (viola pallido), #ff4081 (colore accent)
+   
+   TITOLI FOOTER:
+   body.nome-tema .footer-content h3 {
+       color: #COLORE_TESTO;
+   }
+   Esempio: #6f40a5
+   
+   TITOLI CHANGELOG:
+   body.nome-tema .changelog h1 {
+       color: #COLORE_TESTO;
+   }
+   Esempio: #a97cdb
+   
+   TITOLI POST:
+   body.nome-tema .post-title {
+       color: #COLORE_TESTO;
+   }
+   Esempio: #f8d8ff
+   
+   FEATURES, HERO, CHANGELOG, DISCORD - Aree principali della pagina:
+   body.nome-tema .features, body.nome-tema .hero, body.nome-tema .changelog,
+   body.nome-tema .discord-section {
+       background-color: rgba(COLORE, OPACITA);
+       border-color: #COLORE_BORDO;
+   }
+   Esempio: rgba(33, 0, 50, 0.98), #8d4dc4
+   
+   BORDI ELEMENTI - Linee di separazione in liste:
+   body.nome-tema .features li, body.nome-tema .calendar-month li,
+   body.nome-tema .post-date {
+       border-color: #COLORE_BORDO;
+   }
+   Esempio: #9f44d2
+   
+   TITOLI CALENDARIO:
+   body.nome-tema .calendar-year .year-title, body.nome-tema .calendar-month .month-title,
+   body.nome-tema .post-title {
+       color: #COLORE_TESTO;
+   }
+   Esempio: #f8d8ff
+   
+   ELEMENTI CALENDARIO - Sfondo celle:
+   body.nome-tema .calendar-month li {
+       background-color: rgba(COLORE, OPACITA);
+   }
+   Esempio: rgba(45, 0, 63, 0.95)
+   
+   HOVER CALENDARIO - Effetto mouse su celle:
+   body.nome-tema .calendar-month li:hover {
+       background-color: rgba(COLORE, OPACITA);
+   }
+   Usa versione più scura: rgba(63, 0, 104, 0.95)
+   
+   LINK E DATE CALENDARIO:
+   body.nome-tema .calendar-month a, body.nome-tema .calendar-month .date {
+       color: #COLORE_TESTO;
+   }
+   Esempio: #ffd7ff
+   
+   HOVER LINK CALENDARIO:
+   body.nome-tema .calendar-month a:hover {
+       color: #COLORE_TESTO;
+   }
+   Usa colore più chiaro: #ffffff
+   
+   DATE POST - Badge con data del post:
+   body.nome-tema .post-date {
+       background-color: rgba(COLORE, OPACITA);
+       color: #COLORE_TESTO;
+   }
+   Esempio: rgba(63, 0, 93, 0.95), #f0d8ff
+   
+   PULSANTI DISCORD - Bottoni principali:
+   body.nome-tema .discord-button, body.nome-tema .discord-button.alt {
+       background-color: #COLORE_PULSANTE;
+   }
+   Esempio: #a139d4 (colore vibrante)
+   
+   HOVER PULSANTI DISCORD:
+   body.nome-tema .discord-button:hover, body.nome-tema .discord-button.alt:hover {
+       background-color: #COLORE_HOVER;
+   }
+   Usa versione più scura: #7a1f8d
+   
+   CONTENUTO FOOTER COMPLETO - Testo footer e link:
+   body.nome-tema .footer-content, body.nome-tema .footer-content h3,
+   body.nome-tema .footer-content p, body.nome-tema .footer-content nav a {
+       color: #COLORE_TESTO;
+   }
+   Esempio: #f8f2ff
+   
+   BORDO TOP FOOTER:
+   body.nome-tema .footer-content {
+       border-top-color: #COLORE_BORDO;
+   }
+   Esempio: #ff4081
+   
+   CONSIGLI PER LA CREAZIONE DI TEMI ARMONICI:
+   
+   1. SCELTA COLORI:
+      - Scegliere 1-2 colori primari (es: verde per tema "Minecraft Birthday")
+      - Creare varianti scure (header, border) e chiare (accenti)
+      - Testare il contrasto con testo bianco per accessibilità
+   
+   2. OPACITA':
+      - UI elements: 0.08-0.16 (semi-trasparente)
+      - Sezioni principali: 0.95-0.98 (quasi opaco)
+      - Accenti/vignette: 0.18-0.38 (moderato)
+   
+   3. BLUR E BRIGHTNESS:
+      - blur: 2-3px per immagini ad alta risoluzione, 0-1px per sfondi soft
+      - brightness: 0.7 per immagini molto luminose, 1.0-1.05 per immagini scure
+   
+   4. GRADIENTE VIGNETTA:
+      - Mantenere sempre un'ombra sui bordi per leggibilità
+      - Aggiungere luci secondarie (25% 15%, 70% 25%) per profondità
+      - Center gradient: (transparent 45%, rgba(0,0,0,0.38) 100%)
+   
+   5. RESPONSIVE:
+      - I temi funzionano su tutti i dispositivi automaticamente
+      - Testare su mobile per verificare visibilità testo
+=================================== */
 
 /* ===================================
    Header e Navigazione
