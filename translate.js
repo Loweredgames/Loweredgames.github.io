@@ -7,9 +7,8 @@
  * 
  * Come funziona:
  * - `themeEvents` è un array di eventi.
- * - Ogni evento può usare `month` e `day` per un singolo giorno,
- *   oppure `startMonth` + `startDay` e `endMonth` + `endDay`
- *   per un intervallo di date.
+ * - Ogni evento usa `month` per il mese singolo, e `startDay` + `endDay` per un intervallo di giorni nello stesso mese.
+ * - Per un singolo giorno, usa `month` e `day`.
  * - Se la data corrisponde, viene aggiunta la classe CSS al body
  *   (`body.classList.add(event.className)`) e viene aggiornato il favicon.
  * - Per l'evento `april-fools` viene anche lanciato un effetto confetti.
@@ -19,10 +18,12 @@
  * 1) nella variabile `themeEvents`, aggiungi un nuovo oggetto:
  *      {
  *          id: 'nome-evento',
- *          month: 11, // gennaio = 0, febbraio = 1, ..., dicembre = 11
- *          day: 25,
- *          className: 'christmas',
- *          iconPath: 'images/icons/favicon-christmas.ico' Deve essere un .ico
+ *          month: 3, // mese (0-11)
+ *          day: 1, // singolo giorno (opzionale se intervallo)
+ *          startDay: 1, // inizio intervallo giorni (opzionale)
+ *          endDay: 3, // fine intervallo giorni (opzionale)
+ *          className: 'nome-evento',
+ *          iconPath: 'images/icons/nome-evento/favicon.ico'
  *      }
  *
  * 2) in `style.css`, aggiungi gli stili per:
@@ -162,8 +163,7 @@ const themeEvents = [
     // April Fools'
     {
         id: 'april-fools',
-        startMonth: 3,
-        endMonth: 3,
+        month: 3,
         startDay: 1,
         endDay: 3,
         className: 'april-fools',
@@ -171,11 +171,10 @@ const themeEvents = [
     },
 
 
-    // Christmas
+    // Christmas (To do)
     {
         id: 'christmas',
-        startMonth: 11,
-        endMonth: 11,
+        month: 11,
         startDay: 24,
         endDay: 26,
         className: 'christmas',
@@ -187,37 +186,29 @@ const themeEvents = [
     {
         id: 'template', // id per il funzionamento qui sotto
         month: 3, // mese singolo
-        day: 1, // giorno singolo
-        startMonth: 11, // Inizio mese nel
-        endMonth: 11, // fine mese nel
-        startDay: 24, // inizio giorno nel
-        endDay: 26, // fine giorno nel
+        day: 1, // giorno singolo (usare solo questo se è un solo giorno)
+        startDay: 24, // inizio giorno nel mese (usare solo questo se è multiplo mese)
+        endDay: 26, // fine giorno nel mese (usare solo questo se è multiplo mese)
         className: 'template', // id class per sytle.css
         iconPath: 'images/icons/festivita/favicon.ico' // favicon icon. creare una cartella per ordine.
     }
 ];
 
 function isTodayInEventRange(event, today) {
-    const hasRange =
-        typeof event.startMonth === 'number' &&
-        typeof event.startDay === 'number' &&
-        typeof event.endMonth === 'number' &&
-        typeof event.endDay === 'number';
+    const currentMonth = today.getMonth();
+    const currentDay = today.getDate();
 
-    if (hasRange) {
-        const year = today.getFullYear();
-        const startDate = new Date(year, event.startMonth, event.startDay);
-        const endDate = new Date(year, event.endMonth, event.endDay);
-
-        if (startDate <= endDate) {
-            return today >= startDate && today <= endDate;
-        }
-
-        // Intervallo che attraversa l'anno nuovo, es. 28 dicembre -> 2 gennaio
-        return today >= startDate || today <= endDate;
+    // Se ha un singolo giorno
+    if (typeof event.day === 'number') {
+        return event.month === currentMonth && event.day === currentDay;
     }
 
-    return event.month === today.getMonth() && event.day === today.getDate();
+    // Se ha un intervallo di giorni nello stesso mese
+    if (typeof event.startDay === 'number' && typeof event.endDay === 'number') {
+        return event.month === currentMonth && currentDay >= event.startDay && currentDay <= event.endDay;
+    }
+
+    return false;
 }
 
 // Cerca l'evento che corrisponde alla data odierna.
@@ -309,10 +300,6 @@ function applySiteTheme() {
     }
 }
 
-/**
- * Funzione di inizializzazione del widget di Google Translate
- * Viene chiamata automaticamente dallo script di Google
- */
 // Callback richiesta da Google Translate per inizializzare il widget.
 window.googleTranslateElementInit = function() {
     new google.translate.TranslateElement({
