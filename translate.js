@@ -160,26 +160,6 @@ function loadTranslateWidget() {
 // Lista delle festività (priorità bassa, sovrascrivono il tema default).
 const holidays = [
     
-    // Christmas TO DO
-    {
-        id: 'christmas',
-        month: 11,
-        startDay: 24,
-        endDay: 26,
-        className: 'christmas',
-        iconPath: 'images/icons/christmas/favicon.ico'
-    },
-    
-    // April Fools'
-    {
-        id: 'april-fools',
-        month: 3,
-        startDay: 1,
-        endDay: 3,
-        className: 'april-fools',
-        iconPath: 'images/icons/april_fools/favicon.ico'
-    },
-    
     // Febbraio (SEASONS MESI)
     {
         id: 'febbraio-seasons',
@@ -198,11 +178,51 @@ const holidays = [
         endDay: 31,
         className: 'maggio-seasons',
         iconPath: 'images/icons/favicon.ico'
+    },
+
+        // Giugno (SEASONS MESI)
+    {
+        id: 'giugno-seasons',
+        month: 5,
+        startDay: 1,
+        endDay: 31,
+        className: 'giugno-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+        // Luglio (SEASONS MESI)
+    {
+        id: 'luglio-seasons',
+        month: 6,
+        startDay: 1,
+        endDay: 31,
+        className: 'luglio-seasons',
+        iconPath: 'images/icons/favicon.ico'
     }
 ];
 
 // Lista degli eventi (priorità alta, sovrascrivono festività e tema default). hanno priorità massima e sovrascrivono tutto.
 const events = [
+    
+    // Christmas
+    {
+        id: 'christmas',
+        month: 11,
+        startDay: 24,
+        endDay: 26,
+        className: 'christmas',
+        iconPath: 'images/icons/christmas/favicon.ico'
+    },
+    
+    // April Fools'
+    {
+        id: 'april-fools',
+        month: 3,
+        startDay: 1,
+        endDay: 3,
+        className: 'april-fools',
+        iconPath: 'images/icons/april_fools/favicon.ico'
+    },
     
     // Compleanno di Minecraft
     {

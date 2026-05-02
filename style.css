@@ -89,6 +89,18 @@ body.maggio-seasons::before {
     background-image: url('images/background/holiday/seasons/maggio/flowers.png');
 }
 
+/* Giugno (SEASONS MESI) */
+body.giugno-seasons::before {
+    background-color: #333c87;
+    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+}
+
+/* Luglio (SEASONS MESI) */
+body.luglio-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/luglio/dromedary.png');
+}
+
 /* COMPLEANO DI Minecraft */
 
 body.mc-birthday::before {
