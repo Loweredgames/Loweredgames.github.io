@@ -160,43 +160,83 @@ function loadTranslateWidget() {
 // Lista delle festività (priorità bassa, sovrascrivono il tema default).
 const holidays = [
     
-    // Febbraio (SEASONS MESI)
+    // Febbraio 1 (SEASONS MESI)
     {
-        id: 'febbraio-seasons',
+        id: 'febbraio1-seasons',
         month: 1,
         startDay: 1,
-        endDay: 29,
-        className: 'febbraio-seasons',
+        endDay: 15,
+        className: 'febbraio1-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
 
-    // Maggio (SEASONS MESI)
+    // Febbraio 2 (SEASONS MESI)
     {
-        id: 'maggio-seasons',
+        id: 'febbraio2-seasons',
+        month: 1,
+        startDay: 16,
+        endDay: 29,
+        className: 'febbraio2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Maggio 1 (SEASONS MESI)
+    {
+        id: 'maggio1-seasons',
         month: 4,
         startDay: 1,
-        endDay: 31,
-        className: 'maggio-seasons',
+        endDay: 15,
+        className: 'maggio1-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
 
-        // Giugno (SEASONS MESI)
+    // Maggio 2 (SEASONS MESI)
     {
-        id: 'giugno-seasons',
+        id: 'maggio2-seasons',
+        month: 4,
+        startDay: 16,
+        endDay: 31,
+        className: 'maggio2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Giugno 1 (SEASONS MESI)
+    {
+        id: 'giugno1-seasons',
         month: 5,
         startDay: 1,
-        endDay: 31,
-        className: 'giugno-seasons',
+        endDay: 15,
+        className: 'giugno1-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
 
-        // Luglio (SEASONS MESI)
+    // Giugno 2 (SEASONS MESI)
     {
-        id: 'luglio-seasons',
+        id: 'giugno2-seasons',
+        month: 5,
+        startDay: 16,
+        endDay: 31,
+        className: 'giugno2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Luglio 1 (SEASONS MESI)
+    {
+        id: 'luglio1-seasons',
         month: 6,
         startDay: 1,
+        endDay: 15,
+        className: 'luglio1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Luglio 2 (SEASONS MESI)
+    {
+        id: 'luglio2-seasons',
+        month: 6,
+        startDay: 16,
         endDay: 31,
-        className: 'luglio-seasons',
+        className: 'luglio2-seasons',
         iconPath: 'images/icons/favicon.ico'
     }
 ];

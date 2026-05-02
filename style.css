@@ -77,28 +77,52 @@ body::after {
 
 /* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
 
-/* Febbraio (SEASONS MESI) TO DO */
-body.maggio-seasons::before {
+/* Febbraio 1 (SEASONS MESI) TO DO*/
+body.febbraio1-seasons::before {
     background-color: #a5b49f;
     background-image: url('images/background/holiday/end/ender_dragon.png');
 }
 
-/* Maggio (SEASONS MESI) */
-body.maggio-seasons::before {
+/* Febbraio 2 (SEASONS MESI) TO DO*/
+body.febbraio2-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/night/bed.png');
+}
+
+/* Maggio 1 (SEASONS MESI) TO DO*/
+body.maggio1-seasons::before {
     background-color: #66b447;
     background-image: url('images/background/holiday/seasons/maggio/flowers.png');
 }
 
-/* Giugno (SEASONS MESI) */
-body.giugno-seasons::before {
+/* Maggio 2 (SEASONS MESI) TO DO */
+body.maggio2-seasons::before {
+    background-color: #66b447;
+    background-image: url('images/background/holiday/casual/picasso_nose_mountain.png');
+}
+
+/* Giugno 1 (SEASONS MESI) TO DO */
+body.giugno1-seasons::before {
     background-color: #333c87;
     background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
 }
 
-/* Luglio (SEASONS MESI) */
-body.luglio-seasons::before {
+/* Giugno 2 (SEASONS MESI) TO DO */
+body.giugno2-seasons::before {
+    background-color: #333c87;
+    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+}
+
+/* Luglio 1 (SEASONS MESI) TO DO */
+body.luglio1-seasons::before {
     background-color: #eeff00;
     background-image: url('images/background/holiday/seasons/luglio/dromedary.png');
+}
+
+/* Luglio 2 (SEASONS MESI) TO DO */
+body.luglio2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/desert/mesa.png');
 }
 
 /* COMPLEANO DI Minecraft */
