@@ -6,16 +6,18 @@
  *
  * 
  * Come funziona:
- * - `themeEvents` è un array di eventi.
- * - Ogni evento usa `month` per il mese singolo, e `startDay` + `endDay` per un intervallo di giorni nello stesso mese.
+ * - `holidays` è un array di festività (priorità bassa, sovrascrivono il tema default).
+ * - `events` è un array di eventi (priorità alta, sovrascrivono festività e tema default).
+ * - Ogni elemento usa `month` per il mese singolo, e `startDay` + `endDay` per un intervallo di giorni nello stesso mese.
  * - Per un singolo giorno, usa `month` e `day`.
  * - Se la data corrisponde, viene aggiunta la classe CSS al body
  *   (`body.classList.add(event.className)`) e viene aggiornato il favicon.
- * - Per l'evento `april-fools` viene anche lanciato un effetto confetti.
+ * - Priorità: eventi > festività > tema default.
  *
  * 
- * Come aggiungere un nuovo evento:
- * 1) nella variabile `themeEvents`, aggiungi un nuovo oggetto:
+ * Come aggiungere una nuova festività o evento:
+ * 1) Scegli l'array appropriato: `holidays` per festività (priorità bassa), `events` per eventi (priorità alta).
+ * 2) Aggiungi un nuovo oggetto:
  *      {
  *          id: 'nome-evento',
  *          month: 3, // mese (0-11)
@@ -155,23 +157,10 @@ function loadTranslateWidget() {
     document.body.appendChild(script);
 }
 
-// Lista degli eventi speciali che cambiano il tema del sito.
-// Ogni oggetto rappresenta un evento con data, classe CSS e favicon dedicato.
-const themeEvents = [
+// Lista delle festività (priorità bassa, sovrascrivono il tema default).
+const holidays = [
     
-
-    // April Fools'
-    {
-        id: 'april-fools',
-        month: 3,
-        startDay: 1,
-        endDay: 3,
-        className: 'april-fools',
-        iconPath: 'images/icons/april_fools/favicon.ico'
-    },
-
-
-    // Christmas (To do)
+    // Christmas TO DO
     {
         id: 'christmas',
         month: 11,
@@ -180,19 +169,41 @@ const themeEvents = [
         className: 'christmas',
         iconPath: 'images/icons/christmas/favicon.ico'
     },
-
-
-    // Template
+        // April Fools'
     {
-        id: 'template', // id per il funzionamento qui sotto
-        month: 3, // mese singolo
-        day: 1, // giorno singolo (usare solo questo se è un solo giorno)
-        startDay: 24, // inizio giorno nel mese (usare solo questo se è multiplo mese)
-        endDay: 26, // fine giorno nel mese (usare solo questo se è multiplo mese)
-        className: 'template', // id class per sytle.css
-        iconPath: 'images/icons/festivita/favicon.ico' // favicon icon. creare una cartella per ordine.
+        id: 'april-fools',
+        month: 3,
+        startDay: 1,
+        endDay: 3,
+        className: 'april-fools',
+        iconPath: 'images/icons/april_fools/favicon.ico'
     }
 ];
+
+// Lista degli eventi (priorità alta, sovrascrivono festività e tema default). hanno priorità massima e sovrascrivono tutto.
+const events = [
+    
+    // April Fools' To do da cambiare
+    {
+        id: 'april-fools',
+        month: 3,
+        startDay: 1,
+        endDay: 3,
+        className: 'april-fools',
+        iconPath: 'images/icons/april_fools/favicon.ico'
+    }
+];
+
+// Template (può essere usato per aggiungere altri eventi o festività)
+const template_dummy = { // NON USARE, SERVE SOLO COME SEPARATORE. aggiungere in const events/holidays
+        id: 'template', // id univoco per identificare l'evento/festività
+        month: 3, // mese (0 = gennaio, 1 = febbraio, ..., 11 = dicembre)
+        day: 1, // giorno singolo (usa solo questo per eventi di un giorno)
+        startDay: 24, // inizio intervallo giorni
+        endDay: 26, // fine intervallo giorni
+        className: 'template', // classe CSS da aggiungere al body (devi creare stili in style.css in uno custom)
+        iconPath: 'images/icons/festivita/favicon.ico' // percorso al favicon (crea cartella e file .ico)
+};
 
 function isTodayInEventRange(event, today) {
     const currentMonth = today.getMonth();
@@ -211,10 +222,25 @@ function isTodayInEventRange(event, today) {
     return false;
 }
 
-// Cerca l'evento che corrisponde alla data odierna.
+// Prima controlla se c'è un evento attivo (priorità alta).
+// Se non c'è, controlla se c'è una festività attiva (priorità bassa).
+// Se niente, restituisce null e rimane il tema default.
 function getTodayThemeEvent() {
-    const today = new Date();
-    return themeEvents.find(event => isTodayInEventRange(event, today));
+
+    // TEST: forza data (commenta questa riga per disabilitare)
+    // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
+    // const today = new Date(2026, 11, 25); // 25 dicembre 2026
+    const today = new Date(); // usa questa per produzione
+    
+    // Prima cerca negli eventi (priorità alta)
+    const activeEvent = events.find(event => isTodayInEventRange(event, today));
+    if (activeEvent) return activeEvent;
+    
+    // Poi cerca nelle festività (priorità bassa)
+    const activeHoliday = holidays.find(holiday => isTodayInEventRange(holiday, today));
+    if (activeHoliday) return activeHoliday;
+    
+    return null;
 }
 
 function updateFaviconForEvent(event) {
@@ -282,6 +308,8 @@ function launchChristmasSnow() {
 }
 
 // Applica il tema del sito in base alla data odierna, se c'è un evento corrispondente.
+// Questa funzione viene chiamata al caricamento della pagina.
+// Aggiunge la classe CSS al body, cambia il favicon e lancia effetti speciali.
 function applySiteTheme() {
     // Cerca un evento che corrisponda alla data odierna.
     const event = getTodayThemeEvent();

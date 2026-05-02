@@ -33,8 +33,8 @@ body::before {
     filter: blur(3px) brightness(0.7);
     z-index: -1;
 
-    /* Immagine di sfondo, basta cambiare url */
-    background-image: url('images/background/default/notch_day.png');
+    /* Immagine di sfondo default */
+    background-image: url('images/background/default/minecraft.png');
 }
 
 /* Gestione sfondo per dispositivi mobili */
