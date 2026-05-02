@@ -169,7 +169,8 @@ const holidays = [
         className: 'christmas',
         iconPath: 'images/icons/christmas/favicon.ico'
     },
-        // April Fools'
+    
+    // April Fools'
     {
         id: 'april-fools',
         month: 3,
@@ -177,20 +178,29 @@ const holidays = [
         endDay: 3,
         className: 'april-fools',
         iconPath: 'images/icons/april_fools/favicon.ico'
+    },
+    
+    // Maggio (SEASONS MESI)
+    {
+        id: 'maggio-seasons',
+        month: 4,
+        startDay: 1,
+        endDay: 31,
+        className: 'maggio-seasons',
+        iconPath: 'images/icons/favicon.ico'
     }
 ];
 
 // Lista degli eventi (priorità alta, sovrascrivono festività e tema default). hanno priorità massima e sovrascrivono tutto.
 const events = [
     
-    // April Fools' To do da cambiare
+    // Compleanno di Minecraft
     {
-        id: 'april-fools',
-        month: 3,
-        startDay: 1,
-        endDay: 3,
-        className: 'april-fools',
-        iconPath: 'images/icons/april_fools/favicon.ico'
+        id: 'mc-birthday',
+        month: 4,
+        day: 13,
+        className: 'mc-birthday',
+        iconPath: 'images/icons/mc-birthday/favicon.ico'
     }
 ];
 
@@ -229,7 +239,7 @@ function getTodayThemeEvent() {
 
     // TEST: forza data (commenta questa riga per disabilitare)
     // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
-    // const today = new Date(2026, 11, 25); // 25 dicembre 2026
+    // const today = new Date(2026, 4, 13); // 25 dicembre 2026
     const today = new Date(); // usa questa per produzione
     
     // Prima cerca negli eventi (priorità alta)
