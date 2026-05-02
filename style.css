@@ -77,6 +77,12 @@ body::after {
 
 /* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
 
+/* Febbraio (SEASONS MESI) TO DO */
+body.maggio-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/end/ender_dragon.png');
+}
+
 /* Maggio (SEASONS MESI) */
 body.maggio-seasons::before {
     background-color: #66b447;

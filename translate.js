@@ -180,6 +180,16 @@ const holidays = [
         iconPath: 'images/icons/april_fools/favicon.ico'
     },
     
+    // Febbraio (SEASONS MESI)
+    {
+        id: 'febbraio-seasons',
+        month: 1,
+        startDay: 1,
+        endDay: 29,
+        className: 'febbraio-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
     // Maggio (SEASONS MESI)
     {
         id: 'maggio-seasons',
