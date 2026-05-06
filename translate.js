@@ -197,7 +197,7 @@ const holidays = [
     {
         id: 'gennaio1-seasons',
         month: 0,
-        startDay: 1,
+        startDay: 5,
         endDay: 15,
         className: 'gennaio1-seasons',
         iconPath: 'images/icons/favicon.ico'
@@ -352,6 +352,87 @@ const holidays = [
         className: 'agosto2-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
+
+    // Settembre 1 (SEASONS MESI)
+    {
+        id: 'settembre1-seasons',
+        month: 8,
+        startDay: 1,
+        endDay: 15,
+        className: 'settembre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Settembre 2 (SEASONS MESI)
+    {
+        id: 'settembre2-seasons',
+        month: 8,
+        startDay: 16,
+        endDay: 31,
+        className: 'settembre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Ottobre 1 (SEASONS MESI)
+    {
+        id: 'ottobre1-seasons',
+        month: 9,
+        startDay: 1,
+        endDay: 15,
+        className: 'ottobre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Ottobre 2 (SEASONS MESI)
+    {
+        id: 'ottobre2-seasons',
+        month: 9,
+        startDay: 16,
+        endDay: 31,
+        className: 'ottobre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Novembre 1 (SEASONS MESI)
+    {
+        id: 'novembre1-seasons',
+        month: 10,
+        startDay: 1,
+        endDay: 15,
+        className: 'novembre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Novembre 2 (SEASONS MESI)
+    {
+        id: 'novembre2-seasons',
+        month: 10,
+        startDay: 16,
+        endDay: 31,
+        className: 'novembre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Dicembre 1 (SEASONS MESI)
+    {
+        id: 'dicembre1-seasons',
+        month: 11,
+        startDay: 1,
+        endDay: 15,
+        className: 'dicembre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Dicembre 2 (SEASONS MESI)
+    {
+        id: 'dicembre2-seasons',
+        month: 11,
+        startDay: 16,
+        endDay: 31,
+        className: 'dicembre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
 ];
 
 // Template (può essere usato per aggiungere altri eventi o festività)
@@ -389,7 +470,7 @@ function getTodayThemeEvent() {
 
     // TEST: forza data (commenta questa riga per disabilitare)
     // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
-    // const today = new Date(2026, 3, 16); // anno, mese, giorno
+    // const today = new Date(2026, 0, 1); // anno, mese, giorno
     const today = new Date(); // usa questa per produzione
     
     // Prima cerca negli eventi (priorità alta)

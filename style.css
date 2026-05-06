@@ -80,49 +80,49 @@ body::after {
 /* Gennaio 1 (SEASONS MESI) TO DO*/
 body.gennaio1-seasons::before {
     background-color: #a5b49f;
-    background-image: url('images/background/holiday/end/ender_dragon.png');
+    background-image: url('images/background/holiday/seasons/gennaio/draft.png');
 }
 
 /* Gennaio 2 (SEASONS MESI) TO DO*/
 body.gennaio2-seasons::before {
     background-color: #a5b49f;
-    background-image: url('images/background/holiday/end/ender_dragon.png');
+    background-image: url('images/background/holiday/seasons/gennaio/draft.png');
 }
 
 /* Febbraio 1 (SEASONS MESI) TO DO*/
 body.febbraio1-seasons::before {
     background-color: #a5b49f;
-    background-image: url('images/background/holiday/end/ender_dragon.png');
+    background-image: url('images/background/holiday/seasons/febbrario/draft.png');
 }
 
 /* Febbraio 2 (SEASONS MESI) TO DO*/
 body.febbraio2-seasons::before {
     background-color: #a5b49f;
-    background-image: url('images/background/holiday/night/bed.png');
+    background-image: url('images/background/holiday/seasons/febbrario/draft.png');
 }
 
 /* Marzo 1 (SEASONS MESI) TO DO*/
 body.marzo1-seasons::before {
     background-color: #c09917;
-    background-image: url('images/background/holiday/night/bed.png');
+    background-image: url('images/background/holiday/seasons/marzo/fall.png');
 }
 
 /* Marzo 2 (SEASONS MESI) TO DO*/
 body.marzo2-seasons::before {
     background-color: #e2730b;
-    background-image: url('images/background/holiday/night/bed.png');
+    background-image: url('images/background/holiday/seasons/marzo/draft.png');
 }
 
 /* Aprile 1 (SEASONS MESI) TO DO*/
 body.aprile1-seasons::before {
     background-color: #a5b49f;
-    background-image: url('images/background/holiday/night/bed.png');
+    background-image: url('images/background/holiday/seasons/aprile/mooshroom.png');
 }
 
 /* Aprile 2 (SEASONS MESI) TO DO*/
 body.aprile2-seasons::before {
     background-color: #a5b49f;
-    background-image: url('images/background/holiday/seasons/aprile/mooshroom.png');
+    background-image: url('images/background/holiday/seasons/aprile/vast_forest.png');
 }
 
 /* Maggio 1 (SEASONS MESI) TO DO*/
@@ -134,43 +134,43 @@ body.maggio1-seasons::before {
 /* Maggio 2 (SEASONS MESI) TO DO */
 body.maggio2-seasons::before {
     background-color: #66b447;
-    background-image: url('images/background/holiday/casual/picasso_nose_mountain.png');
+    background-image: url('images/background/holiday/seasons/maggio/river.png');
 }
 
 /* Giugno 1 (SEASONS MESI) TO DO */
 body.giugno1-seasons::before {
     background-color: #333c87;
-    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+    background-image: url('images/background/holiday/seasons/giugno/village.png');
 }
 
 /* Giugno 2 (SEASONS MESI) TO DO */
 body.giugno2-seasons::before {
     background-color: #333c87;
-    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+    background-image: url('images/background/holiday/seasons/giugno/draft.png');
 }
 
 /* Luglio 1 (SEASONS MESI) TO DO */
 body.luglio1-seasons::before {
     background-color: #eeff00;
-    background-image: url('images/background/holiday/seasons/luglio/dromedary.png');
+    background-image: url('images/background/holiday/seasons/luglio/rabbit_desert.png');
 }
 
 /* Luglio 2 (SEASONS MESI) TO DO */
 body.luglio2-seasons::before {
     background-color: #eeff00;
-    background-image: url('images/background/holiday/desert/mesa.png');
+    background-image: url('images/background/holiday/seasons/luglio/badland.png');
 }
 
 /* Agosto 1 (SEASONS MESI) TO DO */
 body.agosto1-seasons::before {
     background-color: #eeff00;
-    background-image: url('images/background/holiday/desert/mesa.png');
+    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
 }
 
 /* Agosto 2 (SEASONS MESI) TO DO */
 body.agosto2-seasons::before {
     background-color: #eeff00;
-    background-image: url('images/background/holiday/desert/mesa.png');
+    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
 }
 
 /* COMPLEANO DI Minecraft */
