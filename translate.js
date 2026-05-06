@@ -432,7 +432,6 @@ const holidays = [
         className: 'dicembre2-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
-
 ];
 
 // Template (può essere usato per aggiungere altri eventi o festività)
