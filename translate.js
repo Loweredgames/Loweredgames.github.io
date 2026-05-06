@@ -160,118 +160,19 @@ function loadTranslateWidget() {
 // Lista delle festività (priorità bassa, sovrascrivono il tema default).
 const holidays = [
     
-    // Febbraio 1 (SEASONS MESI)
-    {
-        id: 'febbraio1-seasons',
-        month: 1,
-        startDay: 1,
-        endDay: 15,
-        className: 'febbraio1-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
+{
+    None
+}
 
-    // Febbraio 2 (SEASONS MESI)
-    {
-        id: 'febbraio2-seasons',
-        month: 1,
-        startDay: 16,
-        endDay: 29,
-        className: 'febbraio2-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
-
-    // Maggio 1 (SEASONS MESI)
-    {
-        id: 'maggio1-seasons',
-        month: 4,
-        startDay: 1,
-        endDay: 15,
-        className: 'maggio1-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
-
-    // Maggio 2 (SEASONS MESI)
-    {
-        id: 'maggio2-seasons',
-        month: 4,
-        startDay: 16,
-        endDay: 31,
-        className: 'maggio2-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
-
-    // Giugno 1 (SEASONS MESI)
-    {
-        id: 'giugno1-seasons',
-        month: 5,
-        startDay: 1,
-        endDay: 15,
-        className: 'giugno1-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
-
-    // Giugno 2 (SEASONS MESI)
-    {
-        id: 'giugno2-seasons',
-        month: 5,
-        startDay: 16,
-        endDay: 31,
-        className: 'giugno2-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
-
-    // Luglio 1 (SEASONS MESI)
-    {
-        id: 'luglio1-seasons',
-        month: 6,
-        startDay: 1,
-        endDay: 15,
-        className: 'luglio1-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    },
-
-    // Luglio 2 (SEASONS MESI)
-    {
-        id: 'luglio2-seasons',
-        month: 6,
-        startDay: 16,
-        endDay: 31,
-        className: 'luglio2-seasons',
-        iconPath: 'images/icons/favicon.ico'
-    }
 ];
 
 // Lista degli eventi (priorità alta, sovrascrivono festività e tema default). hanno priorità massima e sovrascrivono tutto.
 const events = [
     
-    // Christmas
-    {
-        id: 'christmas',
-        month: 11,
-        startDay: 24,
-        endDay: 26,
-        className: 'christmas',
-        iconPath: 'images/icons/christmas/favicon.ico'
-    },
-    
-    // April Fools'
-    {
-        id: 'april-fools',
-        month: 3,
-        startDay: 1,
-        endDay: 3,
-        className: 'april-fools',
-        iconPath: 'images/icons/april_fools/favicon.ico'
-    },
-    
-    // Compleanno di Minecraft
-    {
-        id: 'mc-birthday',
-        month: 4,
-        day: 13,
-        className: 'mc-birthday',
-        iconPath: 'images/icons/mc-birthday/favicon.ico'
-    }
+{
+    None
+}
+
 ];
 
 // Template (può essere usato per aggiungere altri eventi o festività)
