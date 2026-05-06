@@ -75,150 +75,151 @@ body::after {
     );
 }
 
-/* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
+
+/* MESI SEASONS (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
 
 /* Gennaio 1 (SEASONS MESI) TO DO*/
 body.gennaio1-seasons::before {
-    background-color: #a5b49f;
+    background-color: #8c9197;
     background-image: url('images/background/holiday/seasons/gennaio/draft.png');
 }
 
 /* Gennaio 2 (SEASONS MESI) TO DO*/
 body.gennaio2-seasons::before {
-    background-color: #a5b49f;
+    background-color: #d0afae;
     background-image: url('images/background/holiday/seasons/gennaio/draft.png');
 }
 
 /* Febbraio 1 (SEASONS MESI) TO DO*/
 body.febbraio1-seasons::before {
-    background-color: #a5b49f;
+    background-color: #cbb8d7;
     background-image: url('images/background/holiday/seasons/febbrario/draft.png');
 }
 
 /* Febbraio 2 (SEASONS MESI) TO DO*/
 body.febbraio2-seasons::before {
-    background-color: #a5b49f;
+    background-color: #c8a2c8;
     background-image: url('images/background/holiday/seasons/febbrario/draft.png');
 }
 
 /* Marzo 1 (SEASONS MESI) TO DO*/
 body.marzo1-seasons::before {
-    background-color: #c09917;
+    background-color: #287233;
     background-image: url('images/background/holiday/seasons/marzo/fall.png');
 }
 
 /* Marzo 2 (SEASONS MESI) TO DO*/
 body.marzo2-seasons::before {
-    background-color: #e2730b;
+    background-color: #f7e89f;
     background-image: url('images/background/holiday/seasons/marzo/draft.png');
 }
 
 /* Aprile 1 (SEASONS MESI) TO DO*/
 body.aprile1-seasons::before {
-    background-color: #a5b49f;
+    background-color: #ffd1dc;
     background-image: url('images/background/holiday/seasons/aprile/mooshroom.png');
 }
 
 /* Aprile 2 (SEASONS MESI) TO DO*/
 body.aprile2-seasons::before {
-    background-color: #a5b49f;
+    background-color: #eae6ca;
     background-image: url('images/background/holiday/seasons/aprile/vast_forest.png');
 }
 
 /* Maggio 1 (SEASONS MESI) TO DO*/
 body.maggio1-seasons::before {
-    background-color: #66b447;
+    background-color: #00bb2d;
     background-image: url('images/background/holiday/seasons/maggio/flowers.png');
 }
 
 /* Maggio 2 (SEASONS MESI) TO DO */
 body.maggio2-seasons::before {
-    background-color: #66b447;
+    background-color: #ff0080;
     background-image: url('images/background/holiday/seasons/maggio/river.png');
 }
 
 /* Giugno 1 (SEASONS MESI) TO DO */
 body.giugno1-seasons::before {
-    background-color: #333c87;
+    background-color: #99ffcc;
     background-image: url('images/background/holiday/seasons/giugno/village.png');
 }
 
 /* Giugno 2 (SEASONS MESI) TO DO */
 body.giugno2-seasons::before {
-    background-color: #333c87;
+    background-color: #f3f3ea;
     background-image: url('images/background/holiday/seasons/giugno/draft.png');
 }
 
 /* Luglio 1 (SEASONS MESI) TO DO */
 body.luglio1-seasons::before {
-    background-color: #eeff00;
+    background-color: #ff9900;
     background-image: url('images/background/holiday/seasons/luglio/rabbit_desert.png');
 }
 
 /* Luglio 2 (SEASONS MESI) TO DO */
 body.luglio2-seasons::before {
-    background-color: #eeff00;
+    background-color: #343a90;
     background-image: url('images/background/holiday/seasons/luglio/badland.png');
 }
 
 /* Agosto 1 (SEASONS MESI) TO DO */
 body.agosto1-seasons::before {
-    background-color: #eeff00;
+    background-color: #a61022;
     background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
 }
 
 /* Agosto 2 (SEASONS MESI) TO DO */
 body.agosto2-seasons::before {
-    background-color: #eeff00;
+    background-color: #eac102;
     background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
 }
 
 /* Settembre 1 (SEASONS MESI) TO DO */
 body.settembre-seasons::before {
-    background-color: #eeff00;
+    background-color: #382c1e;
     background-image: url('images/background/holiday/seasons/settembre/draft.png');
 }
 
 /* Settembre 2 (SEASONS MESI) TO DO */
 body.settembre2-seasons::before {
-    background-color: #eeff00;
+    background-color: #ff6088;
     background-image: url('images/background/holiday/seasons/settembre/draft.png');
 }
 
 /* Ottobre 1 (SEASONS MESI) TO DO */
 body.ottobre1-seasons::before {
-    background-color: #eeff00;
-    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+    background-color: #eb6123;
+    background-image: url('images/background/holiday/seasons/ottobre/eyeblossom.png');
 }
 
 /* Ottobre 2 (SEASONS MESI) TO DO */
-body.agosto2-seasons::before {
-    background-color: #eeff00;
-    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+body.ottobre2-seasons::before {
+    background-color: #500000;
+    background-image: url('images/background/holiday/seasons/ottobre/night_moon.png');
 }
 
-/* Agosto 1 (SEASONS MESI) TO DO */
-body.agosto1-seasons::before {
-    background-color: #eeff00;
+/* Novembre 1 (SEASONS MESI) TO DO */
+body.novembre1-seasons::before {
+    background-color: #e4e5e0;
     background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
 }
 
-/* Agosto 2 (SEASONS MESI) TO DO */
-body.agosto2-seasons::before {
-    background-color: #eeff00;
+/* Novembre 2 (SEASONS MESI) TO DO */
+body.novembre2-seasons::before {
+    background-color: #ffc87c;
     background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
 }
 
-/* Agosto 1 (SEASONS MESI) TO DO */
-body.agosto1-seasons::before {
-    background-color: #eeff00;
-    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+/* Dicembre 1 (SEASONS MESI) TO DO */
+body.dicembre1-seasons::before {
+    background-color: #cb312b;
+    background-image: url('images/background/holiday/seasons/dicembre/draft.png');
 }
 
-/* Agosto 2 (SEASONS MESI) TO DO */
-body.agosto2-seasons::before {
-    background-color: #eeff00;
-    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+/* Dicembre 2 (SEASONS MESI) TO DO */
+body.dicembre2-seasons::before {
+    background-color: #ffffff;
+    background-image: url('images/background/holiday/seasons/dicembre/draft.png');
 }
 
 
