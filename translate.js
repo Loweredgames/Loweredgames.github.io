@@ -6,8 +6,8 @@
  *
  * 
  * Come funziona:
- * - `holidays` è un array di festività (priorità bassa, sovrascrivono il tema default).
- * - `events` è un array di eventi (priorità alta, sovrascrivono festività e tema default).
+ * - `events` è un array di festività (priorità bassa, sovrascrivono il tema default).
+ * - `holidays` è un array di eventi (priorità alta, sovrascrivono festività e tema default).
  * - Ogni elemento usa `month` per il mese singolo, e `startDay` + `endDay` per un intervallo di giorni nello stesso mese.
  * - Per un singolo giorno, usa `month` e `day`.
  * - Se la data corrisponde, viene aggiunta la classe CSS al body
@@ -16,7 +16,7 @@
  *
  * 
  * Come aggiungere una nuova festività o evento:
- * 1) Scegli l'array appropriato: `holidays` per festività (priorità bassa), `events` per eventi (priorità alta).
+ * 1) Scegli l'array appropriato: `events` per festività (priorità bassa), `holidays` per eventi (priorità alta).
  * 2) Aggiungi un nuovo oggetto:
  *      {
  *          id: 'nome-evento',
@@ -157,8 +157,8 @@ function loadTranslateWidget() {
     document.body.appendChild(script);
 }
 
-// Lista degli eventi (priorità alta, sovrascrivono festività (holidays) e tema default). hanno priorità massima e sovrascrivono tutto.
-const events = [
+// Lista delle festività (priorità alta, sovrascrivono eventi (events) e tema default). hanno priorità massima e sovrascrivono tutto.
+const holidays = [
     
     // Christmas
     {
@@ -190,8 +190,8 @@ const events = [
     }
 ];
 
-// Lista delle festività (priorità bassa, sovrascrivono il tema default).
-const holidays = [
+// Lista degli eventi (priorità bassa, sovrascrivono il tema default).
+const events = [
     
     // Gennaio 1 (SEASONS MESI)
     {
@@ -435,7 +435,7 @@ const holidays = [
 ];
 
 // Template (può essere usato per aggiungere altri eventi o festività)
-const template_dummy = { // NON USARE, SERVE SOLO COME SEPARATORE. aggiungere in const events/holidays
+const template_dummy = { // NON USARE, SERVE SOLO COME SEPARATORE. aggiungere in const holidays/events
         id: 'template', // id univoco per identificare l'evento/festività
         month: 3, // mese (0 = gennaio, 1 = febbraio, ..., 11 = dicembre)
         day: 1, // giorno singolo (usa solo questo per eventi di un giorno)
@@ -472,12 +472,12 @@ function getTodayThemeEvent() {
     // const today = new Date(2026, 0, 1); // anno, mese, giorno
     const today = new Date(); // usa questa per produzione
     
-    // Prima cerca negli eventi (priorità alta)
-    const activeEvent = events.find(event => isTodayInEventRange(event, today));
+    // Prima cerca nelle festività (priorità alta)
+    const activeEvent = holidays.find(event => isTodayInEventRange(event, today));
     if (activeEvent) return activeEvent;
     
-    // Poi cerca nelle festività (priorità bassa)
-    const activeHoliday = holidays.find(holiday => isTodayInEventRange(holiday, today));
+    // Poi cerca negli eventi (priorità bassa)
+    const activeHoliday = events.find(holiday => isTodayInEventRange(holiday, today));
     if (activeHoliday) return activeHoliday;
     
     return null;

@@ -173,6 +173,55 @@ body.agosto2-seasons::before {
     background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
 }
 
+/* Settembre 1 (SEASONS MESI) TO DO */
+body.settembre-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/settembre/draft.png');
+}
+
+/* Settembre 2 (SEASONS MESI) TO DO */
+body.settembre2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/settembre/draft.png');
+}
+
+/* Ottobre 1 (SEASONS MESI) TO DO */
+body.ottobre1-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+}
+
+/* Ottobre 2 (SEASONS MESI) TO DO */
+body.agosto2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+}
+
+/* Agosto 1 (SEASONS MESI) TO DO */
+body.agosto1-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+}
+
+/* Agosto 2 (SEASONS MESI) TO DO */
+body.agosto2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+}
+
+/* Agosto 1 (SEASONS MESI) TO DO */
+body.agosto1-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+}
+
+/* Agosto 2 (SEASONS MESI) TO DO */
+body.agosto2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+}
+
+
 /* COMPLEANO DI Minecraft */
 
 body.mc-birthday::before {
