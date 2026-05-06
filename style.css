@@ -77,6 +77,18 @@ body::after {
 
 /* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
 
+/* Gennaio 1 (SEASONS MESI) TO DO*/
+body.gennaio1-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/end/ender_dragon.png');
+}
+
+/* Gennaio 2 (SEASONS MESI) TO DO*/
+body.gennaio2-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/end/ender_dragon.png');
+}
+
 /* Febbraio 1 (SEASONS MESI) TO DO*/
 body.febbraio1-seasons::before {
     background-color: #a5b49f;
@@ -87,6 +99,30 @@ body.febbraio1-seasons::before {
 body.febbraio2-seasons::before {
     background-color: #a5b49f;
     background-image: url('images/background/holiday/night/bed.png');
+}
+
+/* Marzo 1 (SEASONS MESI) TO DO*/
+body.marzo1-seasons::before {
+    background-color: #c09917;
+    background-image: url('images/background/holiday/night/bed.png');
+}
+
+/* Marzo 2 (SEASONS MESI) TO DO*/
+body.marzo2-seasons::before {
+    background-color: #e2730b;
+    background-image: url('images/background/holiday/night/bed.png');
+}
+
+/* Aprile 1 (SEASONS MESI) TO DO*/
+body.aprile1-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/night/bed.png');
+}
+
+/* Aprile 2 (SEASONS MESI) TO DO*/
+body.aprile2-seasons::before {
+    background-color: #a5b49f;
+    background-image: url('images/background/holiday/seasons/aprile/mooshroom.png');
 }
 
 /* Maggio 1 (SEASONS MESI) TO DO*/
@@ -121,6 +157,18 @@ body.luglio1-seasons::before {
 
 /* Luglio 2 (SEASONS MESI) TO DO */
 body.luglio2-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/desert/mesa.png');
+}
+
+/* Agosto 1 (SEASONS MESI) TO DO */
+body.agosto1-seasons::before {
+    background-color: #eeff00;
+    background-image: url('images/background/holiday/desert/mesa.png');
+}
+
+/* Agosto 2 (SEASONS MESI) TO DO */
+body.agosto2-seasons::before {
     background-color: #eeff00;
     background-image: url('images/background/holiday/desert/mesa.png');
 }

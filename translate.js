@@ -157,9 +157,62 @@ function loadTranslateWidget() {
     document.body.appendChild(script);
 }
 
+// Lista degli eventi (priorità alta, sovrascrivono festività (holidays) e tema default). hanno priorità massima e sovrascrivono tutto.
+const events = [
+    
+    // Christmas
+    {
+        id: 'christmas',
+        month: 11,
+        startDay: 24,
+        endDay: 26,
+        className: 'christmas',
+        iconPath: 'images/icons/christmas/favicon.ico'
+    },
+    
+    // April Fools'
+    {
+        id: 'april-fools',
+        month: 3,
+        startDay: 1,
+        endDay: 3,
+        className: 'april-fools',
+        iconPath: 'images/icons/april_fools/favicon.ico'
+    },
+    
+    // Compleanno di Minecraft
+    {
+        id: 'mc-birthday',
+        month: 4,
+        day: 13,
+        className: 'mc-birthday',
+        iconPath: 'images/icons/mc-birthday/favicon.ico'
+    }
+];
+
 // Lista delle festività (priorità bassa, sovrascrivono il tema default).
 const holidays = [
     
+    // Gennaio 1 (SEASONS MESI)
+    {
+        id: 'gennaio1-seasons',
+        month: 0,
+        startDay: 1,
+        endDay: 15,
+        className: 'gennaio1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Gennaio 2 (SEASONS MESI)
+    {
+        id: 'gennaio1-seasons',
+        month: 0,
+        startDay: 16,
+        endDay: 31,
+        className: 'gennaio2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
     // Febbraio 1 (SEASONS MESI)
     {
         id: 'febbraio1-seasons',
@@ -177,6 +230,46 @@ const holidays = [
         startDay: 16,
         endDay: 29,
         className: 'febbraio2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Marzo 1 (SEASONS MESI)
+    {
+        id: 'marzo1-seasons',
+        month: 2,
+        startDay: 1,
+        endDay: 15,
+        className: 'marzo1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Marzo 2 (SEASONS MESI)
+    {
+        id: 'marzo2-seasons',
+        month: 2,
+        startDay: 16,
+        endDay: 31,
+        className: 'marzo2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Aprile 1 (SEASONS MESI)
+    {
+        id: 'aprile1-seasons',
+        month: 3,
+        startDay: 1,
+        endDay: 15,
+        className: 'aprile1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Aprile 2 (SEASONS MESI)
+    {
+        id: 'aprile2-seasons',
+        month: 3,
+        startDay: 16,
+        endDay: 31,
+        className: 'aprile2-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
 
@@ -238,40 +331,27 @@ const holidays = [
         endDay: 31,
         className: 'luglio2-seasons',
         iconPath: 'images/icons/favicon.ico'
-    }
-];
-
-// Lista degli eventi (priorità alta, sovrascrivono festività e tema default). hanno priorità massima e sovrascrivono tutto.
-const events = [
-    
-    // Christmas
-    {
-        id: 'christmas',
-        month: 11,
-        startDay: 24,
-        endDay: 26,
-        className: 'christmas',
-        iconPath: 'images/icons/christmas/favicon.ico'
     },
     
-    // April Fools'
+    // Agosto 1 (SEASONS MESI)
     {
-        id: 'april-fools',
-        month: 3,
+        id: 'agosto1-seasons',
+        month: 7,
         startDay: 1,
-        endDay: 3,
-        className: 'april-fools',
-        iconPath: 'images/icons/april_fools/favicon.ico'
+        endDay: 15,
+        className: 'agosto1-seasons',
+        iconPath: 'images/icons/favicon.ico'
     },
-    
-    // Compleanno di Minecraft
+
+    // Agosto 2 (SEASONS MESI)
     {
-        id: 'mc-birthday',
-        month: 4,
-        day: 13,
-        className: 'mc-birthday',
-        iconPath: 'images/icons/mc-birthday/favicon.ico'
-    }
+        id: 'agosto2-seasons',
+        month: 7,
+        startDay: 16,
+        endDay: 31,
+        className: 'agosto2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
 ];
 
 // Template (può essere usato per aggiungere altri eventi o festività)
@@ -309,7 +389,7 @@ function getTodayThemeEvent() {
 
     // TEST: forza data (commenta questa riga per disabilitare)
     // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
-    // const today = new Date(2026, 11, 25); // anno, mese, giorno
+    // const today = new Date(2026, 3, 16); // anno, mese, giorno
     const today = new Date(); // usa questa per produzione
     
     // Prima cerca negli eventi (priorità alta)
