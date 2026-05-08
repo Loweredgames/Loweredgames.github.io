@@ -6,8 +6,8 @@
  *
  * 
  * Come funziona:
- * - `holidays` è un array di festività (priorità bassa, sovrascrivono il tema default).
- * - `events` è un array di eventi (priorità alta, sovrascrivono festività e tema default).
+ * - `events` è un array di festività (priorità bassa, sovrascrivono il tema default).
+ * - `holidays` è un array di eventi (priorità alta, sovrascrivono festività e tema default).
  * - Ogni elemento usa `month` per il mese singolo, e `startDay` + `endDay` per un intervallo di giorni nello stesso mese.
  * - Per un singolo giorno, usa `month` e `day`.
  * - Se la data corrisponde, viene aggiunta la classe CSS al body
@@ -16,7 +16,7 @@
  *
  * 
  * Come aggiungere una nuova festività o evento:
- * 1) Scegli l'array appropriato: `holidays` per festività (priorità bassa), `events` per eventi (priorità alta).
+ * 1) Scegli l'array appropriato: `events` per festività (priorità bassa), `holidays` per eventi (priorità alta).
  * 2) Aggiungi un nuovo oggetto:
  *      {
  *          id: 'nome-evento',
@@ -157,9 +157,62 @@ function loadTranslateWidget() {
     document.body.appendChild(script);
 }
 
-// Lista delle festività (priorità bassa, sovrascrivono il tema default).
+// Lista delle festività (priorità alta, sovrascrivono eventi (events) e tema default). hanno priorità massima e sovrascrivono tutto.
 const holidays = [
     
+    // Christmas
+    {
+        id: 'christmas',
+        month: 11,
+        startDay: 24,
+        endDay: 26,
+        className: 'christmas',
+        iconPath: 'images/icons/christmas/favicon.ico'
+    },
+    
+    // April Fools'
+    {
+        id: 'april-fools',
+        month: 3,
+        startDay: 1,
+        endDay: 3,
+        className: 'april-fools',
+        iconPath: 'images/icons/april_fools/favicon.ico'
+    },
+    
+    // Compleanno di Minecraft
+    {
+        id: 'mc-birthday',
+        month: 4,
+        day: 13,
+        className: 'mc-birthday',
+        iconPath: 'images/icons/mc-birthday/favicon.ico'
+    }
+];
+
+// Lista degli eventi (priorità bassa, sovrascrivono il tema default).
+const events = [
+    
+    // Gennaio 1 (SEASONS MESI)
+    {
+        id: 'gennaio1-seasons',
+        month: 0,
+        startDay: 5,
+        endDay: 15,
+        className: 'gennaio1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Gennaio 2 (SEASONS MESI)
+    {
+        id: 'gennaio1-seasons',
+        month: 0,
+        startDay: 16,
+        endDay: 31,
+        className: 'gennaio2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
     // Febbraio 1 (SEASONS MESI)
     {
         id: 'febbraio1-seasons',
@@ -177,6 +230,46 @@ const holidays = [
         startDay: 16,
         endDay: 29,
         className: 'febbraio2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Marzo 1 (SEASONS MESI)
+    {
+        id: 'marzo1-seasons',
+        month: 2,
+        startDay: 1,
+        endDay: 15,
+        className: 'marzo1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Marzo 2 (SEASONS MESI)
+    {
+        id: 'marzo2-seasons',
+        month: 2,
+        startDay: 16,
+        endDay: 31,
+        className: 'marzo2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Aprile 1 (SEASONS MESI)
+    {
+        id: 'aprile1-seasons',
+        month: 3,
+        startDay: 1,
+        endDay: 15,
+        className: 'aprile1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+    
+    // Aprile 2 (SEASONS MESI)
+    {
+        id: 'aprile2-seasons',
+        month: 3,
+        startDay: 16,
+        endDay: 31,
+        className: 'aprile2-seasons',
         iconPath: 'images/icons/favicon.ico'
     },
 
@@ -238,44 +331,111 @@ const holidays = [
         endDay: 31,
         className: 'luglio2-seasons',
         iconPath: 'images/icons/favicon.ico'
-    }
-];
-
-// Lista degli eventi (priorità alta, sovrascrivono festività e tema default). hanno priorità massima e sovrascrivono tutto.
-const events = [
-    
-    // Christmas
-    {
-        id: 'christmas',
-        month: 11,
-        startDay: 24,
-        endDay: 26,
-        className: 'christmas',
-        iconPath: 'images/icons/christmas/favicon.ico'
     },
     
-    // April Fools'
+    // Agosto 1 (SEASONS MESI)
     {
-        id: 'april-fools',
-        month: 3,
+        id: 'agosto1-seasons',
+        month: 7,
         startDay: 1,
-        endDay: 3,
-        className: 'april-fools',
-        iconPath: 'images/icons/april_fools/favicon.ico'
+        endDay: 15,
+        className: 'agosto1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Agosto 2 (SEASONS MESI)
+    {
+        id: 'agosto2-seasons',
+        month: 7,
+        startDay: 16,
+        endDay: 31,
+        className: 'agosto2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Settembre 1 (SEASONS MESI)
+    {
+        id: 'settembre1-seasons',
+        month: 8,
+        startDay: 1,
+        endDay: 15,
+        className: 'settembre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Settembre 2 (SEASONS MESI)
+    {
+        id: 'settembre2-seasons',
+        month: 8,
+        startDay: 16,
+        endDay: 31,
+        className: 'settembre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Ottobre 1 (SEASONS MESI)
+    {
+        id: 'ottobre1-seasons',
+        month: 9,
+        startDay: 1,
+        endDay: 15,
+        className: 'ottobre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Ottobre 2 (SEASONS MESI)
+    {
+        id: 'ottobre2-seasons',
+        month: 9,
+        startDay: 16,
+        endDay: 31,
+        className: 'ottobre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Novembre 1 (SEASONS MESI)
+    {
+        id: 'novembre1-seasons',
+        month: 10,
+        startDay: 1,
+        endDay: 15,
+        className: 'novembre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Novembre 2 (SEASONS MESI)
+    {
+        id: 'novembre2-seasons',
+        month: 10,
+        startDay: 16,
+        endDay: 31,
+        className: 'novembre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
     },
     
-    // Compleanno di Minecraft
+    // Dicembre 1 (SEASONS MESI)
     {
-        id: 'mc-birthday',
-        month: 4,
-        day: 13,
-        className: 'mc-birthday',
-        iconPath: 'images/icons/mc-birthday/favicon.ico'
-    }
+        id: 'dicembre1-seasons',
+        month: 11,
+        startDay: 1,
+        endDay: 15,
+        className: 'dicembre1-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
+
+    // Dicembre 2 (SEASONS MESI)
+    {
+        id: 'dicembre2-seasons',
+        month: 11,
+        startDay: 16,
+        endDay: 31,
+        className: 'dicembre2-seasons',
+        iconPath: 'images/icons/favicon.ico'
+    },
 ];
 
 // Template (può essere usato per aggiungere altri eventi o festività)
-const template_dummy = { // NON USARE, SERVE SOLO COME SEPARATORE. aggiungere in const events/holidays
+const template_dummy = { // NON USARE, SERVE SOLO COME SEPARATORE. aggiungere in const holidays/events
         id: 'template', // id univoco per identificare l'evento/festività
         month: 3, // mese (0 = gennaio, 1 = febbraio, ..., 11 = dicembre)
         day: 1, // giorno singolo (usa solo questo per eventi di un giorno)
@@ -309,15 +469,15 @@ function getTodayThemeEvent() {
 
     // TEST: forza data (commenta questa riga per disabilitare)
     // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
-    // const today = new Date(2026, 11, 25); // anno, mese, giorno
+    // const today = new Date(2026, 0, 1); // anno, mese, giorno
     const today = new Date(); // usa questa per produzione
     
-    // Prima cerca negli eventi (priorità alta)
-    const activeEvent = events.find(event => isTodayInEventRange(event, today));
+    // Prima cerca nelle festività (priorità alta)
+    const activeEvent = holidays.find(event => isTodayInEventRange(event, today));
     if (activeEvent) return activeEvent;
     
-    // Poi cerca nelle festività (priorità bassa)
-    const activeHoliday = holidays.find(holiday => isTodayInEventRange(holiday, today));
+    // Poi cerca negli eventi (priorità bassa)
+    const activeHoliday = events.find(holiday => isTodayInEventRange(holiday, today));
     if (activeHoliday) return activeHoliday;
     
     return null;
