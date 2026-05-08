@@ -112,8 +112,8 @@ body.marzo1-seasons::before {
 
 /* Marzo 2 (SEASONS MESI)*/
 body.marzo2-seasons::before {
-    background-color: #f7e89f30;
-    background-image: url('images/background/holiday/seasons/marzo/fall.png');
+    background-color: #a7943730;
+    background-image: url('images/background/holiday/seasons/marzo/glow_cave.png');
 }
 
 /* Aprile 1 (SEASONS MESI)*/
@@ -164,79 +164,79 @@ body.luglio2-seasons::before {
     background-image: url('images/background/holiday/seasons/luglio/badland.png');
 }
 
-/* Agosto 1 (SEASONS MESI) TO DO */
+/* Agosto 1 (SEASONS MESI)*/
 body.agosto1-seasons::before {
     background-color: #a6102230;
     background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
 }
 
-/* Agosto 2 (SEASONS MESI) TO DO */
+/* Agosto 2 (SEASONS MESI)*/
 body.agosto2-seasons::before {
-    background-color: #eac10230;
-    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+    background-color: #9b8b4530;
+    background-image: url('images/background/holiday/seasons/agosto/fortress.png');
 }
 
-/* Settembre 1 (SEASONS MESI) TO DO */
-body.settembre-seasons::before {
-    background-color: #382c1e30;
-    background-image: url('images/background/holiday/seasons/settembre/draft.png');
+/* Settembre 1 (SEASONS MESI)*/
+body.settembre1-seasons::before {
+    background-color: #99672e30;
+    background-image: url('images/background/holiday/seasons/settembre/fall.png');
 }
 
-/* Settembre 2 (SEASONS MESI) TO DO */
+/* Settembre 2 (SEASONS MESI)*/
 body.settembre2-seasons::before {
-    background-color: #ff608830;
-    background-image: url('images/background/holiday/seasons/settembre/draft.png');
+    background-color: #83243c30;
+    background-image: url('images/background/holiday/seasons/settembre/light_cave.png');
 }
 
-/* Ottobre 1 (SEASONS MESI) TO DO */
+/* Ottobre 1 (SEASONS MESI)*/
 body.ottobre1-seasons::before {
-    background-color: #eb612330;
+    background-color: #883d1a30;
     background-image: url('images/background/holiday/seasons/ottobre/eyeblossom.png');
 }
 
-/* Ottobre 2 (SEASONS MESI) TO DO */
+/* Ottobre 2 (SEASONS MESI)*/
 body.ottobre2-seasons::before {
     background-color: #50000030;
     background-image: url('images/background/holiday/seasons/ottobre/night_moon.png');
 }
 
-/* Novembre 1 (SEASONS MESI) TO DO */
+/* Novembre 1 (SEASONS MESI)*/
 body.novembre1-seasons::before {
-    background-color: #e4e5e030;
-    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+    background-color: #c1c2be30;
+    background-image: url('images/background/holiday/seasons/novembre/rain_forest.png');
 }
 
-/* Novembre 2 (SEASONS MESI) TO DO */
+/* Novembre 2 (SEASONS MESI)*/
 body.novembre2-seasons::before {
-    background-color: #ffc87c30;
-    background-image: url('images/background/holiday/seasons/agosto/nether_fortress.png');
+    background-color: #0e398830;
+    background-image: url('images/background/holiday/seasons/novembre/in_night_pillager_outpost.png');
 }
 
-/* Dicembre 1 (SEASONS MESI) TO DO */
+/* Dicembre 1 (SEASONS MESI)*/
 body.dicembre1-seasons::before {
-    background-color: #cb312b30;
-    background-image: url('images/background/holiday/seasons/dicembre/draft.png');
+    background-color: #500b0b30;
+    background-image: url('images/background/holiday/seasons/dicembre/snow_mountain.png');
 }
 
-/* Dicembre 2 (SEASONS MESI) TO DO */
+/* Dicembre 2 (SEASONS MESI)*/
 body.dicembre2-seasons::before {
     background-color: #ffffff30;
-    background-image: url('images/background/holiday/seasons/dicembre/draft.png');
+    background-image: url('images/background/holiday/seasons/dicembre/snowstorm.png');
 }
 
 
 /* COMPLEANO DI Minecraft */
 
 body.mc-birthday::before {
-    background-color: #00ff15;
-    background-image: url('images/background/events/nostalgic/old_cobblestone.png');
+    background-color: #29692e30;
+    background-image: url('images/background/events/minecraft_worlds/nostalgic/egyptian_signs.png');
 }
 
 /*CHRISTMAS*/
 
 body.christmas::before {
-    background-color: #0b253a;
-    background-image: url('images/background/holiday/christmas/snowstorm.png');
+    background-color: #0b253a30;
+    background-image: url('images/background/holiday/christmas/draft.png');
     background-blend-mode: normal, screen, screen;
     filter: blur(2px) brightness(1.05);
 }
@@ -524,7 +524,7 @@ body.christmas .christmas-snowflake {
 /*APRIL FOOLS*/
 
 body.april-fools::before {
-    background-color: #14122a;
+    background-color: #14122a30;
     background-image: url('images/background/holiday/april_fools/april_fools2026.png');
     background-size: cover;
     background-blend-mode: screen, screen, screen;
@@ -787,7 +787,7 @@ body.april-fools .april-fools-confetti span {
    
    BACKGROUND DEL TEMA:
    body.nome-tema::before {
-       background-color: #COLORE_SFONDO;
+       background-color: #COLORE_SFONDO 30 di Alpha sempre;
        background-image: url('images/background/tema/nome-immagine.png');
        background-blend-mode: normal, screen, screen;
        filter: blur(VALORE_PX) brightness(VALORE);
