@@ -32,6 +32,8 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #00000030;
     filter: blur(3px) brightness(0.7);
     z-index: -1;
 
@@ -77,68 +79,166 @@ body::after {
     );
 }
 
-/* SEASONS MESI (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
 
-/* Febbraio 1 (SEASONS MESI) TO DO*/
+/* MESI SEASONS (Background che cambiano in mese in mese per riflettere la stagione o il periodo) */
+
+/* Gennaio 1 (SEASONS MESI)*/
+body.gennaio1-seasons::before {
+    background-color: #8c919730;
+    background-image: url('images/background/holiday/seasons/gennaio/snow_taiga.png');
+}
+
+/* Gennaio 2 (SEASONS MESI)*/
+body.gennaio2-seasons::before {
+    background-color: #d0afae30;
+    background-image: url('images/background/holiday/seasons/gennaio/icestream.png');
+}
+
+/* Febbraio 1 (SEASONS MESI)*/
 body.febbraio1-seasons::before {
-    background-color: #a5b49f;
-    background-image: url('images/background/holiday/end/ender_dragon.png');
+    background-color: #cbb8d730;
+    background-image: url('images/background/holiday/seasons/febbrario/spices.png');
 }
 
-/* Febbraio 2 (SEASONS MESI) TO DO*/
+/* Febbraio 2 (SEASONS MESI)*/
 body.febbraio2-seasons::before {
-    background-color: #a5b49f;
-    background-image: url('images/background/holiday/night/bed.png');
+    background-color: #a04fa030;
+    background-image: url('images/background/holiday/seasons/febbrario/love_door.png');
 }
 
-/* Maggio 1 (SEASONS MESI) TO DO*/
+/* Marzo 1 (SEASONS MESI)*/
+body.marzo1-seasons::before {
+    background-color: #28723330;
+    background-image: url('images/background/holiday/seasons/marzo/eye_lake.png');
+}
+
+/* Marzo 2 (SEASONS MESI)*/
+body.marzo2-seasons::before {
+    background-color: #a7943730;
+    background-image: url('images/background/holiday/seasons/marzo/glow_cave.png');
+}
+
+/* Aprile 1 (SEASONS MESI)*/
+body.aprile1-seasons::before {
+    background-color: #ffd1dc30;
+    background-image: url('images/background/holiday/seasons/aprile/mooshroom.png');
+}
+
+/* Aprile 2 (SEASONS MESI)*/
+body.aprile2-seasons::before {
+    background-color: #eae6ca30;
+    background-image: url('images/background/holiday/seasons/aprile/frog.png');
+}
+
+/* Maggio 1 (SEASONS MESI)*/
 body.maggio1-seasons::before {
-    background-color: #66b447;
+    background-color: #00bb2d30;
+    background-image: url('images/background/holiday/seasons/maggio/river.png');
+}
+
+/* Maggio 2 (SEASONS MESI)*/
+body.maggio2-seasons::before {
+    background-color: #a8477830;
     background-image: url('images/background/holiday/seasons/maggio/flowers.png');
 }
 
-/* Maggio 2 (SEASONS MESI) TO DO */
-body.maggio2-seasons::before {
-    background-color: #66b447;
-    background-image: url('images/background/holiday/casual/picasso_nose_mountain.png');
-}
-
-/* Giugno 1 (SEASONS MESI) TO DO */
+/* Giugno 1 (SEASONS MESI)*/
 body.giugno1-seasons::before {
-    background-color: #333c87;
-    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+    background-color: #99ffcc30;
+    background-image: url('images/background/holiday/seasons/giugno/jungle_temple.png');
 }
 
-/* Giugno 2 (SEASONS MESI) TO DO */
+/* Giugno 2 (SEASONS MESI)*/
 body.giugno2-seasons::before {
-    background-color: #333c87;
-    background-image: url('images/background/holiday/seasons/giugno/strange_mountain.png');
+    background-color: #f3f3ea30;
+    background-image: url('images/background/holiday/seasons/giugno/village.png');
 }
 
-/* Luglio 1 (SEASONS MESI) TO DO */
+/* Luglio 1 (SEASONS MESI)*/
 body.luglio1-seasons::before {
-    background-color: #eeff00;
-    background-image: url('images/background/holiday/seasons/luglio/dromedary.png');
+    background-color: #ff990030;
+    background-image: url('images/background/holiday/seasons/luglio/rabbit_desert.png');
 }
 
-/* Luglio 2 (SEASONS MESI) TO DO */
+/* Luglio 2 (SEASONS MESI)*/
 body.luglio2-seasons::before {
-    background-color: #eeff00;
-    background-image: url('images/background/holiday/desert/mesa.png');
+    background-color: #343a9030;
+    background-image: url('images/background/holiday/seasons/luglio/badland.png');
 }
+
+/* Agosto 1 (SEASONS MESI)*/
+body.agosto1-seasons::before {
+    background-color: #a6102230;
+    background-image: url('images/background/holiday/seasons/agosto/gold_piglin.png');
+}
+
+/* Agosto 2 (SEASONS MESI)*/
+body.agosto2-seasons::before {
+    background-color: #9b8b4530;
+    background-image: url('images/background/holiday/seasons/agosto/fortress.png');
+}
+
+/* Settembre 1 (SEASONS MESI)*/
+body.settembre1-seasons::before {
+    background-color: #99672e30;
+    background-image: url('images/background/holiday/seasons/settembre/fall.png');
+}
+
+/* Settembre 2 (SEASONS MESI)*/
+body.settembre2-seasons::before {
+    background-color: #83243c30;
+    background-image: url('images/background/holiday/seasons/settembre/light_cave.png');
+}
+
+/* Ottobre 1 (SEASONS MESI)*/
+body.ottobre1-seasons::before {
+    background-color: #883d1a30;
+    background-image: url('images/background/holiday/seasons/ottobre/eyeblossom.png');
+}
+
+/* Ottobre 2 (SEASONS MESI)*/
+body.ottobre2-seasons::before {
+    background-color: #50000030;
+    background-image: url('images/background/holiday/seasons/ottobre/night_moon.png');
+}
+
+/* Novembre 1 (SEASONS MESI)*/
+body.novembre1-seasons::before {
+    background-color: #c1c2be30;
+    background-image: url('images/background/holiday/seasons/novembre/rain_forest.png');
+}
+
+/* Novembre 2 (SEASONS MESI)*/
+body.novembre2-seasons::before {
+    background-color: #0e398830;
+    background-image: url('images/background/holiday/seasons/novembre/in_night_pillager_outpost.png');
+}
+
+/* Dicembre 1 (SEASONS MESI)*/
+body.dicembre1-seasons::before {
+    background-color: #500b0b30;
+    background-image: url('images/background/holiday/seasons/dicembre/snow_mountain.png');
+}
+
+/* Dicembre 2 (SEASONS MESI)*/
+body.dicembre2-seasons::before {
+    background-color: #ffffff30;
+    background-image: url('images/background/holiday/seasons/dicembre/snowstorm.png');
+}
+
 
 /* COMPLEANO DI Minecraft */
 
 body.mc-birthday::before {
-    background-color: #00ff15;
-    background-image: url('images/background/events/nostalgic/old_cobblestone.png');
+    background-color: #29692e30;
+    background-image: url('images/background/events/minecraft_worlds/nostalgic/egyptian_signs.png');
 }
 
 /*CHRISTMAS*/
 
 body.christmas::before {
-    background-color: #0b253a;
-    background-image: url('images/background/holiday/christmas/snowstorm.png');
+    background-color: #0b253a30;
+    background-image: url('images/background/holiday/christmas/draft.png');
     background-blend-mode: normal, screen, screen;
     filter: blur(2px) brightness(1.05);
 }
@@ -426,7 +526,7 @@ body.christmas .christmas-snowflake {
 /*APRIL FOOLS*/
 
 body.april-fools::before {
-    background-color: #14122a;
+    background-color: #14122a30;
     background-image: url('images/background/holiday/april_fools/april_fools2026.png');
     background-size: cover;
     background-blend-mode: screen, screen, screen;
@@ -689,7 +789,7 @@ body.april-fools .april-fools-confetti span {
    
    BACKGROUND DEL TEMA:
    body.nome-tema::before {
-       background-color: #COLORE_SFONDO;
+       background-color: #COLORE_SFONDO 30 di Alpha sempre;
        background-image: url('images/background/tema/nome-immagine.png');
        background-blend-mode: normal, screen, screen;
        filter: blur(VALORE_PX) brightness(VALORE);
