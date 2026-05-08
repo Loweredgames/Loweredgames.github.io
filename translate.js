@@ -469,8 +469,8 @@ function getTodayThemeEvent() {
 
     // TEST: forza data (commenta questa riga per disabilitare)
     // Attenzione: in JavaScript i mesi partono da 0, quindi dicembre è 11.
-    // const today = new Date(2026, 0, 1); // anno, mese, giorno
-    const today = new Date(); // usa questa per produzione
+    const today = new Date(2026, 6, 16); // anno, mese, giorno
+    // const today = new Date(); // usa questa per produzione
     
     // Prima cerca nelle festività (priorità alta)
     const activeEvent = holidays.find(event => isTodayInEventRange(event, today));
