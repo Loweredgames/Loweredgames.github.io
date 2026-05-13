@@ -184,7 +184,7 @@ const holidays = [
     {
         id: 'mc-birthday',
         month: 4,
-        day: 13,
+        day: 17,
         className: 'mc-birthday',
         iconPath: 'images/icons/mc-birthday/favicon.ico'
     }
