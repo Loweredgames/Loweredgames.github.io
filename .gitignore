@@ -1,0 +1,3 @@
+# Artefatti di compilazione Rust
+/tetris-rust/target/
+/tetris-rust/Cargo.lock
