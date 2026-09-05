@@ -20,6 +20,7 @@ Contiene tutta la struttura e i testi visibili della pagina.
 - `progetti`: tendine HTML per i progetti. Ogni progetto contiene titolo, tag, favicon, descrizione e link.
 - `contatti`: collegamento principale a Discord.
 - `footer`: tutti i social e i profili pubblici.
+- `blog`: anteprima automatica degli ultimi aggiornamenti personali.
 
 ### `style.css`
 
@@ -39,9 +40,37 @@ Le variabili all'inizio del file sono il punto più semplice da modificare:
 
 La modalità chiara usa `body[data-theme='light']` e sostituisce automaticamente i colori principali.
 
+### Blog Markdown
+
+Il blog è statico e usa file Markdown nella cartella `blog/posts/`. Il browser li legge e li visualizza mantenendo lo stile del sito.
+
+```text
+blog/posts/YYYY-MM-DD-titolo-del-post.md
+```
+
+Per aggiungere un aggiornamento:
+
+1. Crea il file Markdown nella cartella `blog/posts/`.
+2. Scrivi il titolo con `#`, i sottotitoli con `##` e il testo normalmente.
+3. Aggiungi titolo, data, categoria, autore, estratto e nome file in `blog/posts.json`.
+
+Esempio di contenuto:
+
+```markdown
+# Titolo dell'aggiornamento
+
+Testo del nuovo post.
+
+## Un sottotitolo
+
+Altri pensieri e aggiornamenti.
+```
+
+Puoi usare come modello il file [`blog/posts/2026-09-05-benvenuti-nel-blog.md`](blog/posts/2026-09-05-benvenuti-nel-blog.md).
+
 ### `script.js`
 
-Gestisce soltanto le funzioni interattive:
+Il file gestisce il caricamento dei post Markdown, l'apertura tramite URL `#post=...` e la visualizzazione del tema condiviso.
 
 - cambio modalità chiara/scura;
 - salvataggio del tema in `localStorage`;
@@ -86,13 +115,14 @@ python3 -m http.server 8000
 
 Apri `http://localhost:8000` nel browser.
 
+Il blog deve essere aperto tramite server HTTP perché usa `fetch()` per leggere i file Markdown. Non aprire direttamente `index.html` con `file://`.
+
 ## Pubblicazione su GitHub Pages
 
-1. Carica `index.html`, `style.css` e `script.js` nel repository.
-2. Mantieni i percorsi relativi dei file.
-3. In GitHub apri `Settings > Pages`.
-4. Seleziona il branch principale e la cartella principale `/root`.
-5. Salva e attendi la pubblicazione.
+1. Carica `index.html`, `style.css`, `script.js` e la cartella `blog/` nel repository.
+2. In GitHub apri `Settings > Pages`.
+3. Seleziona il branch principale e la cartella principale `/root`.
+4. Salva e attendi la pubblicazione.
 
 ## Note importanti
 

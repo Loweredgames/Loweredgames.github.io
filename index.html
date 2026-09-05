@@ -29,6 +29,7 @@
         <a href="#chi-sono">Chi sono</a>
         <a href="#passioni">Passioni</a>
         <a href="#progetti">Progetti</a>
+        <a href="blog/">Blog</a>
 
     <!-- TEMA: Chiaro/Scuro-->
       <button class="theme-toggle" type="button" aria-label="Attiva modalità chiara" aria-pressed="false">
@@ -47,6 +48,12 @@
   </header>
 
   <main id="contenuto">
+    <aside class="site-notice" aria-label="Avviso sullo stato del sito">
+      <div class="container site-notice-inner">
+        <span class="site-notice-mark" aria-hidden="true">!</span>
+        <p><strong>Working in progress:</strong> Il sito è ancora in costruzione e non è completo al 100%.</p>
+      </div>
+    </aside>
     <!-- HERO: modifica titolo, presentazione e bio personale nella prima schermata. -->
     <section id="top" class="hero section-shell">
       <div class="container hero-grid">
@@ -220,10 +227,27 @@
       </div>
     </section>
 
+    <!-- BLOG: accesso diretto alla pagina separata degli aggiornamenti. -->
+    <section id="blog" class="blog-preview section-shell">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div>
+            <p class="eyebrow">04 / Diario personale</p>
+            <h2>¿Appunti dal<br><em>mio angolo del web.?</em></h2>
+          </div>
+        </div>
+        <a class="blog-gateway reveal" href="blog/">
+          <span class="button button-primary blog-gateway-button">Leggi tutti gli aggiornamenti <span aria-hidden="true">-&gt;</span></span>
+          <span class="blog-gateway-copy">Un posto semplice per raccontare cosa sto imparando, costruendo e osservando nel tempo o le varie notizie.</span>
+          <span class="blog-gateway-arrow" aria-hidden="true">-&gt;</span>
+        </a>
+      </div>
+    </section>
+
     <!-- CONTATTI: sostituisci il link Discord se vuoi usare un altro canale principale. -->
     <section id="contatti" class="contact section-shell">
       <div class="container contact-inner reveal">
-        <p class="eyebrow">04 / Restiamo in contatto</p>
+        <p class="eyebrow">05 / Restiamo in contatto</p>
         <h2>¿Ti piace quello che faccio?<br><em>Allora parliamone o mostrami cosa sai fare.?</em></h2>
         <p>Trovi tutti i miei spazi online qui sotto: per mappe, progetti vari e collaborazioni future. Se ti va:</p>
         <a class="button button-primary" href="https://discord.gg/T6PHxhznJ6" target="_blank" rel="noopener noreferrer">Scrivimi qui su Discord<span aria-hidden="true">-&gt;</span></a>
