@@ -20,11 +20,17 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      
-        <!-- BRAND: modifica il testo per cambiare il nome mostrato nell'header e nel footer. -->
+
+    <!-- BRAND: modifica il testo per cambiare il nome mostrato nell'header e nel footer. -->
       <a class="brand" href="index.html" aria-label="Ricarica la pagina">LOWEREDGAMES</a>
 
-      <!-- TEMA: il testo e' aggiornato automaticamente da script.js. -->
+      <!-- NAVIGAZIONE: aggiungi qui i collegamenti alle nuove sezioni usando href="#id-sezione". -->
+      <nav id="site-nav" class="site-nav" aria-label="Navigazione principale">
+        <a href="#chi-sono">Chi sono</a>
+        <a href="#passioni">Passioni</a>
+        <a href="#progetti">Progetti</a>
+
+    <!-- TEMA: Chiaro/Scuro-->
       <button class="theme-toggle" type="button" aria-label="Attiva modalità chiara" aria-pressed="false">
         <span class="theme-icon" aria-hidden="true">☼</span>
         <span class="theme-label">Chiaro</span>
@@ -35,12 +41,6 @@
         <span class="menu-line"></span>
         <span class="sr-only">Apri il menu</span>
       </button>
-      
-      <!-- NAVIGAZIONE: aggiungi qui i collegamenti alle nuove sezioni usando href="#id-sezione". -->
-      <nav id="site-nav" class="site-nav" aria-label="Navigazione principale">
-        <a href="#chi-sono">Chi sono</a>
-        <a href="#passioni">Passioni</a>
-        <a href="#progetti">Progetti</a>
         <a class="nav-cta" href="#contatti">Contatti <span aria-hidden="true">-&gt;</span></a>
       </nav>
     </div>
@@ -51,9 +51,11 @@
     <section id="top" class="hero section-shell">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="status-dot"></span> Online da sempre</p>
-          <h1>Curioso per natura.<br><em>Creativo per scelta.</em></h1>
-          <p class="hero-text">Sono Loweredgames. Questo e' il mio spazio sul web: un portfolio per raccogliere progetti, idee e tutte le cose che accendono la mia curiosita'.</p>
+          <p class="eyebrow"><span class="status-dot"></span> Online: ¿? - Forever</p>
+          <h1>¿Curioso per natura,<br><em>creativo per scelta.?</em></h1>
+          <p class="hero-text">Sono Loweredgames. Questo è il mio spazio sul web: un portfolio per raccogliere progetti, idee e tutte le cose che accendono la mia curiosità.</p>
+          <em>Biografia:</em>
+          <p></p>
           <div class="bio-signature" aria-label="Bio di Loweredgames">
             <span class="personal-symbol">¿?</span>
             <span>Io penso, io sono...</span>
@@ -61,8 +63,8 @@
             <span>¿? - Forever</span>
           </div>
           <div class="hero-actions">
-            <a class="button button-primary" href="#progetti">Scopri i progetti <span aria-hidden="true">-&gt;</span></a>
-            <a class="text-link" href="#chi-sono">Conosciamoci <span aria-hidden="true">&#8595;</span></a>
+            <a class="button button-primary" href="#progetti">Scopri i miei progetti <span aria-hidden="true">-&gt;</span></a>
+            <a class="text-link" href="#chi-sono">Conosciamoci! <span aria-hidden="true">&#8595;</span></a>
           </div>
         </div>
 
@@ -89,12 +91,12 @@
       <div class="container split-layout">
         <div class="section-heading reveal">
           <p class="eyebrow">01 / Profilo</p>
-          <h2>Un universo di<br><em>curiosita'</em></h2>
+          <h2>¿Un universo<em> di curiosità e idee.?</em></h2>
         </div>
         <div class="about-copy reveal">
           <p class="lead">Mi piace esplorare, imparare e trasformare le idee in qualcosa di concreto.</p>
-          <p>Da sempre vivo il web come un luogo dove scoprire cose nuove, condividere quello che creo e incontrare persone con passioni simili alle mie. Qui puoi trovare i miei progetti, i miei interessi e i posti in cui sono attivo online.</p>
-          <p class="tech-note"><span>Il mio linguaggio preferito:</span> Rust</p>
+          <p>Da sempre considero il web un luogo dove scoprire cose nuove, condividere quello che creo e incontrare persone con passioni simili alle mie. Qui puoi trovare i miei progetti, i miei interessi e i posti in cui sono attivo online. Cresciuto con Minecraft e grazie a YouTube, ho imparato a conoscere il web a 360° e le sue stranezze, dalla programmazione alla filosofia Internetiana.</p>
+          <p class="tech-note"><span>Il mio linguaggio preferito è</span> Rust</p>
           <pre class="profile-code"><code><span class="code-const">const</span> TERRA: <span class="code-type">string</span> = <span class="code-string">"Terra"</span>;
 <span class="code-const">const</span> PIZZA: <span class="code-type">string</span> = <span class="code-string">"Pizza"</span>;
 
@@ -120,40 +122,42 @@
     <section id="passioni" class="interests section-shell">
       <div class="container">
         <div class="section-intro reveal">
-          <p class="eyebrow">02 / Fuori dagli schemi</p>
-          <h2>Le cose che mi <em>ispirano</em></h2>
-          <p>Non seguo una sola strada. Le mie passioni si incrociano e spesso diventano il punto di partenza per una nuova idea.</p>
+          <div>
+            <p class="eyebrow">02 / Passioni e ispirazioni</p>
+            <h2>¿In giro per il web,<br><em>ispirandomi ai vari media.?</em></h2>
+          </div>
+          <p>Non seguo una sola strada. Le mie passioni si incrociano e spesso diventano il punto di partenza per nuovi progetti e nuove idee. Viaggio e scopro nuovi mondi.</p>
         </div>
         <div class="interest-grid">
           <article class="interest-card reveal">
             <span class="card-number">01</span>
-            <span class="interest-icon" aria-hidden="true">[ ]</span>
-            <h3>¿Videogiochi?</h3>
-            <p>Mondi da esplorare, sistemi da capire e storie in cui perdersi, la mia passione per eccelenza.</p>
+            <span class="interest-icon" aria-hidden="true">;></span>
+            <h3>Videogiochi</h3>
+            <p>Mondi 2D/3D da esplorare, sistemi da capire e storie in cui perdersi: i videogiochi sono la mia passione per eccellenza.</p>
           </article>
           <article class="interest-card reveal">
             <span class="card-number">02</span>
             <span class="interest-icon" aria-hidden="true">/-\</span>
             <h3>Anime &amp; Manga</h3>
-            <p>Le storie nella terra del sol. Una cultura diversa e che mi posso immergere.</p>
+            <p>Le storie della terra del Sol Levante e una cultura diversa, capace di immergermi e ispirarmi.</p>
           </article>
           <article class="interest-card reveal">
             <span class="card-number">03</span>
-            <span class="interest-icon" aria-hidden="true">~</span>
-            <h3>Film &amp; serie</h3>
-            <p>Visioni, atmosfere e storie da guardare fino ai titoli di coda.</p>
+            <span class="interest-icon" aria-hidden="true">[TV]</span>
+            <h3>Film &amp; Serie TV</h3>
+            <p>Dai film d'animazione alla fantascienza e al fantasy più puro: guardo tutto ciò che mi piace e ne traggo spunti.</p>
           </article>
           <article class="interest-card reveal">
             <span class="card-number">04</span>
             <span class="interest-icon" aria-hidden="true">*</span>
-            <h3>Spazio</h3>
-            <p>Universi da osservare, domande senza confini e meraviglie da esplorare.</p>
+            <h3>Spazio &amp; Filosofia</h3>
+            <p>Da quando sono nato, mi affascina l'universo e tutte le sue sfaccettature. Immagino e mi pongo sempre delle domande filosofiche: ma esistono gli alieni? Perché non li abbiamo ancora incontrati? Perché la natura e l'universo si comportano così? Ma cos'è la conoscenza?</p>
           </article>
-          <article class="interest-card interest-card-rust reveal">
+          <article class="interest-card reveal">
             <span class="card-number">05</span>
-            <span class="interest-icon" aria-hidden="true">RS</span>
-            <h3>Rust</h3>
-            <p>Il mio linguaggio di programmazione preferito per costruire idee solide e veloci.</p>
+            <span class="interest-icon" aria-hidden="true">{}</span>
+            <h3>Programmi &amp; Programmazione</h3>
+            <p>Anche se ho qualche difficoltà con la matematica, mi piace tantissimo programmare, leggere la documentazione e studiare i vari software, sia open source sia proprietari, da Blender a Godot e Bevy.</p>
           </article>
         </div>
       </div>
@@ -164,8 +168,8 @@
       <div class="container">
         <div class="section-heading project-heading reveal">
           <div>
-            <p class="eyebrow">03 / Cose che costruisco</p>
-            <h2>Progetti in <em>corso</em></h2>
+            <p class="eyebrow">03 / I miei progetti</p>
+            <h2>¿Progetti, creazioni ed <em>esperimenti.?</em></h2>
           </div>
           <span class="project-count">01 — 04</span>
         </div>
@@ -175,22 +179,22 @@
               <span class="drawer-index">01</span>
               <span class="drawer-logo drawer-logo-block"><img src="https://loweredgames.github.io/BlockMapsChangelogs/images/icons/favicon.ico" alt="" onerror="this.remove()"><span>BM</span></span>
               <span class="drawer-title">Block Maps Changelogs</span>
-              <span class="drawer-type">Minecraft / Changelogs</span>
+              <span class="drawer-type">Minecraft / Changelogs Maps</span>
               <span class="drawer-toggle" aria-hidden="true">+</span>
             </summary>
             <div class="drawer-content">
-              <div class="drawer-copy"><p>Il punto di riferimento per seguire gli aggiornamenti delle mie custom maps, con changelog, versioni e novita' dedicate soprattutto al mondo Minecraft.</p><a class="button button-light" href="https://loweredgames.github.io/BlockMapsChangelogs/" target="_blank" rel="noopener noreferrer">Visita il progetto <span aria-hidden="true">-&gt;</span></a></div>
+              <div class="drawer-copy"><p>Il punto di riferimento per seguire gli aggiornamenti delle mie custom maps, con changelog, versioni e novità dedicate soprattutto al mondo Minecraft.</p><a class="button button-light" href="https://loweredgames.github.io/BlockMapsChangelogs/" target="_blank" rel="noopener noreferrer">Visita il sito web<span aria-hidden="true">-&gt;</span></a></div>
             </div>
           </details>
           <details class="project-drawer reveal">
             <summary>
               <span class="drawer-index">02</span>
               <span class="drawer-logo drawer-logo-prototype"><img src="https://loweredgames.github.io/Loweredgames_prototype.github.io/images/icons/favicon.ico" alt="" onerror="this.remove()"><span>PM</span></span>
-              <span class="drawer-title">Prototype Maps</span>
-              <span class="drawer-type">Mappe / Sperimentazione</span>
+              <span class="drawer-title">Loweredgames Prototype Maps</span>
+              <span class="drawer-type">Minecraft / Changelogs Maps / Experimental</span>
               <span class="drawer-toggle" aria-hidden="true">+</span>
             </summary>
-            <div class="drawer-content"><div class="drawer-copy"><p>Un laboratorio per sperimentare nuove mappe e idee di gameplay prima di trasformarle in progetti completi.</p><a class="button button-light" href="https://loweredgames.github.io/Loweredgames_prototype.github.io/" target="_blank" rel="noopener noreferrer">Apri il progetto <span aria-hidden="true">-&gt;</span></a></div></div>
+            <div class="drawer-content"><div class="drawer-copy"><p>Un laboratorio per sperimentare nuove mappe e idee di gameplay prima di trasformarle in mappe di Minecraft complete.</p><a class="button button-light" href="https://loweredgames.github.io/Loweredgames_prototype.github.io/" target="_blank" rel="noopener noreferrer">Visita il sito web <span aria-hidden="true">-&gt;</span></a></div></div>
           </details>
           <details class="project-drawer reveal">
             <summary>
@@ -200,17 +204,17 @@
               <span class="drawer-type">Minecraft / Resource pack</span>
               <span class="drawer-toggle" aria-hidden="true">+</span>
             </summary>
-            <div class="drawer-content"><div class="drawer-copy"><p>Un resource pack per Minecraft che semplifica lo stile mantenendo leggibilita' e dettagli essenziali.</p><a class="button button-light" href="https://simple-default-texturepack.blogspot.com/" target="_blank" rel="noopener noreferrer">Apri il progetto <span aria-hidden="true">-&gt;</span></a></div></div>
+            <div class="drawer-content"><div class="drawer-copy"><p>Il mio resource pack di Minecraft semplifica lo stile, mantenendo leggibilità e dettagli essenziali.</p><a class="button button-light" href="https://simple-default-texturepack.blogspot.com/" target="_blank" rel="noopener noreferrer">Apri il progetto <span aria-hidden="true">-&gt;</span></a></div></div>
           </details>
           <details class="project-drawer reveal">
             <summary>
               <span class="drawer-index">04</span>
               <span class="drawer-logo drawer-logo-linux"><img src="https://loweredgames.github.io/Linux-Distros-Timeline/favicon.ico" alt="" onerror="this.remove()"><span>LT</span></span>
               <span class="drawer-title">Linux Distros Timeline</span>
-              <span class="drawer-type">Web / Cultura tech</span>
+              <span class="drawer-type">Web / Cultura Tech / Linux</span>
               <span class="drawer-toggle" aria-hidden="true">+</span>
             </summary>
-            <div class="drawer-content"><div class="drawer-copy"><p>Una timeline visuale per esplorare la storia e le famiglie delle distribuzioni Linux.</p><a class="button button-light" href="https://loweredgames.github.io/Linux-Distros-Timeline" target="_blank" rel="noopener noreferrer">Apri il progetto <span aria-hidden="true">-&gt;</span></a></div></div>
+            <div class="drawer-content"><div class="drawer-copy"><p>Una timeline visuale per esplorare la storia e le famiglie delle distribuzioni Linux, dalla nascita a oggi</p><a class="button button-light" href="https://loweredgames.github.io/Linux-Distros-Timeline" target="_blank" rel="noopener noreferrer">Apri il sito web e naviga <span aria-hidden="true">-&gt;</span></a></div></div>
           </details>
         </div>
       </div>
@@ -220,9 +224,9 @@
     <section id="contatti" class="contact section-shell">
       <div class="container contact-inner reveal">
         <p class="eyebrow">04 / Restiamo in contatto</p>
-        <h2>Hai un'idea?<br><em>Parliamone.</em></h2>
-        <p>Trovi tutti i miei spazi online qui sotto. Per mappe, progetti, collaborazioni o semplicemente per condividere una passione.</p>
-        <a class="button button-primary" href="https://discord.gg/T6PHxhznJ6" target="_blank" rel="noopener noreferrer">Scrivimi su Discord <span aria-hidden="true">-&gt;</span></a>
+        <h2>¿Ti piace quello che faccio?<br><em>Allora parliamone o mostrami cosa sai fare.?</em></h2>
+        <p>Trovi tutti i miei spazi online qui sotto: per mappe, progetti vari e collaborazioni future. Se ti va:</p>
+        <a class="button button-primary" href="https://discord.gg/T6PHxhznJ6" target="_blank" rel="noopener noreferrer">Scrivimi qui su Discord<span aria-hidden="true">-&gt;</span></a>
       </div>
     </section>
   </main>
@@ -230,14 +234,9 @@
   <!-- FOOTER: aggiorna qui i link dei tuoi profili e delle tue mappe. -->
   <footer class="site-footer">
     <div class="container footer-top">
-      <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="Ricarica la pagina">LOWEREDGAMES</a>
-        <p>Curiosita', creativita' e progetti dal web.</p>
-      </div>
       <div class="footer-links">
-        <p class="footer-label">In tanto controlla i vari link per le mie mappe o i miei social media:</p>
+        <p class="footer-label">Oppure ecco tutti i link dei miei profili sul web:</p>
         <div class="social-grid">
-          <a href="https://discord.gg/T6PHxhznJ6" target="_blank" rel="noopener noreferrer">Discord Server <span aria-hidden="true">-&gt;</span></a>
           <a href="https://github.com/Loweredgames/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">-&gt;</span></a>
           <a href="https://modrinth.com/user/LoweredgamesMC/" target="_blank" rel="noopener noreferrer">Modrinth <span aria-hidden="true">-&gt;</span></a>
           <a href="https://www.planetminecraft.com/member/loweredgames/" target="_blank" rel="noopener noreferrer">PlanetMinecraft <span aria-hidden="true">-&gt;</span></a>
@@ -248,8 +247,8 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>&copy; <span id="current-year">2026</span> Loweredgames</span>
-      <span>Made on the web / with curiosity</span>
+      <span>&copy; <span id="current-year"></span> Loweredgames</span>
+      <span>Made in Italy from Earth</span>
     </div>
   </footer>
 </body>
