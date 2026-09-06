@@ -17,55 +17,44 @@ const toDateTime = (date) => {
   return match ? `${match[3]}-${match[2]}-${match[1]}` : '';
 };
 
-const renderMarkdown = (markdown) => {
-  const lines = markdown.trim().split(/\r?\n/);
-  const html = [];
-  let listItems = [];
-  let paragraph = [];
+const highlightCode = (code, language) => {
+  const normalizedLanguage = String(language || '').trim().toLowerCase();
+  if (!normalizedLanguage) return escapeHtml(code);
 
-  const inline = (text) => escapeHtml(text)
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/`([^`]+)`/g, '<code>$1</code>');
-
-  const flushParagraph = () => {
-    if (paragraph.length > 0) {
-      html.push(`<p>${inline(paragraph.join(' '))}</p>`);
-      paragraph = [];
-    }
-  };
-
-  const flushList = () => {
-    if (listItems.length > 0) {
-      html.push(`<ul>${listItems.map((item) => `<li>${inline(item)}</li>`).join('')}</ul>`);
-      listItems = [];
-    }
-  };
-
-  lines.forEach((line) => {
-    if (line.startsWith('## ')) {
-      flushParagraph();
-      flushList();
-      html.push(`<h2>${inline(line.slice(3))}</h2>`);
-    } else if (line.startsWith('# ')) {
-      flushParagraph();
-      flushList();
-      html.push(`<h2>${inline(line.slice(2))}</h2>`);
-    } else if (line.startsWith('- ')) {
-      flushParagraph();
-      listItems.push(line.slice(2));
-    } else if (line.trim() === '') {
-      flushParagraph();
-      flushList();
-    } else {
-      paragraph.push(line.trim());
-    }
-  });
-
-  flushParagraph();
-  flushList();
-  return html.join('');
+  try {
+    return window.hljs.highlight(code, { language: normalizedLanguage }).value;
+  } catch {
+    return escapeHtml(code);
+  }
 };
+
+const markdown = window.markdownit({
+  html: true,
+  linkify: true,
+  typographer: true,
+  highlight: highlightCode,
+})
+  .use(window.markdownitFootnote)
+  .use(window.markdownitDeflist)
+  .use(window.markdownitSub)
+  .use(window.markdownitSup)
+  .use(window.markdownitMark)
+  .use(window.markdownitEmoji);
+
+markdown.core.ruler.push('custom_heading_ids', (state) => {
+  for (let index = 0; index < state.tokens.length - 1; index += 1) {
+    const token = state.tokens[index];
+    const inlineToken = state.tokens[index + 1];
+    if (token.type !== 'heading_open' || inlineToken.type !== 'inline') continue;
+
+    const match = inlineToken.content.match(/^(.*)\s+\{#([A-Za-z][\w-]*)\}\s*$/);
+    if (!match) continue;
+    inlineToken.content = match[1];
+    token.attrSet('id', match[2]);
+  }
+});
+
+const renderMarkdown = (source) => markdown.render(source);
 
 const showError = (message) => {
   postView.hidden = true;
@@ -75,7 +64,7 @@ const showError = (message) => {
 
 const renderPostList = (posts) => {
   if (posts.length === 0) {
-    showError('Non ci sono ancora aggiornamenti pubblicati.');
+    showError('Non ci sono ancora aggiornamenti pubblicati. Ritorna piu tardi.');
     return;
   }
 
@@ -140,8 +129,9 @@ fetch('posts.json')
   })
   .then((posts) => {
     if (!Array.isArray(posts)) throw new Error('Catalogo non valido');
-    renderPostList(posts);
-    updateView(posts);
-    window.addEventListener('hashchange', () => updateView(posts));
+    const publicPosts = posts.filter((post) => post.public === true);
+    renderPostList(publicPosts);
+    updateView(publicPosts);
+    window.addEventListener('hashchange', () => updateView(publicPosts));
   })
   .catch(() => showError('Non riesco a caricare gli aggiornamenti. Avvia il sito con un server locale.'));

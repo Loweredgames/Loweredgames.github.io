@@ -2,9 +2,9 @@
 
 Sito web per i miei progetti tra cui Minecraft.
 
----
-
 Portfolio statico personale realizzato con HTML, CSS e JavaScript. Il sito presenta la tua bio, le passioni, i progetti, Rust e i collegamenti ai tuoi profili online.
+
+---
 
 ## File principali
 

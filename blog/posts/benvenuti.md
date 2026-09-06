@@ -1,9 +1,9 @@
-Ciao a tutti, questo sara il mio sito web main, personale, dove condivido un po di tutto, e cosi mi distacco da Minecraft e mantengo tutto pulito. è ancora un po "Working progress" pero va be l'importante è che funziona tutto.
+Ciao a tutti! Questo sarà il mio sito web principale e personale, dove condividerò un po' di tutto. In questo modo mi distacco da Minecraft e mantengo tutto pulito. È ancora un po' "work in progress", però vabbè, l'importante è che funzioni tutto.
 
-# LLM
+## LLM
 
-Si ho usato la AI, siamo sempre nel 2026 😄 e comunque è uno strumento molto utile. la maggior parte pero è stato un lavoro manuale nel fixare o modificare tutto quanto.
+Sì, ho usato l'IA: siamo pur sempre nel 2026 😄. E comunque è uno strumento molto utile. La maggior parte del lavoro, però, è stata svolta manualmente, correggendo e modificando tutto quanto.
 
-# Grazie
+## Grazie
 
-vari dettagli arriverano in seguti, con aggiornamenti e post personali. grazie a tutti e buona permanenza.
+Vari dettagli arriveranno in seguito, con aggiornamenti e post personali. Grazie a tutti e buona permanenza!

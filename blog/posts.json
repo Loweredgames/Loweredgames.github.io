@@ -5,6 +5,16 @@
     "date": "05/09/2026",
     "category": "Benvenuti",
     "author": "Loweredgames",
-    "excerpt": "Primo blog personale."
+    "excerpt": "Primo blog personale.",
+    "public": true
+  },
+  {
+    "file": "test.md",
+    "title": "Test",
+    "date": "03/10/2000",
+    "category": "Test",
+    "author": "Loweredgames",
+    "excerpt": "Test blog post.",
+    "public": false
   }
 ]
